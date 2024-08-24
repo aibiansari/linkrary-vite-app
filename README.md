@@ -1,5 +1,5 @@
 # Linkrary
-Linkrary is the ultimate resource hub, bringing together a curated selection of the best web tools, design inspiration, development utilities, and more. Whether you're a creative professional, a developer, or simply someone who loves discovering useful online resources, Linkrary organizes everything into easy-to-navigate categories, making it simple to find exactly what you need. Explore and share your favorite links—all in one place.
+Linkrary is the ultimate resource hub, bringing together a curated selection of the best web tools, design inspiration, development utilities, and more. Whether you're a creative professional, a developer, or simply someone who loves discovering useful online resources, Linkrary organizes everything into easy-to-navigate categories, making it simple to find exactly what you need. Explore and share your favorite links - all in one place.
 
 ## Tech Stack
 
