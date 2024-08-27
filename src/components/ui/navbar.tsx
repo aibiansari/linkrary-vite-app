@@ -1,5 +1,6 @@
 import { FaGithub, FaSearch } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight, FaCircleHalfStroke } from "react-icons/fa6";
+import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { Turn as Hamburger } from "hamburger-react";
 import logo from "/logo.svg";
 
@@ -11,6 +12,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,13 +22,15 @@ const Navbar = () => {
         className="flex-shrink-0 w-12 md:w-52 flex items-center gap-2 mb-2 md:mb-0"
       >
         <img src={logo} alt="Linkrary Logo" className="w-6 h-6" />
-        <span className="hidden md:block text-2xl font-bold">Linkrary</span>
+        <span className="hidden md:block text-2xl italic font-Raleway font-bold">
+          Linkrary
+        </span>
       </a>
 
       <div className="flex flex-grow justify-center mb-2 md:mb-0">
         <div className="bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 py-3 px-2 rounded-full hover:bg-hover transition-colors ease-in cursor-pointer">
           <FaSearch size={16} className="text-gray-300 ml-2" />
-          <span className="text-neutral-500 font-medium">
+          <span className="text-neutral-500 italic font-Raleway font-medium">
             Search on Linkrary...
           </span>
         </div>
@@ -50,13 +54,28 @@ const Navbar = () => {
           <DropdownMenuTrigger className="outline-none">
             <Hamburger size={24} />
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+          <DropdownMenuContent className=" font-Raleway" align="end">
+            <DropdownMenuLabel>
+              <Link to="/Linkrary/saved">Collection</Link>
+            </DropdownMenuLabel>
+            <DropdownMenuItem>About</DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Billing</DropdownMenuItem>
-            <DropdownMenuItem>Team</DropdownMenuItem>
-            <DropdownMenuItem>Subscription</DropdownMenuItem>
+            <DropdownMenuItem>Themes</DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <div className="flex p-2">
+              <DropdownMenuItem className="flex flex-col items-center justify-center space-y-1">
+                <FaCircleHalfStroke size={20} />
+                <span>System</span>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="flex flex-col items-center  justify-center space-y-1">
+                <MdOutlineLightMode size={20} />
+                <span>Light</span>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="flex flex-col items-center  justify-center space-y-1">
+                <MdOutlineDarkMode size={20} />
+                <span>Dark</span>
+              </DropdownMenuItem>
+            </div>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>

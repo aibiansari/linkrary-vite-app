@@ -34,8 +34,8 @@ const ResponsiveComponent: React.FC = () => {
             </section>
           </main>
           <footer className="mt-6 text-center">
-            <p className="text-gray-500">
-              &copy; 2024 Responsive Component. All rights reserved.
+            <p className="text-neutral-500">
+              &copy; {new Date().getFullYear()} Linkrary. All rights reserved.
             </p>
           </footer>
         </div>
