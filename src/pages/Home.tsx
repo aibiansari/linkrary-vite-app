@@ -1,41 +1,47 @@
-// App.tsx
 import Navbar from "@/components/ui/navbar";
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Home: React.FC = () => {
+const ResponsiveComponent: React.FC = () => {
   return (
-    <>
+    <div className="flex flex-col items-center min-h-screen">
+      {/* Navbar */}
       <Navbar />
-      <div className="flex flex-col min-h-screen bg-neutral-900 text-white">
-        <main className="flex-grow flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-6xl font-Raleway italic mb-8">_Linkrary</h1>
-            <p className="text-lg mb-6">
-              Quality Stuff on the way. Stay tuned!
-            </p>
-            <Link to="/Linkrary/saved">Saved</Link>
-          </div>
-        </main>
 
-        <footer className="bg-slate-800 text-center p-3">
-          <p className="text-md">
-            Crafted by{" "}
-            <a
-              href="https://github.com/aibiansari"
-              className="font-bold"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Abdullah Ansari
-            </a>
-          </p>
-        </footer>
+      {/* Main Content */}
+      <div className="flex-grow flex flex-col items-center justify-start p-4">
+        <div className="max-w-screen-xl w-full bg-body shadow-md rounded-lg p-6">
+          <header className="text-center mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">
+              Responsive Design
+            </h1>
+          </header>
+          <main className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <section className="flex-1 text-center md:text-left">
+              <h2 className="text-xl md:text-2xl font-semibold text-gray-700 mb-4">
+                Welcome!
+              </h2>
+              <p className="text-gray-600">
+                This component is designed to be responsive across various
+                screen sizes, from mobile to 4k displays.
+              </p>
+            </section>
+            <section className="flex-1 flex items-center justify-center">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Placeholder"
+                className="w-full max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
+              />
+            </section>
+          </main>
+          <footer className="mt-6 text-center">
+            <p className="text-gray-500">
+              &copy; 2024 Responsive Component. All rights reserved.
+            </p>
+          </footer>
+        </div>
       </div>
-      <div className="min-h-screen bg-white">sad</div>
-      <div className="min-h-screen bg-gray-500">sad</div>
-    </>
+    </div>
   );
 };
 
-export default Home;
+export default ResponsiveComponent;

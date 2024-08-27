@@ -20,6 +20,11 @@ module.exports = {
       fontFamily: {
         Raleway: ["Raleway", "sans-serif"],
       },
+      colors: {
+        body: "#111111",
+        hover: "#3d3d3d",
+        element: "#2e2e2e",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
