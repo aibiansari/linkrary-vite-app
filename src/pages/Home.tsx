@@ -1,4 +1,5 @@
 import Navbar from "@/components/ui/navbar";
+import HorizontalScroll from "@/components/ui/ScrollX";
 import React from "react";
 
 const ResponsiveComponent: React.FC = () => {
@@ -6,9 +7,9 @@ const ResponsiveComponent: React.FC = () => {
     <div className="flex flex-col items-center min-h-screen">
       {/* Navbar */}
       <Navbar />
-
+      <HorizontalScroll />
       {/* Main Content */}
-      <div className="flex-grow flex flex-col items-center justify-start p-4">
+      <div className="flex-grow flex flex-col mt-20 items-center justify-start p-4">
         <div className="max-w-screen-xl w-full bg-body shadow-md rounded-lg p-6">
           <header className="text-center mb-6">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">
