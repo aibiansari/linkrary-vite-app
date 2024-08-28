@@ -1,11 +1,13 @@
 // App.tsx
 import Navbar from "@/components/ui/navbar";
+import HorizontalScroll from "@/components/ui/ScrollX";
 import React from "react";
 
 const Home: React.FC = () => {
   return (
     <>
       <Navbar />
+      <HorizontalScroll />
       <div className="flex flex-col min-h-screen bg-body text-white">
         <main className="flex-grow flex items-center justify-center">
           <div className="text-center">

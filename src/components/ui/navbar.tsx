@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex w-12 md:w-52 md:space-x-4">
+      <div className="flex w-12 md:w-52 md:space-x-4 mb-2 md:mb-0">
         <a
           href="https://github.com/aibiansari/Linkrary"
           target="_blank"

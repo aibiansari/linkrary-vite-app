@@ -40,14 +40,14 @@ const HorizontalScroll = () => {
   };
 
   return (
-    <div className="sticky top-20 md:top-16 z-10 bg-body border-y-[1px] border-element">
+    <div className="sticky top-20 md:top-16 z-10 bg-body border-y-[1px] border-neutral-900">
       <div className="relative flex items-center w-[96vw] md:w-[98vw] lg:w-[99vw] max-w-screen-2xl md:px-4">
         <button className="hidden md:flex py-2 px-3 items-center justify-center gap-2 font-Raleway bg-element hover:bg-hover transition-colors duration-200 rounded-full text-neutral-200 font-semibold">
           <PiSlidersHorizontalBold />
           Filters
         </button>
         <div className="hidden md:block h-9 w-[1.4px] shrink-0 bg-element ml-5 mr-1"></div>
-        <button onClick={() => scroll("left")} className="p-2">
+        <button onClick={() => scroll("left")} className="hidden md:block p-2">
           <FaArrowLeft
             size="2.4em"
             className="text-white hover:bg-element transition-all duration-200 p-3 rounded-full"
@@ -55,7 +55,7 @@ const HorizontalScroll = () => {
         </button>
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto text-sm md:text-base space-x-2 md:space-x-6 mx-2"
+          className="flex overflow-x-auto text-sm md:text-base space-x-2 md:space-x-6"
           style={{ scrollbarWidth: "none" }}
         >
           {categories.map((category, index) => (
@@ -69,7 +69,7 @@ const HorizontalScroll = () => {
             </button>
           ))}
         </div>
-        <button onClick={() => scroll("right")} className="p-2">
+        <button onClick={() => scroll("right")} className="hidden md:block p-2">
           <FaArrowRight
             size="2.4em"
             className="text-white hover:bg-element transition-all duration-200 p-3 rounded-full"
