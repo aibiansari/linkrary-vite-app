@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useFilterButtonContext } from "@/contexts/FilterButtonContext";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { PiSlidersHorizontalBold } from "react-icons/pi";
 import { RiAppsFill } from "react-icons/ri";
@@ -31,7 +32,7 @@ const categories = [
 
 const HorizontalScroll = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-
+  const { buttonState, setButtonState } = useFilterButtonContext();
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const scrollAmount = direction === "left" ? -300 : 300;
@@ -42,7 +43,10 @@ const HorizontalScroll = () => {
   return (
     <div className="sticky top-20 md:top-16 z-10 bg-body border-y-[1px] border-neutral-900">
       <div className="relative flex items-center w-[96vw] md:w-[98vw] lg:w-[99vw] max-w-screen-2xl md:px-4">
-        <button className="hidden md:flex py-2 px-3 items-center justify-center gap-2 font-Raleway bg-element hover:bg-hover transition-colors duration-200 rounded-full text-neutral-200 font-semibold">
+        <button
+          onClick={() => setButtonState(!buttonState)}
+          className="hidden md:flex py-2 px-3 items-center justify-center gap-2 font-Raleway bg-element hover:bg-hover transition-colors duration-200 rounded-full text-neutral-200 font-semibold"
+        >
           <PiSlidersHorizontalBold />
           Filters
         </button>

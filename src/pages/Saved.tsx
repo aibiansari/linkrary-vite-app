@@ -1,4 +1,5 @@
 // App.tsx
+import FilterModal from "@/components/ui/filterModal";
 import Navbar from "@/components/ui/navbar";
 import HorizontalScroll from "@/components/ui/ScrollX";
 import React from "react";
@@ -6,6 +7,7 @@ import React from "react";
 const Home: React.FC = () => {
   return (
     <>
+      <FilterModal />
       <Navbar />
       <HorizontalScroll />
       <div className="flex flex-col min-h-screen bg-body text-white">

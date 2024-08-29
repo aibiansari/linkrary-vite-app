@@ -1,3 +1,4 @@
+import FilterModal from "@/components/ui/filterModal";
 import Navbar from "@/components/ui/navbar";
 import HorizontalScroll from "@/components/ui/ScrollX";
 import React from "react";
@@ -6,6 +7,7 @@ const ResponsiveComponent: React.FC = () => {
   return (
     <div className="flex flex-col items-center min-h-screen">
       {/* Navbar */}
+      <FilterModal />
       <Navbar />
       <HorizontalScroll />
       {/* Main Content */}
