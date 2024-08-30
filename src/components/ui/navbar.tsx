@@ -19,14 +19,14 @@ const Navbar = () => {
   const { buttonState, setButtonState } = useFilterButtonContext();
 
   return (
-    <nav className="bg-body fixed h-20 md:h-16 w-screen z-50 max-w-screen-2xl text-white px-4 md:px-8 flex flex-wrap items-center justify-between">
+    <nav className="bg-body fixed h-20 md:h-16 w-screen z-20 max-w-screen-2xl text-white px-4 md:px-8 flex flex-wrap items-center justify-between">
       <a
         href="/Linkrary/"
         className="flex-shrink-0 w-12 md:w-52 flex items-center gap-2 mb-2 md:mb-0"
       >
         <img src={logo} alt="Linkrary Logo" className="w-6 h-6" />
         <span className="hidden md:block text-2xl font-Raleway font-bold">
-          Lin<span className="italic">krary</span>
+          Linkrary
         </span>
       </a>
 

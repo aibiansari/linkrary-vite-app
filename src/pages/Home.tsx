@@ -3,7 +3,7 @@ import Navbar from "@/components/ui/navbar";
 import HorizontalScroll from "@/components/ui/ScrollX";
 import React from "react";
 
-const ResponsiveComponent: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <div className="flex flex-col items-center min-h-screen">
       {/* Navbar */}
@@ -47,4 +47,4 @@ const ResponsiveComponent: React.FC = () => {
   );
 };
 
-export default ResponsiveComponent;
+export default Home;

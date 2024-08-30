@@ -4,7 +4,7 @@ import Navbar from "@/components/ui/navbar";
 import HorizontalScroll from "@/components/ui/ScrollX";
 import React from "react";
 
-const Home: React.FC = () => {
+const Saved: React.FC = () => {
   return (
     <>
       <FilterModal />
@@ -31,4 +31,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Saved;
