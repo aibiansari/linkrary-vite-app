@@ -3,7 +3,7 @@ Linkrary is the ultimate resource hub, bringing together a curated selection of 
 
 ## Tech Stack
 
-<img src="https://skillicons.dev/icons?i=react,tailwind,html,css,vite,vscode,git,typescript,github,ai,ps" />
+<img src="https://skillicons.dev/icons?i=react,tailwind,html,css,vite,vscode,git,javascript,typescript,github,ai,ps" />
 
 ## Libraries and Frameworks
 
