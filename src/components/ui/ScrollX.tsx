@@ -43,7 +43,7 @@ const categories = [
   { name: "Free Games", icon: <FaGamepad /> },
   { name: "Torrent Resources", icon: <FaLock /> },
   { name: "PDF Utilities", icon: <FaBook /> },
-  { name: "Cracked Softwares", icon: <FaLock /> },
+  { name: "Cracked Apps", icon: <FaLock /> },
   { name: "Cloud Solutions", icon: <FaCloud /> },
   { name: "3D Design Tools", icon: <FaPaintBrush /> },
   { name: "Coding Resources", icon: <FaCode /> },
