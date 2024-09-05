@@ -1,4 +1,5 @@
 import { useFilterButtonContext } from "@/contexts/FilterButtonContext";
+import { IoSearch } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 
@@ -46,23 +47,27 @@ const FilterModal = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setButtonState(false)}
-          className="bg-black/50 fixed  font-Raleway inset-0 z-50 grid place-items-center"
+          className="bg-black/50 fixed font-Raleway inset-0 z-50 grid place-items-center"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "0deg" }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-body text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
+            className="bg-body text-white p-6 rounded-3xl w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
           >
-            <div className="relative z-10 max-h-[90vh] md:max-h-[80vh]">
-              <h3 className="text-center mb-2 flex items-start justify-between">
+            <div className="relative z-10 max-h-[90vh] md:max-h-[70vh]">
+              <h3 className="text-center pb-4 mb-6 border-b-hover border-b-2 flex items-baseline justify-between">
+                <IoSearch
+                  size="1.25em"
+                  className="translate-y-1 text-neutral-500"
+                />
                 <input
                   type="text"
-                  placeholder="Search shortcuts..."
+                  placeholder="Search on Linkrary"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="w-full p-1.5 pl-2 mb-8 text-white bg-neutral-900 border border-neutral-700 rounded-lg focus:outline-none focus:border-neutral-600"
+                  className="w-full p-1.5 pl-4 placeholder:italic text-neutral-200 bg-body border border-none rounded-lg focus:outline-none focus:border-neutral-600"
                 />
               </h3>
               <ul
