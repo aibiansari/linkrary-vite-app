@@ -9,18 +9,15 @@ import {
   FaHeadphones,
   FaPaintBrush,
   FaLaptopCode,
-  FaCloud,
-  FaStore,
   FaTools,
   FaLightbulb,
   FaLock,
   FaPlay,
   FaCodeBranch,
   FaPalette,
-  FaCode,
   FaBrain,
 } from "react-icons/fa";
-import { RiAppsFill, RiFontSize, RiOpenSourceLine } from "react-icons/ri";
+import { RiAppsFill, RiFontSize } from "react-icons/ri";
 import { MdLibraryBooks } from "react-icons/md";
 
 const categories = [
@@ -28,25 +25,19 @@ const categories = [
   { name: "AI Tools", icon: <FaBrain /> },
   { name: "Audio Tools", icon: <FaHeadphones /> },
   { name: "Video Editing", icon: <FaVideo /> },
+  { name: "Design Tools", icon: <FaPaintBrush /> },
   { name: "Game Libraries", icon: <FaGamepad /> },
-  { name: "Freeware", icon: <FaTools /> },
   { name: "Design Inspiration", icon: <FaPalette /> },
   { name: "Web Development", icon: <FaLaptopCode /> },
   { name: "Font Resources", icon: <RiFontSize /> },
   { name: "SVG Icons", icon: <FaCodeBranch /> },
-  { name: "Open Source", icon: <RiOpenSourceLine /> },
   { name: "Web Libraries", icon: <MdLibraryBooks /> },
-  { name: "Online Stores", icon: <FaStore /> },
   { name: "File Converters", icon: <FaTools /> },
   { name: "Useful Websites", icon: <FaLightbulb /> },
   { name: "Streaming Services", icon: <FaPlay /> },
-  { name: "Free Games", icon: <FaGamepad /> },
   { name: "Torrent Resources", icon: <FaLock /> },
   { name: "PDF Utilities", icon: <FaBook /> },
   { name: "Cracked Apps", icon: <FaLock /> },
-  { name: "Cloud Solutions", icon: <FaCloud /> },
-  { name: "3D Design Tools", icon: <FaPaintBrush /> },
-  { name: "Coding Resources", icon: <FaCode /> },
   { name: "Stock Images", icon: <FaPalette /> },
 ];
 
