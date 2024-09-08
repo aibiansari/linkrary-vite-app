@@ -11,18 +11,19 @@ import {
   FaLaptopCode,
   FaTools,
   FaLightbulb,
-  FaLock,
+  FaUnlockAlt,
   FaPlay,
   FaCodeBranch,
   FaPalette,
-  FaBrain,
+  FaRobot,
+  FaImages,
 } from "react-icons/fa";
 import { RiAppsFill, RiFontSize } from "react-icons/ri";
 import { MdLibraryBooks } from "react-icons/md";
 
 const categories = [
   { name: "All Apps", icon: <RiAppsFill /> },
-  { name: "AI Tools", icon: <FaBrain /> },
+  { name: "AI Tools", icon: <FaRobot /> },
   { name: "Audio Tools", icon: <FaHeadphones /> },
   { name: "Video Editing", icon: <FaVideo /> },
   { name: "Design Tools", icon: <FaPaintBrush /> },
@@ -33,12 +34,12 @@ const categories = [
   { name: "SVG Icons", icon: <FaCodeBranch /> },
   { name: "Web Libraries", icon: <MdLibraryBooks /> },
   { name: "File Converters", icon: <FaTools /> },
+  { name: "Torrent Resources", icon: <FaUnlockAlt /> },
   { name: "Useful Websites", icon: <FaLightbulb /> },
   { name: "Streaming Services", icon: <FaPlay /> },
-  { name: "Torrent Resources", icon: <FaLock /> },
+  { name: "Cracked Apps", icon: <FaUnlockAlt /> },
   { name: "PDF Utilities", icon: <FaBook /> },
-  { name: "Cracked Apps", icon: <FaLock /> },
-  { name: "Stock Images", icon: <FaPalette /> },
+  { name: "Stock Images", icon: <FaImages /> },
 ];
 
 const HorizontalScroll = () => {
