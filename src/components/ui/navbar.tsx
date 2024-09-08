@@ -20,15 +20,15 @@ const Navbar = () => {
 
   return (
     <nav className="bg-body fixed h-20 md:h-16 w-screen z-20 max-w-screen-2xl text-white px-4 md:px-8 flex flex-wrap items-center justify-between">
-      <a
-        href="/Linkrary/"
-        className="flex-shrink-0 w-12 md:w-52 flex items-center gap-2 mb-2 md:mb-0"
-      >
-        <img src={logo} alt="Linkrary Logo" className="w-6 h-6" />
-        <span className="hidden md:block text-2xl font-Raleway font-bold">
-          Linkrary
-        </span>
-      </a>
+      <div className="flex-shrink-0 w-12 md:w-52 flex items-center mb-2 md:mb-0">
+        <a href="/Linkrary/" className="flex items-center gap-2">
+          <img src={logo} alt="Linkrary Logo" className="w-6 h-6" />
+
+          <span className="hidden md:block text-2xl font-Raleway font-bold">
+            Linkrary
+          </span>
+        </a>
+      </div>
 
       <div className="flex flex-grow justify-center mb-2 md:mb-0">
         <div
@@ -47,7 +47,7 @@ const Navbar = () => {
           href="https://github.com/aibiansari/Linkrary"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex items-center space-x-1.5 hover:text-neutral-400 transition-colors duration-300 ease-in-out group"
+          className="hidden md:flex items-center space-x-1.5 hover:text-neutral-300 transition-colors duration-300 ease-in-out group"
         >
           <FaGithub size={20} />
           <span>GitHub Repo</span>
@@ -60,24 +60,25 @@ const Navbar = () => {
           <DropdownMenuTrigger className="outline-none">
             <Hamburger size={24} />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className=" font-Raleway" align="end">
+          <DropdownMenuContent className="dark font-Raleway" align="end">
             <DropdownMenuLabel>
               <Link to="/Linkrary/saved">Collection</Link>
             </DropdownMenuLabel>
             <DropdownMenuItem>About</DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Themes</DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <div className="flex p-2">
-              <DropdownMenuItem className="flex flex-col items-center justify-center space-y-1">
+            <DropdownMenuItem disabled className="text-xs">
+              Select a theme
+            </DropdownMenuItem>
+            <div className="flex gap-2 p-2 text-neutral-300">
+              <DropdownMenuItem className="flex text-xs cursor-pointer flex-col w-14 ring-1 ring-neutral-900 rounded-md items-center justify-center space-y-1">
                 <FaCircleHalfStroke size={20} />
                 <span>System</span>
               </DropdownMenuItem>
-              <DropdownMenuItem className="flex flex-col items-center  justify-center space-y-1">
+              <DropdownMenuItem className="flex text-xs cursor-pointer flex-col w-14 ring-1 ring-neutral-900 rounded-md items-center  justify-center space-y-1">
                 <MdOutlineLightMode size={20} />
                 <span>Light</span>
               </DropdownMenuItem>
-              <DropdownMenuItem className="flex flex-col items-center  justify-center space-y-1">
+              <DropdownMenuItem className="flex text-xs cursor-pointer flex-col w-14 ring-1 ring-neutral-900 rounded-md items-center  justify-center space-y-1">
                 <MdOutlineDarkMode size={20} />
                 <span>Dark</span>
               </DropdownMenuItem>

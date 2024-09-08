@@ -2,45 +2,60 @@ import FilterModal from "@/components/ui/filterModal";
 import Navbar from "@/components/ui/navbar";
 import HorizontalScroll from "@/components/ui/ScrollX";
 import React from "react";
+import ChatGPT from "/icons/ChatGPT.webp";
+import FMHY from "/icons/FMHY.webp";
+
+const cards = [
+  {
+    image: ChatGPT, // Replace with actual image paths
+    title: "ChatGPT",
+    description: "This is a description for ChatGPT.",
+    link: "https://example.com/1",
+  },
+  {
+    image: FMHY,
+    title: "FMHY",
+    description: "This is a description for FMHY.",
+    link: "https://example.com/2",
+  },
+  // Add more cards as needed
+];
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen">
+    <div className="flex flex-col items-center min-h-screen dark">
       {/* Navbar */}
       <FilterModal />
       <Navbar />
       <HorizontalScroll />
+
       {/* Main Content */}
-      <div className="flex-grow flex flex-col mt-20 items-center justify-start p-4">
-        <div className="max-w-screen-xl w-full bg-body shadow-md rounded-lg p-6">
-          <header className="text-center mb-6">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">
-              Responsive Design
-            </h1>
-          </header>
-          <main className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <section className="flex-1 text-center md:text-left">
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-700 mb-4">
-                Welcome!
-              </h2>
-              <p className="text-gray-600">
-                This component is designed to be responsive across various
-                screen sizes, from mobile to 4k displays.
-              </p>
-            </section>
-            <section className="flex-1 flex items-center justify-center">
+      <div className="max-w-screen-2xl mt-16 w-full bg-body">
+        <h1 className="p-8 text-3xl md:text-4xl text-white font-Raleway font-bold">
+          Discover
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-8 py-2">
+          {cards.map((card, index) => (
+            <a
+              key={index}
+              href={card.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 hover:bg-hover hover:scale-105 hover:shadow-lg shadow-black/50 transition-all duration-300"
+            >
               <img
-                src="https://via.placeholder.com/300"
-                alt="Placeholder"
-                className="w-full max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
+                src={card.image}
+                alt={card.title}
+                className="w-16 h-16 rounded-lg object-cover"
               />
-            </section>
-          </main>
-          <footer className="mt-6 text-center">
-            <p className="text-neutral-500">
-              &copy; {new Date().getFullYear()} Linkrary. All rights reserved.
-            </p>
-          </footer>
+              <div>
+                <h3 className="text-xl text-white font-semibold">
+                  {card.title}
+                </h3>
+                <p className="text-sm text-neutral-300">{card.description}</p>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </div>

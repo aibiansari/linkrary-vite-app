@@ -1,42 +1,35 @@
 import { useFilterButtonContext } from "@/contexts/FilterButtonContext";
 import { IoSearch } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
+import { FaArrowRight } from "react-icons/fa6";
 import React from "react";
+import ChatGPT from "/icons/ChatGPT.webp";
+import FMHY from "/icons/FMHY.webp";
 
-const items = [
-  { name: "Select All", shortcut: "Ctrl + A" },
-  { name: "Copy Selection", shortcut: "Ctrl + C" },
-  { name: "Cut Selection", shortcut: "Ctrl + X" },
-  { name: "Paste Selection", shortcut: "Ctrl + V" },
-  { name: "Undo", shortcut: "Ctrl + Z" },
-  { name: "Redo", shortcut: "Ctrl + Y" },
-  { name: "Delete Selection", shortcut: "Delete" },
-  { name: "Center Selection", shortcut: "Spacebar" },
-  { name: "Go to Full Screen", shortcut: "F11" },
-  { name: "Add new node on canvas", shortcut: "Double Left Click" },
-  { name: "Add label on link", shortcut: "Double Click on Link" },
-  { name: "Open Context Menu", shortcut: "Right Click on Selection" },
-  { name: "Selection Box", shortcut: "Left Click Hold & Drag" },
-  { name: "Switch Scrolling Mods", shortcut: "Middle Mouse Button" },
-  { name: "Move Selection", shortcut: "Arrow Keys" },
-  { name: "Precise Selection Movement", shortcut: "Ctrl + Arrow Keys" },
-  { name: "Free Rotation", shortcut: "Shift + Rotate" },
-  { name: "Rescale Selection", shortcut: "Drag Bottom Right Corner" },
-  { name: "Multiple Selection", shortcut: "Shift/Ctrl + Select" },
-  { name: "Group Selection", shortcut: "Ctrl + G" },
-  { name: "Ungroup Selection", shortcut: "Ctrl + Shift + G" },
-  { name: "Zoom In/Out", shortcut: "+ & -" },
-  { name: "Zoom to Fit", shortcut: "Shift + Z" },
+const cards = [
+  {
+    image: ChatGPT, // Replace with actual image paths
+    title: "ChatGPT",
+    description: "This is a description for ChatGPT.",
+    link: "https://example.com/1",
+  },
+  {
+    image: FMHY,
+    title: "FMHY",
+    description: "This is a description for FMHY.",
+    link: "https://example.com/2",
+  },
+  // Add more cards as needed
 ];
 
 const FilterModal = () => {
   const { buttonState, setButtonState } = useFilterButtonContext();
   const [search, setSearch] = React.useState("");
 
-  const filteredShortcuts = items.filter(
-    (item) =>
-      item.name.toLowerCase().includes(search.toLowerCase()) ||
-      item.shortcut.toLowerCase().includes(search.toLowerCase())
+  const filteredCards = cards.filter(
+    (card) =>
+      card.description.toLowerCase().includes(search.toLowerCase()) ||
+      card.description.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
@@ -57,7 +50,7 @@ const FilterModal = () => {
             className="bg-body text-white p-6 rounded-3xl w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
           >
             <div className="relative z-10 max-h-[90vh] md:max-h-[70vh]">
-              <h3 className="text-center pb-4 mb-6 border-b-hover border-b-2 flex items-baseline justify-between">
+              <h3 className="text-center pb-2 mx-4 mt-2 mb-6 border-b-hover border-b-2 flex items-baseline justify-between">
                 <IoSearch
                   size="1.25em"
                   className="translate-y-1 text-neutral-500"
@@ -71,19 +64,35 @@ const FilterModal = () => {
                 />
               </h3>
               <ul
-                className="h-screen pb-52"
+                className="h-screen space-y-3 p-4 pb-52"
                 style={{ scrollbarWidth: "none", overflowY: "scroll" }}
               >
-                {filteredShortcuts.map((shortcut, index) => (
-                  <li
+                {filteredCards.map((card, index) => (
+                  <a
                     key={index}
-                    className="flex items-center justify-between px-1 mb-6 border-b border-white border-opacity-5 pb-2"
+                    href={card.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 hover:bg-body hover:shadow-none hover:ring-1 ring-element shadow-black/50 transition-all duration-300 group"
                   >
-                    <p className="py-0.5 text-white">{shortcut.name}</p>
-                    <span className="bg-neutral-800 text-neutral-300 py-1 px-1.5 rounded-md font-medium shadow-black shadow-md">
-                      {shortcut.shortcut}
-                    </span>
-                  </li>
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="w-16 h-16 rounded-lg object-cover"
+                    />
+                    <div className="flex-1">
+                      <h3 className="text-xl text-white font-semibold">
+                        {card.title}
+                      </h3>
+                      <p className="text-sm text-neutral-300">
+                        {card.description}
+                      </p>
+                    </div>
+                    <FaArrowRight
+                      size="1.25em"
+                      className="absolute right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white"
+                    />
+                  </a>
                 ))}
               </ul>
             </div>
