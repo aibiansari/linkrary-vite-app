@@ -15,6 +15,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Link } from "react-router-dom";
 
+const dropdownItems = [
+  { icon: <FaCircleHalfStroke size={20} />, label: "System" },
+  { icon: <MdOutlineLightMode size={20} />, label: "Light" },
+  { icon: <MdOutlineDarkMode size={20} />, label: "Dark" },
+];
+
 const Navbar = () => {
   const { buttonState, setButtonState } = useFilterButtonContext();
 
@@ -70,18 +76,15 @@ const Navbar = () => {
               Select a theme
             </DropdownMenuItem>
             <div className="flex gap-2 p-2 text-neutral-300">
-              <DropdownMenuItem className="flex text-xs cursor-pointer flex-col w-14 ring-1 ring-neutral-900 rounded-md items-center justify-center space-y-1">
-                <FaCircleHalfStroke size={20} />
-                <span>System</span>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="flex text-xs cursor-pointer flex-col w-14 ring-1 ring-neutral-900 rounded-md items-center  justify-center space-y-1">
-                <MdOutlineLightMode size={20} />
-                <span>Light</span>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="flex text-xs cursor-pointer flex-col w-14 ring-1 ring-neutral-900 rounded-md items-center  justify-center space-y-1">
-                <MdOutlineDarkMode size={20} />
-                <span>Dark</span>
-              </DropdownMenuItem>
+              {dropdownItems.map((item, index) => (
+                <DropdownMenuItem
+                  key={index}
+                  className="flex text-xs cursor-pointer flex-col w-14 ring-1 ring-neutral-900 rounded-md items-center justify-center space-y-1"
+                >
+                  {item.icon}
+                  <span>{item.label}</span>
+                </DropdownMenuItem>
+              ))}
             </div>
           </DropdownMenuContent>
         </DropdownMenu>

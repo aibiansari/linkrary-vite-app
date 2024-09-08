@@ -73,11 +73,12 @@ const FilterModal = () => {
                     href={card.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 hover:bg-body hover:shadow-none hover:ring-1 ring-element shadow-black/50 transition-all duration-300 group"
+                    className="relative bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 hover:bg-body hover:shadow-none hover:ring-1 ring-element shadow-black/40 transition-all duration-300 group"
                   >
                     <img
                       src={card.image}
                       alt={card.title}
+                      draggable="false"
                       className="w-16 h-16 rounded-lg object-cover"
                     />
                     <div className="flex-1">
