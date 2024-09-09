@@ -59,7 +59,7 @@ const Navbar = () => {
           <span>GitHub Repo</span>
           <FaArrowRight
             size={16}
-            className="transition-transform duration-300 ease-in-out group-hover:-rotate-45"
+            className="transition-transform duration-200 ease-linear group-hover:-rotate-45"
           />
         </a>
         <DropdownMenu>
