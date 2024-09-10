@@ -1,7 +1,7 @@
 import { FaGithub, FaSearch } from "react-icons/fa";
 import { FaArrowRight, FaCircleHalfStroke } from "react-icons/fa6";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
-import { useFilterButtonContext } from "@/contexts/FilterButtonContext";
+import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
 import { Turn as Hamburger } from "hamburger-react";
 import logo from "/logo.svg";
 

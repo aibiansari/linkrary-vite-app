@@ -1,5 +1,5 @@
 // FilterButtonContext.tsx
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useState, ReactNode } from "react";
 
 type FilterButtonContextType = {
   buttonState: boolean;
@@ -7,7 +7,8 @@ type FilterButtonContextType = {
 };
 
 // Initialize the context with the correct type or `null`
-const FilterButtonContext = createContext<FilterButtonContextType | null>(null);
+export const FilterButtonContext =
+  createContext<FilterButtonContextType | null>(null);
 
 export const FilterButtonProvider = ({ children }: { children: ReactNode }) => {
   const [buttonState, setButtonState] = useState(false);
@@ -17,15 +18,4 @@ export const FilterButtonProvider = ({ children }: { children: ReactNode }) => {
       {children}
     </FilterButtonContext.Provider>
   );
-};
-
-// Hook to use the context
-export const useFilterButtonContext = () => {
-  const context = useContext(FilterButtonContext);
-  if (!context) {
-    throw new Error(
-      "useFilterButtonContext must be used within a FilterButtonProvider"
-    );
-  }
-  return context;
 };

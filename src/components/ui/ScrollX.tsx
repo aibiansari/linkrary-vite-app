@@ -1,5 +1,6 @@
 import { useRef } from "react";
-import { useFilterButtonContext } from "@/contexts/FilterButtonContext";
+import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
+import { useCategoryContext } from "@/contexts/useCategoryContext";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { PiSlidersHorizontalBold } from "react-icons/pi";
 import {
@@ -45,6 +46,7 @@ const categories = [
 const HorizontalScroll = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const { buttonState, setButtonState } = useFilterButtonContext();
+  const { selectedCategory, setSelectedCategory } = useCategoryContext();
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const scrollAmount = direction === "left" ? -300 : 300;
@@ -77,8 +79,12 @@ const HorizontalScroll = () => {
           {categories.map((category, index) => (
             <button
               key={index}
-              className="flex items-center gap-1.5 whitespace-nowrap text-neutral-400 font-Raleway font-medium py-2 px-3 rounded-full hover:bg-hover transition-colors duration-200"
-              onClick={() => console.log(`${category.name} clicked`)}
+              className={`flex items-center gap-1.5 py-2 px-3 rounded-full transition-colors duration-200 whitespace-nowrap ${
+                selectedCategory === category.name
+                  ? "bg-hover text-neutral-300"
+                  : "text-neutral-400 hover:bg-hover"
+              }`}
+              onClick={() => setSelectedCategory(category.name)}
             >
               {category.icon}
               {category.name}
