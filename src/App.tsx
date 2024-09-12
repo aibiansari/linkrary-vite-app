@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FilterButtonProvider } from "./contexts/FilterButtonContext";
 import { CategoryProvider } from "./contexts/CategoryContext";
 import Home from "./pages/Home";
-import Saved from "./pages/Saved";
+import Collection from "./pages/Collection";
 
 const App: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const App: React.FC = () => {
         <Router>
           <Routes>
             <Route path="/Linkrary/" element={<Home />} />
-            <Route path="/Linkrary/saved" element={<Saved />} />
+            <Route path="/Linkrary/collection" element={<Collection />} />
           </Routes>
         </Router>
       </FilterButtonProvider>

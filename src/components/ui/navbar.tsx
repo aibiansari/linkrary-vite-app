@@ -68,7 +68,7 @@ const Navbar = () => {
           </DropdownMenuTrigger>
           <DropdownMenuContent className="dark font-Raleway" align="end">
             <DropdownMenuLabel>
-              <Link to="/Linkrary/saved">Collection</Link>
+              <Link to="/Linkrary/collection">Collection</Link>
             </DropdownMenuLabel>
             <DropdownMenuItem>About</DropdownMenuItem>
             <DropdownMenuSeparator />

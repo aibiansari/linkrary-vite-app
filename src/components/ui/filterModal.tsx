@@ -9,7 +9,7 @@ const FilterModal = () => {
   const { buttonState, setButtonState } = useFilterButtonContext();
   const [search, setSearch] = React.useState("");
 
-  // Filter logic that matches both description and tags intelligently
+  // Filter logic that matches tags intelligently
   const filteredCards =
     search.length >= 2
       ? cards.filter((card) =>
@@ -23,6 +23,20 @@ const FilterModal = () => {
     setButtonState(false);
     setSearch(""); // Clear search input when modal is closed
   };
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        handleClose();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <AnimatePresence>
