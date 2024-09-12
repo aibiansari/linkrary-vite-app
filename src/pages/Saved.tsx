@@ -1,4 +1,4 @@
-import Cards from "@/components/Cards";
+import Cards from "@/components/ui/Cards";
 import FilterModal from "@/components/ui/filterModal";
 import Navbar from "@/components/ui/navbar";
 import HorizontalScroll from "@/components/ui/ScrollX";

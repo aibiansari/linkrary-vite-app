@@ -16,7 +16,7 @@ const Cards = () => {
           href={card.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 hover:bg-hover hover:scale-105 hover:shadow-lg hover:shadow-black/40 shadow-black/50 transition-all duration-300"
+          className="bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 hover:bg-hover hover:-translate-y-1 hover:shadow-lg hover:shadow-black/40 shadow-black/50 transition-all duration-300"
         >
           <img
             src={card.image}

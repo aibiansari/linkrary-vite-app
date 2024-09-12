@@ -8,6 +8,7 @@ export const cards = [
     description: "This is a description for ChatGPT.",
     link: "https://example.com/1",
     categories: ["AI Tools", "All Apps", "Web Development"],
+    tags: ["chatbot", "openai", "ai", "chatgpt", "web development"],
   },
   {
     image: FMHY,
@@ -15,5 +16,6 @@ export const cards = [
     description: "This is a description for FMHY.",
     link: "https://example.com/2",
     categories: ["All Apps", "Torrent Resources"],
+    tags: ["torrent", "resources", "fmhy", "filesharing", "all apps"],
   },
 ];
