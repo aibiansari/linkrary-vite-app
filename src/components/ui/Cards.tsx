@@ -26,7 +26,9 @@ const Cards = () => {
           />
           <div>
             <h3 className="text-xl text-white font-semibold">{card.title}</h3>
-            <p className="text-sm text-neutral-300">{card.description}</p>
+            <p className="text-sm text-neutral-400 line-clamp-2">
+              {card.description}
+            </p>
           </div>
         </a>
       ))}

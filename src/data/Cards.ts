@@ -5,7 +5,7 @@ export const cards = [
   {
     image: ChatGPT,
     title: "ChatGPT",
-    description: "AI-powered chatbot by OpenAI.",
+    description: "The best AI-powered chatbot by OpenAI.",
     link: "https://chatgpt.com",
     categories: ["AI Tools", "All Apps", "Web Development"],
     tags: ["chatbot", "openai", "ai", "chatgpt", "web development"],
