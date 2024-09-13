@@ -15,7 +15,7 @@ export const cards = [
     title: "FMHY",
     description: "A huge list of free software and torrent resources.",
     link: "https://fmhy.net",
-    categories: ["All Apps", "Torrent Resources"],
+    categories: ["All Apps", "Useful Websites"],
     tags: ["torrent", "resources", "fmhy", "filesharing", "all apps"],
   },
 ];

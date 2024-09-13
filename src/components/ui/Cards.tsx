@@ -22,7 +22,7 @@ const Cards = () => {
             src={card.image}
             alt={card.title}
             draggable="false"
-            className="w-16 h-16 rounded-lg object-cover"
+            className="h-16 w-16 rounded-lg object-cover"
           />
           <div>
             <h3 className="text-xl text-white font-semibold">{card.title}</h3>

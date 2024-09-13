@@ -119,9 +119,7 @@ const Navbar = () => {
                   alt="Schnell Logo text-black"
                   className="w-16 h-16"
                 />
-                <p className="text-slate-950 dark:text-white">
-                  Linkrary Curator App
-                </p>
+                <p className="text-slate-950 dark:text-white">Linkrary</p>
               </DialogTitle>
               <DialogDescription className="mx-4">
                 <About />

@@ -1,4 +1,4 @@
-import avatar from "/avatar.webp";
+import aibi from "/aibi.webp";
 import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
 
 const About = () => {
@@ -47,7 +47,7 @@ const About = () => {
       <section className="w-full max-w-xl mx-auto p-6 mt-4 bg-white rounded-lg shadow-inner">
         <div className="flex flex-col md:flex-row items-center gap-4">
           <img
-            src={avatar}
+            src={aibi}
             alt="Abdullah Ansari"
             className="w-24 h-24 rounded-full shadow-black/40 shadow-md"
           />
