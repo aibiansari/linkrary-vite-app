@@ -8,7 +8,7 @@ export const cards = [
     description: "The best AI-powered chatbot by OpenAI.",
     link: "https://chatgpt.com",
     categories: ["AI Tools", "All Apps", "Web Development"],
-    tags: ["chatbot", "openai", "ai", "chatgpt", "web development"],
+    tags: ["chatbot", "openai", "ai", "chatgpt", "all web development"],
   },
   {
     image: FMHY,

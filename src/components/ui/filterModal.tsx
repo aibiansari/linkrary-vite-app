@@ -38,6 +38,21 @@ const FilterModal = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const listVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, translateY: 16 },
+    visible: { opacity: 1, translateY: 0 },
+  };
+
   return (
     <AnimatePresence>
       {buttonState && (
@@ -83,17 +98,22 @@ const FilterModal = () => {
                   No matching apps found for "{search}".
                 </p>
               ) : (
-                <ul
-                  className="h-screen space-y-3 p-4 pb-52"
+                <motion.ul
+                  className="h-screen space-y-3 p-4 pb-52 md:pb-80"
                   style={{ scrollbarWidth: "none", overflowY: "scroll" }}
+                  initial="hidden"
+                  animate="visible"
+                  variants={listVariants}
                 >
                   {filteredCards.map((card, index) => (
-                    <a
+                    <motion.a
                       key={index}
                       href={card.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="relative bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 hover:bg-body hover:shadow-none hover:ring-1 ring-element shadow-black/40 transition-all duration-300 group"
+                      variants={cardVariants}
+                      transition={{ duration: 0.3, ease: "easeIn" }}
                     >
                       <img
                         src={card.image}
@@ -113,9 +133,9 @@ const FilterModal = () => {
                         size="1.25em"
                         className="absolute right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white"
                       />
-                    </a>
+                    </motion.a>
                   ))}
-                </ul>
+                </motion.ul>
               )}
             </div>
             <div className="hidden md:block absolute bg-body h-6 w-full bottom-0 left-0 z-50"></div>
