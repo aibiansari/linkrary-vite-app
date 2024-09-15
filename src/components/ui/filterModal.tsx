@@ -125,7 +125,7 @@ const FilterModal = () => {
                         <h3 className="text-xl text-white font-semibold">
                           {card.title}
                         </h3>
-                        <p className="text-sm text-neutral-300">
+                        <p className="text-sm text-neutral-300 pr-3">
                           {card.description}
                         </p>
                       </div>

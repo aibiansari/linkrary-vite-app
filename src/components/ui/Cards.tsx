@@ -9,7 +9,7 @@ const Cards = () => {
       ? cards
       : cards.filter((card) => card.categories.includes(selectedCategory));
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-8 py-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-8 py-2">
       {filteredCards.map((card, index) => (
         <a
           key={index}
