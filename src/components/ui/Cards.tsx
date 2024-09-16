@@ -9,7 +9,7 @@ const Cards = () => {
       ? cards
       : cards.filter((card) => card.categories.includes(selectedCategory));
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-8 py-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 px-8 py-2">
       {filteredCards.map((card, index) => (
         <a
           key={index}
@@ -24,7 +24,7 @@ const Cards = () => {
             draggable="false"
             className="h-16 w-16 rounded-lg object-cover"
           />
-          <div>
+          <div className="overflow-hidden">
             <h3 className="text-xl text-white font-semibold">{card.title}</h3>
             <p className="text-sm text-neutral-400 line-clamp-2">
               {card.description}

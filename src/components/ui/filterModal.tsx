@@ -8,6 +8,7 @@ import React from "react";
 const FilterModal = () => {
   const { buttonState, setButtonState } = useFilterButtonContext();
   const [search, setSearch] = React.useState("");
+  const inputRef = React.useRef<HTMLInputElement>(null);
 
   // Filter logic that matches tags intelligently
   const filteredCards =
@@ -19,10 +20,18 @@ const FilterModal = () => {
             ) || card.description.toLowerCase().includes(search.toLowerCase())
         )
       : [];
+
   const handleClose = () => {
     setButtonState(false);
     setSearch(""); // Clear search input when modal is closed
   };
+
+  React.useEffect(() => {
+    if (buttonState && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [buttonState]);
+
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -80,6 +89,7 @@ const FilterModal = () => {
                   type="text"
                   placeholder="Search on Linkrary"
                   value={search}
+                  ref={inputRef}
                   onChange={(e) => setSearch(e.target.value)}
                   className="w-full p-1.5 pl-4 placeholder:italic text-neutral-200 bg-body border border-none rounded-lg focus:outline-none focus:border-neutral-600"
                 />

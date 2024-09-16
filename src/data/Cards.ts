@@ -16,15 +16,69 @@ import FTUApps from "/icons/FTUApps.webp";
 import GetIntoPC from "/icons/GetIntoPC.webp";
 import CrackedIO from "/icons/CrackedIO.webp";
 import NulledTo from "/icons/NulledTo.webp";
+import X1337 from "/icons/X1337.webp";
+import TorrentGalaxy from "/icons/TorrentGalaxy.webp";
+import PirateBay from "/icons/PirateBay.webp";
+import Archive from "/icons/Archive.webp";
+import Seedr from "/icons/Seedr.webp";
+import GPT4O from "/icons/GPT4O.webp";
+import PiecesApp from "/icons/PiecesApp.webp";
+import LlamaCoder from "/icons/LlamaCoder.webp";
+import PerplexityAI from "/icons/PerplexityAI.webp";
+import AdobeEnhance from "/icons/AdobeEnhance.webp";
+import LetsEnhance from "/icons/LetsEnhance.webp";
+import Waifu2x from "/icons/Waifu2x.webp";
+import WaifuXL from "/icons/WaifuXL.webp";
+import VocalRemover from "/icons/VocalRemover.webp";
+import Typeform from "/icons/Typeform.webp";
+import JustDeleteMe from "/icons/JustDeleteMe.webp";
+import CloudConvert from "/icons/CloudConvert.webp";
+import Convertio from "/icons/Convertio.webp";
+import OnlineConvert from "/icons/OnlineConvert.webp";
+import Apps123 from "/icons/Apps123.webp";
+import AudioAlter from "/icons/AudioAlter.webp";
+import Suno from "/icons/Suno.webp";
+import ShotsSO from "/icons/ShotsSO.webp";
+import MusicGen from "/icons/MusicGen.webp";
+import KwikT from "/icons/KwikT.webp";
+import Schnell from "/icons/Schnell.webp";
 
 export const cards = [
   {
-    image: ChatGPT,
-    title: "ChatGPT",
-    description: "The best AI-powered chatbot by OpenAI.",
-    link: "https://chatgpt.com",
-    categories: ["AI Tools", "All Apps", "Web Development"],
-    tags: ["chatbot", "openai", "ai", "chatgpt", "all web development"],
+    image: KwikT,
+    title: "KwikTweaks",
+    description:
+      "A suite of Audio and PDF editing, and digital signature tools.",
+    link: "https://ikamranshahzad.github.io/kwiktweaks-multipurpose-app",
+    categories: ["Useful Websites", "Audio Tools", "PDF Utilities"],
+    tags: [
+      "Quick",
+      "resources",
+      "KwikTweaks",
+      "PDF",
+      "Sign",
+      "Audio",
+      "Editing",
+      "Tools",
+    ],
+  },
+  {
+    image: Schnell,
+    title: "Schnell",
+    description:
+      "Fast and intuitive image generator powered by FLUX.1's Schnell model",
+    link: "https://aibiansari.github.io/schnell-image-generator/",
+    categories: ["Useful Websites", "Ai Tools", "Design Tools"],
+    tags: [
+      "AI",
+      "Images",
+      "Generate",
+      "Free",
+      "Fast",
+      "Schnell",
+      "Editing",
+      "Tools",
+    ],
   },
   {
     image: FMHY,
@@ -33,6 +87,14 @@ export const cards = [
     link: "https://fmhy.net",
     categories: ["All Apps", "Useful Websites"],
     tags: ["torrent", "resources", "fmhy", "filesharing", "all apps"],
+  },
+  {
+    image: ChatGPT,
+    title: "ChatGPT",
+    description: "The best AI-powered chatbot by OpenAI.",
+    link: "https://chatgpt.com",
+    categories: ["AI Tools", "All Apps", "Web Development"],
+    tags: ["chatbot", "openai", "ai", "chatgpt", "all web development"],
   },
   {
     image: TinyWow,
@@ -161,5 +223,206 @@ export const cards = [
     link: "https://www.nulled.to",
     categories: ["Cracked Apps"],
     tags: ["nulled", "software", "resources", "forum", "nulled.to"],
+  },
+  {
+    image: X1337,
+    title: "1337x",
+    description: "A popular torrent site for movies, TV shows, and more.",
+    link: "https://www.1337x.to",
+    categories: ["Torrent Resources"],
+    tags: ["torrent", "movies", "downloads", "1337x", "torrenting"],
+  },
+  {
+    image: TorrentGalaxy,
+    title: "TorrentGalaxy",
+    description: "Torrent site for movies, TV shows, games, and software.",
+    link: "https://torrentgalaxy.to",
+    categories: ["Torrent Resources"],
+    tags: ["torrent", "movies", "downloads", "torrentgalaxy", "torrenting"],
+  },
+  {
+    image: PirateBay,
+    title: "The Pirate Bay",
+    description: "The world's most resilient BitTorrent site.",
+    link: "https://thepiratebay.org",
+    categories: ["Torrent Resources"],
+    tags: ["torrent", "movies", "piratebay", "downloads", "torrenting"],
+  },
+  {
+    image: Archive,
+    title: "Archive.org",
+    description: "A digital library of internet sites and cultural artifacts.",
+    link: "https://archive.org",
+    categories: ["Useful Websites"],
+    tags: ["library", "archive", "internet", "artifacts", "downloads"],
+  },
+  {
+    image: Seedr,
+    title: "Seedr",
+    description: "Cloud-based torrent downloader and streamer.",
+    link: "https://www.seedr.cc",
+    categories: ["Torrent Resources"],
+    tags: ["torrent", "cloud", "streaming", "downloads", "seedr"],
+  },
+  {
+    image: GPT4O,
+    title: "GPT4O",
+    description: "AI tool (GPT4o) for text generation and tasks.",
+    link: "https://gpt4o.so",
+    categories: ["AI Tools"],
+    tags: ["ai", "gpt", "text generation", "automation", "tools"],
+  },
+  {
+    image: PiecesApp,
+    title: "Pieces",
+    description: "AI-powered snippets and productivity tools for developers.",
+    link: "https://pieces.app",
+    categories: ["AI Tools", "Web Development"],
+    tags: ["ai", "snippets", "productivity", "pieces", "developers"],
+  },
+  {
+    image: LlamaCoder,
+    title: "LlamaCoder",
+    description: "AI coding assistant for developers.",
+    link: "https://llamacoder.together.ai",
+    categories: ["AI Tools", "Web Development"],
+    tags: ["ai", "coding", "llamacoder", "developers", "automation"],
+  },
+  {
+    image: PerplexityAI,
+    title: "Perplexity AI",
+    description: "AI-powered search engine for answering questions.",
+    link: "https://www.perplexity.ai",
+    categories: ["AI Tools", "Useful Websites"],
+    tags: ["ai", "search", "answers", "perplexity", "knowledge"],
+  },
+  {
+    image: AdobeEnhance,
+    title: "Adobe Podcast Enhance",
+    description: "Enhance audio quality for podcasts using AI.",
+    link: "https://podcast.adobe.com/enhance",
+    categories: ["Audio Tools"],
+    tags: ["ai", "audio", "podcast", "enhance", "adobe"],
+  },
+  {
+    image: LetsEnhance,
+    title: "Let's Enhance",
+    description: "AI-powered image enhancement tool.",
+    link: "https://letsenhance.io",
+    categories: ["AI Tools", "Design Tools"],
+    tags: ["ai", "image", "enhancement", "design", "letsenhance"],
+  },
+  {
+    image: Waifu2x,
+    title: "Waifu2x",
+    description: "AI-powered image upscaling and noise reduction.",
+    link: "https://waifu2x.booru.pics",
+    categories: ["AI Tools", "Design Tools"],
+    tags: ["ai", "image", "upscale", "waifu2x", "design"],
+  },
+  {
+    image: WaifuXL,
+    title: "WaifuXL",
+    description: "Advanced AI tool for image upscaling.",
+    link: "https://waifuxl.com",
+    categories: ["AI Tools", "Design Tools"],
+    tags: ["ai", "upscale", "images", "waifuxl", "design"],
+  },
+  {
+    image: VocalRemover,
+    title: "Vocal Remover",
+    description: "AI-powered tool for removing vocals from audio tracks.",
+    link: "https://vocalremover.org",
+    categories: ["Audio Tools"],
+    tags: ["ai", "audio", "vocal", "removal", "vocalremover"],
+  },
+  {
+    image: Typeform,
+    title: "Typeform",
+    description: "Create interactive forms, surveys, and quizzes.",
+    link: "https://www.typeform.com",
+    categories: ["Web Development", "Useful Websites"],
+    tags: ["forms", "surveys", "quizzes", "typeform", "web development"],
+  },
+  {
+    image: JustDeleteMe,
+    title: "JustDeleteMe",
+    description:
+      "A directory of direct links to delete accounts from web services.",
+    link: "https://backgroundchecks.org/justdeleteme/",
+    categories: ["Useful Websites"],
+    tags: [
+      "privacy",
+      "delete",
+      "accounts",
+      "justdeleteme",
+      "background checks",
+    ],
+  },
+  {
+    image: CloudConvert,
+    title: "CloudConvert",
+    description: "Online file converter supporting over 200 formats.",
+    link: "https://cloudconvert.com",
+    categories: ["File Converters", "Useful Websites"],
+    tags: ["file", "converter", "cloudconvert", "formats", "online tools"],
+  },
+  {
+    image: Convertio,
+    title: "Convertio",
+    description: "Easy-to-use online file converter for multiple formats.",
+    link: "https://convertio.co",
+    categories: ["File Converters", "Useful Websites"],
+    tags: ["file", "converter", "convertio", "formats", "online tools"],
+  },
+  {
+    image: OnlineConvert,
+    title: "Online Convert",
+    description: "Free online file converter for documents, images, and more.",
+    link: "https://www.online-convert.com",
+    categories: ["File Converters", "Useful Websites"],
+    tags: ["file", "converter", "onlineconvert", "documents", "images"],
+  },
+  {
+    image: Apps123,
+    title: "123Apps",
+    description:
+      "Online multimedia tools including video, audio, and PDF editors.",
+    link: "https://123apps.com",
+    categories: ["Audio Tools", "Video Tools", "PDF Utilities"],
+    tags: ["multimedia", "tools", "audio", "video", "pdf", "123apps"],
+  },
+  {
+    image: AudioAlter,
+    title: "AudioAlter",
+    description:
+      "Audio editing tools including equalizer, pitch, and speed changer.",
+    link: "https://audioalter.com",
+    categories: ["Audio Tools"],
+    tags: ["audio", "editing", "tools", "audioalter", "equalizer"],
+  },
+  {
+    image: Suno,
+    title: "Suno",
+    description: "AI-powered platform for audio creation and manipulation.",
+    link: "https://suno.com",
+    categories: ["Audio Tools", "AI Tools"],
+    tags: ["ai", "audio", "creation", "manipulation", "suno"],
+  },
+  {
+    image: ShotsSO,
+    title: "Shots",
+    description: "Instant screen recording and sharing tool.",
+    link: "https://shots.so",
+    categories: ["Design Tools", "Web Development"],
+    tags: ["screen", "recording", "sharing", "shots", "web development"],
+  },
+  {
+    image: MusicGen,
+    title: "MusicGen",
+    description: "AI-based music generation by Facebook on Hugging Face.",
+    link: "https://huggingface.co/spaces/facebook/MusicGen",
+    categories: ["AI Tools", "Audio Tools"],
+    tags: ["ai", "music", "generation", "huggingface", "musicgen"],
   },
 ];
