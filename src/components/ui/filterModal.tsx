@@ -12,13 +12,13 @@ const FilterModal = () => {
   // Filter logic that matches tags intelligently
   const filteredCards =
     search.length >= 2
-      ? cards.filter((card) =>
-          card.tags.some((tag) =>
-            tag.toLowerCase().includes(search.toLowerCase())
-          )
+      ? cards.filter(
+          (card) =>
+            card.tags.some((tag) =>
+              tag.toLowerCase().includes(search.toLowerCase())
+            ) || card.description.toLowerCase().includes(search.toLowerCase())
         )
       : [];
-
   const handleClose = () => {
     setButtonState(false);
     setSearch(""); // Clear search input when modal is closed
