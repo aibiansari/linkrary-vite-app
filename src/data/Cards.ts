@@ -42,6 +42,22 @@ import ShotsSO from "/icons/ShotsSO.webp";
 import MusicGen from "/icons/MusicGen.webp";
 import KwikT from "/icons/KwikT.webp";
 import Schnell from "/icons/Schnell.webp";
+import DirtyLineStudio from "/icons/DirtyLineStudio.webp";
+import AbstractFonts from "/icons/AbstractFonts.webp";
+import TextureLabs from "/icons/TextureLabs.webp";
+import SketchValley from "/icons/SketchValley.webp";
+import JitterVideo from "/icons/JitterVideo.webp";
+import StorySet from "/icons/StorySet.webp";
+import Paletton from "/icons/Paletton.webp";
+import ResourceBoy from "/icons/ResourceBoy.webp";
+import Pexels from "/icons/Pexels.webp";
+import Coolors from "/icons/Coolors.webp";
+import TheNounProject from "/icons/TheNounProject.webp";
+import MeshGradients from "/icons/MeshGradients.webp";
+import ShaderGradient from "/icons/ShaderGradient.webp";
+import WhatTheFont from "/icons/WhatTheFont.webp";
+import PixCap from "/icons/PixCap.webp";
+import Spline from "/icons/Spline.webp";
 
 export const cards = [
   {
@@ -424,5 +440,134 @@ export const cards = [
     link: "https://huggingface.co/spaces/facebook/MusicGen",
     categories: ["AI Tools", "Audio Tools"],
     tags: ["ai", "music", "generation", "huggingface", "musicgen"],
+  },
+  {
+    image: DirtyLineStudio,
+    title: "Dirty Line Studio Freebies",
+    description: "Free design assets and resources for creatives.",
+    link: "https://dirtylinestudio.com/freebies/",
+    categories: ["Design Tools", "Design Inspiration"],
+    tags: ["design", "freebies", "assets", "dirtylinestudio", "creative"],
+  },
+  {
+    image: AbstractFonts,
+    title: "Abstract Fonts",
+    description: "Collection of free fonts for personal and commercial use.",
+    link: "https://www.abstractfonts.com",
+    categories: ["Font Resources"],
+    tags: ["fonts", "free", "abstractfonts", "typography", "resources"],
+  },
+  {
+    image: TextureLabs,
+    title: "Texture Labs",
+    description: "Free textures, brushes, and design resources.",
+    link: "https://texturelabs.org",
+    categories: ["Design Tools", "Design Inspiration"],
+    tags: ["textures", "design", "resources", "texturelabs", "free"],
+  },
+  {
+    image: SketchValley,
+    title: "Sketch Valley",
+    description: "Free vector and illustration resources for designers.",
+    link: "https://sketchvalley.com",
+    categories: ["Design Tools", "Design Inspiration"],
+    tags: ["vector", "illustrations", "design", "sketchvalley", "resources"],
+  },
+  {
+    image: JitterVideo,
+    title: "Jitter Video",
+    description: "Create motion designs and animations easily.",
+    link: "https://jitter.video",
+    categories: ["Design Tools"],
+    tags: ["video", "design", "motion", "animation", "jitter"],
+  },
+  {
+    image: StorySet,
+    title: "StorySet",
+    description: "Free customizable illustrations for your projects.",
+    link: "https://storyset.com",
+    categories: ["Design Inspiration", "SVG Icons"],
+    tags: ["illustrations", "design", "free", "storyset", "customizable"],
+  },
+  {
+    image: Paletton,
+    title: "Paletton",
+    description: "Color scheme designer for creating perfect color palettes.",
+    link: "https://paletton.com",
+    categories: ["Design Tools"],
+    tags: ["color", "palette", "design", "paletton", "scheme"],
+  },
+  {
+    image: ResourceBoy,
+    title: "ResourceBoy",
+    description: "Free design resources including mockups, fonts, and more.",
+    link: "https://resourceboy.com",
+    categories: ["Design Tools", "Design Inspiration"],
+    tags: ["design", "resources", "free", "mockups", "resourceboy"],
+  },
+  {
+    image: Pexels,
+    title: "Pexels",
+    description:
+      "Free stock photos and videos for personal and commercial use.",
+    link: "https://www.pexels.com",
+    categories: ["Stock Images"],
+    tags: ["stock", "photos", "videos", "free", "pexels"],
+  },
+  {
+    image: Coolors,
+    title: "Coolors",
+    description: "Color palette generator for designers and artists.",
+    link: "https://coolors.co",
+    categories: ["Design Tools"],
+    tags: ["color", "palette", "generator", "coolors", "design"],
+  },
+  {
+    image: TheNounProject,
+    title: "The Noun Project",
+    description: "Free and paid icons for every project.",
+    link: "https://thenounproject.com",
+    categories: ["SVG Icons"],
+    tags: ["icons", "design", "nounproject", "free", "svg"],
+  },
+  {
+    image: MeshGradients,
+    title: "Mesh Gradients",
+    description: "Beautiful mesh gradient backgrounds for your designs.",
+    link: "https://products.ls.graphics/mesh-gradients/",
+    categories: ["Design Tools"],
+    tags: ["gradients", "design", "mesh", "backgrounds", "free"],
+  },
+  {
+    image: ShaderGradient,
+    title: "Shader Gradient",
+    description: "Advanced shader gradients for web design.",
+    link: "https://www.shadergradient.co",
+    categories: ["Design Tools", "Web Development"],
+    tags: ["gradients", "shader", "web development", "design", "tools"],
+  },
+  {
+    image: WhatTheFont,
+    title: "WhatTheFont",
+    description: "Identify fonts from any image instantly.",
+    link: "https://www.myfonts.com/pages/whatthefont",
+    categories: ["Font Resources"],
+    tags: ["fonts", "identification", "design", "whatthefont", "typography"],
+  },
+  {
+    image: PixCap,
+    title: "PixCap",
+    description: "3D animation and design platform for the web.",
+    link: "https://pixcap.com",
+    categories: ["Design Tools"],
+    tags: ["3d", "animation", "design", "web", "pixcap"],
+  },
+  {
+    image: Spline,
+    title: "Spline",
+    description: "Design and collaborate on 3D models and scenes.",
+    link: "https://app.spline.design",
+    categories: ["Design Tools"],
+    tags: ["3d", "design", "collaboration", "models", "spline"],
   },
 ];

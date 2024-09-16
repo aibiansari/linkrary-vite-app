@@ -6,7 +6,7 @@ import React from "react";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen dark">
+    <div className="flex flex-col items-center min-h-screen pb-4 mb-1 dark">
       <FilterModal />
       <Navbar />
       <HorizontalScroll />

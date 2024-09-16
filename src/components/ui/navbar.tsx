@@ -49,12 +49,16 @@ const Navbar = () => {
       <div className="flex flex-grow justify-center mb-2 md:mb-0">
         <div
           onClick={() => setButtonState(!buttonState)}
-          className="bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-2 rounded-full hover:bg-hover transition-colors ease-in cursor-pointer"
+          className="relative bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-2 rounded-full hover:bg-hover transition-colors ease-in cursor-pointer"
         >
           <FaSearch size={16} className="text-gray-300 ml-2" />
           <span className="text-neutral-500 italic font-Raleway font-medium">
             Search on Linkrary...
           </span>
+          <div className="absolute right-4 flex items-center gap-1.5 text-neutral-400 text-sm">
+            <kbd className="ring-neutral-600 ring-1 px-1 rounded ">Ctrl</kbd>
+            <kbd className="ring-neutral-600 ring-1 px-1 rounded ">K</kbd>
+          </div>
         </div>
       </div>
 
