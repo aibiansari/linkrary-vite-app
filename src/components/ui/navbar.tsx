@@ -2,7 +2,7 @@ import { FaGithub, FaSearch } from "react-icons/fa";
 import { FaArrowRight, FaCircleHalfStroke } from "react-icons/fa6";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
-import { Turn as Hamburger } from "hamburger-react";
+import { FiMenu } from "react-icons/fi";
 import logo from "/logo.svg";
 
 import {
@@ -79,7 +79,7 @@ const Navbar = () => {
         <Dialog>
           <DropdownMenu>
             <DropdownMenuTrigger className="outline-none">
-              <Hamburger size={24} />
+              <FiMenu size="1.8em" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="dark font-Raleway" align="end">
               <DropdownMenuItem>
