@@ -70,6 +70,12 @@ import MageSpace from "/icons/MageSpace.webp";
 import LogoDiffusion from "/icons/LogoDiffusion.webp";
 import Pikimov from "/icons/Pikimov.webp";
 import ScenePkg from "/icons/ScenePkg.webp";
+import CareerFlow from "/icons/CareerFlow.webp";
+import Hacksplaining from "/icons/Hacksplaining.webp";
+import VerifTools from "/icons/VerifTools.webp";
+import FakeNameGenerator from "/icons/FakeNameGenerator.webp";
+import OSINTFramework from "/icons/OSINTFramework.webp";
+import Github from "/icons/Github.webp";
 
 export const cards = [
   {
@@ -687,5 +693,53 @@ export const cards = [
     link: "https://wetranslate.thiscould.work/scene.pkg/",
     categories: ["Design Tools"],
     tags: ["scene", "pkg", "design", "resources", "wetranslate"],
+  },
+  {
+    image: CareerFlow,
+    title: "CareerFlow",
+    description: "AI-driven career guidance and job search platform.",
+    link: "https://www.careerflow.ai",
+    categories: ["Career Tools", "AI Tools"],
+    tags: ["ai", "career", "job search", "careerflow", "guidance"],
+  },
+  {
+    image: Hacksplaining,
+    title: "Hacksplaining",
+    description: "Learn cybersecurity through interactive tutorials.",
+    link: "https://www.hacksplaining.com",
+    categories: ["Cybersecurity", "Learning Tools"],
+    tags: ["cybersecurity", "learning", "hacksplaining", "tutorials"],
+  },
+  {
+    image: VerifTools,
+    title: "Verif Tools",
+    description: "Free online verification tools for various use cases.",
+    link: "https://veriftools.net",
+    categories: ["Utility Tools"],
+    tags: ["verification", "tools", "online", "veriftools"],
+  },
+  {
+    image: FakeNameGenerator,
+    title: "Fake Name Generator",
+    description: "Generate random names and identities for testing purposes.",
+    link: "https://www.fakenamegenerator.com",
+    categories: ["Utility Tools"],
+    tags: ["name", "generator", "fake", "testing", "identities"],
+  },
+  {
+    image: OSINTFramework,
+    title: "OSINT Framework",
+    description: "A collection of tools for open-source intelligence (OSINT).",
+    link: "https://osintframework.com",
+    categories: ["Cybersecurity", "Research Tools"],
+    tags: ["osint", "cybersecurity", "intelligence", "research", "framework"],
+  },
+  {
+    image: Github,
+    title: "SundownDev Gist",
+    description: "A collection of useful cybersecurity tools and resources.",
+    link: "https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06",
+    categories: ["Cybersecurity", "Research Tools"],
+    tags: ["cybersecurity", "gist", "tools", "resources", "sundowndev"],
   },
 ];

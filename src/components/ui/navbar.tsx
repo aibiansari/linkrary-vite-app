@@ -12,18 +12,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-  DialogClose,
-  DialogFooter,
-} from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
-import About from "./about";
 
 const dropdownItems = [
   { icon: <FaCircleHalfStroke size={20} />, label: "System" },
@@ -76,66 +65,38 @@ const Navbar = () => {
             className="transition-transform duration-200 ease-linear group-hover:-rotate-45"
           />
         </a>
-        <Dialog>
-          <DropdownMenu>
-            <DropdownMenuTrigger className="outline-none">
-              <FiMenu size="1.8em" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="dark font-Raleway" align="end">
-              <DropdownMenuItem>
-                <Link
-                  className="w-full font-semibold"
-                  to="/Linkrary/collection"
+        <DropdownMenu>
+          <DropdownMenuTrigger className="outline-none">
+            <FiMenu size="1.8em" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="dark font-Raleway" align="end">
+            <DropdownMenuItem>
+              <Link className="w-full font-semibold" to="/Linkrary/collection">
+                Collection
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link className="w-full" to="/Linkrary/about">
+                About
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem disabled className="text-xs">
+              Select a theme
+            </DropdownMenuItem>
+            <div className="flex gap-2 p-2 text-neutral-300">
+              {dropdownItems.map((item, index) => (
+                <DropdownMenuItem
+                  key={index}
+                  className="flex text-xs cursor-pointer flex-col w-14 ring-1 ring-neutral-900 rounded-md items-center justify-center space-y-1"
                 >
-                  Collection
-                </Link>
-              </DropdownMenuItem>
-              <DialogTrigger className="w-full">
-                <DropdownMenuItem className="cursor-pointer">
-                  About
+                  {item.icon}
+                  <span>{item.label}</span>
                 </DropdownMenuItem>
-              </DialogTrigger>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem disabled className="text-xs">
-                Select a theme
-              </DropdownMenuItem>
-              <div className="flex gap-2 p-2 text-neutral-300">
-                {dropdownItems.map((item, index) => (
-                  <DropdownMenuItem
-                    key={index}
-                    className="flex text-xs cursor-pointer flex-col w-14 ring-1 ring-neutral-900 rounded-md items-center justify-center space-y-1"
-                  >
-                    {item.icon}
-                    <span>{item.label}</span>
-                  </DropdownMenuItem>
-                ))}
-              </div>
-            </DropdownMenuContent>
-          </DropdownMenu>
-          <DialogContent className="flex flex-col max-h-screen md:max-h-[calc(100vh-2rem)] overflow-hidden dark">
-            <DialogHeader
-              className="flex-1 overflow-y-auto"
-              style={{ scrollbarWidth: "none" }}
-            >
-              <DialogTitle className="flex flex-col gap-3 items-center justify-center my-4">
-                <img
-                  src={logo}
-                  alt="Schnell Logo text-black"
-                  className="w-16 h-16"
-                />
-                <p className="text-slate-950 dark:text-white">Linkrary</p>
-              </DialogTitle>
-              <DialogDescription className="mx-4">
-                <About />
-              </DialogDescription>
-            </DialogHeader>
-            <DialogFooter>
-              <DialogClose className="text-lg md:mr-2 text-white">
-                Close
-              </DialogClose>
-            </DialogFooter>
-          </DialogContent>
-        </Dialog>
+              ))}
+            </div>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </nav>
   );
