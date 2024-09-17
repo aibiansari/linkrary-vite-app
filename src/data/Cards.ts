@@ -39,7 +39,7 @@ import Apps123 from "/icons/Apps123.webp";
 import AudioAlter from "/icons/AudioAlter.webp";
 import Suno from "/icons/Suno.webp";
 import ShotsSO from "/icons/ShotsSO.webp";
-import MusicGen from "/icons/MusicGen.webp";
+import HuggingF from "/icons/HuggingF.webp";
 import KwikT from "/icons/KwikT.webp";
 import Schnell from "/icons/Schnell.webp";
 import DirtyLineStudio from "/icons/DirtyLineStudio.webp";
@@ -58,6 +58,18 @@ import ShaderGradient from "/icons/ShaderGradient.webp";
 import WhatTheFont from "/icons/WhatTheFont.webp";
 import PixCap from "/icons/PixCap.webp";
 import Spline from "/icons/Spline.webp";
+import Looka from "/icons/Looka.webp";
+import SearchAnything from "/icons/SearchAnything.webp";
+import FlairAI from "/icons/FlairAI.webp";
+import PixverseAI from "/icons/PixverseAI.webp";
+import KreaAI from "/icons/KreaAI.webp";
+import PicFinderAI from "/icons/PicFinderAI.webp";
+import DzineAI from "/icons/DzineAI.webp";
+import Dezgo from "/icons/Dezgo.webp";
+import MageSpace from "/icons/MageSpace.webp";
+import LogoDiffusion from "/icons/LogoDiffusion.webp";
+import Pikimov from "/icons/Pikimov.webp";
+import ScenePkg from "/icons/ScenePkg.webp";
 
 export const cards = [
   {
@@ -434,7 +446,7 @@ export const cards = [
     tags: ["screen", "recording", "sharing", "shots", "web development"],
   },
   {
-    image: MusicGen,
+    image: HuggingF,
     title: "MusicGen",
     description: "AI-based music generation by Facebook on Hugging Face.",
     link: "https://huggingface.co/spaces/facebook/MusicGen",
@@ -569,5 +581,111 @@ export const cards = [
     link: "https://app.spline.design",
     categories: ["Design Tools"],
     tags: ["3d", "design", "collaboration", "models", "spline"],
+  },
+  {
+    image: Looka,
+    title: "Looka",
+    description: "AI-powered logo design and branding platform.",
+    link: "https://looka.com",
+    categories: ["Design Tools", "AI Tools"],
+    tags: ["logo", "branding", "ai", "looka", "design"],
+  },
+  {
+    image: SearchAnything,
+    title: "Search Anything",
+    description: "A tool to search for anything across multiple websites.",
+    link: "https://search.anything.io",
+    categories: ["Useful Websites", "Web Libraries"],
+    tags: ["search", "web", "tools", "anything", "web development"],
+  },
+  {
+    image: FlairAI,
+    title: "Flair AI",
+    description:
+      "AI-powered design tool for creating high-quality marketing visuals.",
+    link: "https://flair.ai",
+    categories: ["AI Tools", "Design Tools"],
+    tags: ["ai", "design", "marketing", "visuals", "flairai"],
+  },
+  {
+    image: PixverseAI,
+    title: "Pixverse AI",
+    description: "AI image generation and editing platform.",
+    link: "https://pixverse.ai",
+    categories: ["AI Tools", "Design Tools"],
+    tags: ["ai", "image", "generation", "editing", "pixverse"],
+  },
+  {
+    image: KreaAI,
+    title: "Krea AI",
+    description: "AI-powered art generator with customizable options.",
+    link: "https://www.krea.ai",
+    categories: ["AI Tools", "Design Inspiration"],
+    tags: ["ai", "art", "generator", "krea", "design"],
+  },
+  {
+    image: PicFinderAI,
+    title: "PicFinder AI",
+    description: "AI-powered tool for finding and generating images.",
+    link: "https://picfinder.ai",
+    categories: ["AI Tools", "Design Tools"],
+    tags: ["ai", "image", "generation", "picfinder", "design"],
+  },
+  {
+    image: DzineAI,
+    title: "Dzine AI",
+    description:
+      "AI-driven platform for designing websites and web components.",
+    link: "https://www.dzine.ai",
+    categories: ["AI Tools", "Web Development"],
+    tags: ["ai", "web design", "components", "dzine", "web development"],
+  },
+  {
+    image: Dezgo,
+    title: "Dezgo",
+    description: "AI art generator with text-to-image capabilities.",
+    link: "https://dezgo.com",
+    categories: ["AI Tools", "Design Tools"],
+    tags: ["ai", "art", "generator", "dezgo", "design"],
+  },
+  {
+    image: MageSpace,
+    title: "Mage Space",
+    description: "AI-powered platform for generating art and images.",
+    link: "https://www.mage.space",
+    categories: ["AI Tools", "Design Tools"],
+    tags: ["ai", "art", "generation", "mage", "design"],
+  },
+  {
+    image: LogoDiffusion,
+    title: "Logo Diffusion",
+    description: "AI-powered logo generation tool.",
+    link: "https://logodiffusion.com",
+    categories: ["AI Tools", "Design Tools"],
+    tags: ["ai", "logo", "generation", "logodiffusion", "design"],
+  },
+  {
+    image: Pikimov,
+    title: "Pikimov",
+    description: "AI-driven tool for generating video and animations.",
+    link: "https://pikimov.com",
+    categories: ["AI Tools", "Video Editing"],
+    tags: ["ai", "video", "generation", "pikimov", "animation"],
+  },
+  {
+    image: HuggingF,
+    title: "FLUX.1 Schnell",
+    description: "AI-based image generation via Hugging Face Spaces.",
+    link: "https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell",
+    categories: ["AI Tools", "Image Generation"],
+    tags: ["ai", "image", "generation", "flux", "huggingface"],
+  },
+  {
+    image: ScenePkg,
+    title: "WeTranslate Scene Package",
+    description: "Downloadable scene packages for design projects.",
+    link: "https://wetranslate.thiscould.work/scene.pkg/",
+    categories: ["Design Tools"],
+    tags: ["scene", "pkg", "design", "resources", "wetranslate"],
   },
 ];

@@ -37,13 +37,13 @@ const Navbar = () => {
   return (
     <nav className="bg-body fixed h-20 md:h-16 w-screen z-20 max-w-screen-2xl text-white px-4 md:px-8 flex flex-wrap items-center justify-between">
       <div className="flex-shrink-0 w-12 md:w-52 flex items-center mb-2 md:mb-0">
-        <a href="/Linkrary/" className="flex items-center gap-2">
+        <Link to="/Linkrary/" className="flex items-center gap-2">
           <img src={logo} alt="Linkrary Logo" className="w-6 h-6" />
 
           <span className="hidden md:block text-2xl font-Raleway font-bold">
             Linkrary
           </span>
-        </a>
+        </Link>
       </div>
 
       <div className="flex flex-grow justify-center mb-2 md:mb-0">
@@ -55,7 +55,7 @@ const Navbar = () => {
           <span className="text-neutral-500 italic font-Raleway font-medium">
             Search on Linkrary...
           </span>
-          <div className="absolute right-4 flex items-center gap-1.5 text-neutral-400 text-sm">
+          <div className="absolute hidden lg:flex right-4  items-center gap-1.5 text-neutral-500 text-sm">
             <kbd className="ring-neutral-600 ring-1 px-1 rounded ">Ctrl</kbd>
             <kbd className="ring-neutral-600 ring-1 px-1 rounded ">K</kbd>
           </div>
