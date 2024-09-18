@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
 
 const About = () => {
   return (
-    <>
+    <div className="bg-body min-h-screen">
       <Navbar page="about" />
       <p className="text-lg text-center md:text-justify text-gray-700 mt-2 mb-8">
         Linkrary is your creative AI-powered image generation tool. With just a
@@ -90,7 +90,7 @@ const About = () => {
       <section className="hidden md:flex w-full justify-end my-4 font-Atkinson">
         &copy; {new Date().getFullYear()} Linkrary. All rights reserved.
       </section>
-    </>
+    </div>
   );
 };
 
