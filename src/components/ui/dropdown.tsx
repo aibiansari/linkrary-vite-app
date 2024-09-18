@@ -8,9 +8,41 @@ import { Link } from "react-router-dom";
 const wrapperVariants = {
   open: {
     scaleY: 1,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 250,
+      damping: 20,
+      staggerChildren: 0.02,
+    },
   },
   closed: {
     scaleY: 0,
+    opacity: 0,
+    transition: {
+      duration: 0.15,
+      staggerChildren: 0.02,
+      staggerDirection: -1,
+    },
+  },
+};
+
+const itemVariants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      duration: 0.2,
+    },
+  },
+  closed: {
+    opacity: 0,
+    y: -10,
+    transition: {
+      type: "tween",
+      duration: 0.15,
+    },
   },
 };
 
@@ -62,6 +94,7 @@ const DropDown = () => {
         >
           Collection
         </Link>
+
         <Link
           onClick={() => setOpen(false)}
           className="w-full p-1.5 text-sm rounded-md hover:bg-neutral-800 transition-colors cursor-pointer"
@@ -69,22 +102,32 @@ const DropDown = () => {
         >
           About
         </Link>
+
         <hr className="border-t my-1 border-neutral-800" />
-        <li className="w-full p-1.5 text-xs pointer-events-none select-none">
+
+        <motion.li
+          variants={itemVariants}
+          className="w-full p-1.5 text-xs pointer-events-none select-none"
+        >
           Select a theme
-        </li>
-        <div className="flex items-center justify-center gap-2 p-2">
+        </motion.li>
+
+        <motion.div
+          variants={itemVariants}
+          className="flex items-center justify-center gap-2 p-2"
+        >
           {dropdownItems.map((item, index) => (
-            <li
+            <motion.li
               key={index}
               onClick={() => setOpen(false)}
-              className="flex py-1.5 text-xs cursor-pointer flex-col w-12 ring-1 ring-neutral-900 hover:bg-element rounded-md items-center justify-center space-y-1 transition-colors duration-300 ease-out"
+              className="flex py-1 text-[10px] cursor-pointer flex-col w-12 ring-1 ring-neutral-900 hover:bg-element rounded-md items-center justify-center space-y-1 transition-colors duration-300 ease-out"
+              variants={itemVariants}
             >
               {item.icon}
               <span>{item.label}</span>
-            </li>
+            </motion.li>
           ))}
-        </div>
+        </motion.div>
       </motion.ul>
     </motion.div>
   );
