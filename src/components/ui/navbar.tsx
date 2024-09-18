@@ -20,11 +20,19 @@ const dropdownItems = [
   { icon: <MdOutlineDarkMode size={20} />, label: "Dark" },
 ];
 
-const Navbar = () => {
+type PageProps = {
+  page: "search" | "about";
+};
+
+const Navbar = ({ page = "search" }: PageProps) => {
   const { buttonState, setButtonState } = useFilterButtonContext();
 
   return (
-    <nav className="bg-body fixed h-20 md:h-16 w-screen z-20 max-w-screen-2xl text-white px-4 md:px-8 flex flex-wrap items-center justify-between">
+    <nav
+      className={`bg-body fixed h-20 md:h-16 w-screen z-20 max-w-screen-2xl text-white px-4 md:px-8 flex flex-wrap items-center justify-between ${
+        page === "about" ? "border-b-[1px] border-neutral-800" : ""
+      }`}
+    >
       <div className="flex-shrink-0 w-12 md:w-52 flex items-center mb-2 md:mb-0">
         <Link to="/Linkrary/" className="flex items-center gap-2">
           <img src={logo} alt="Linkrary Logo" className="w-6 h-6" />
@@ -36,19 +44,38 @@ const Navbar = () => {
       </div>
 
       <div className="flex flex-grow justify-center mb-2 md:mb-0">
-        <div
-          onClick={() => setButtonState(!buttonState)}
-          className="relative bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-2 rounded-full hover:bg-hover transition-colors ease-in cursor-pointer"
-        >
-          <FaSearch size={16} className="text-gray-300 ml-2" />
-          <span className="text-neutral-500 italic font-Raleway font-medium">
-            Search on Linkrary...
-          </span>
-          <div className="absolute hidden lg:flex right-4  items-center gap-1.5 text-neutral-500 text-sm">
-            <kbd className="ring-neutral-600 ring-1 px-1 rounded ">Ctrl</kbd>
-            <kbd className="ring-neutral-600 ring-1 px-1 rounded ">K</kbd>
+        {page === "search" ? (
+          // Search section
+          <div
+            onClick={() => setButtonState(!buttonState)}
+            className="relative bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-2 rounded-full hover:bg-hover transition-colors ease-in cursor-pointer"
+          >
+            <FaSearch size={16} className="text-gray-300 ml-2" />
+            <span className="text-neutral-500 italic font-Raleway font-medium">
+              Search on Linkrary...
+            </span>
+            <div className="absolute hidden lg:flex right-4 items-center gap-1.5 text-neutral-500 text-sm">
+              <kbd className="ring-neutral-600 ring-1 px-1 rounded">Ctrl</kbd>
+              <kbd className="ring-neutral-600 ring-1 px-1 rounded">K</kbd>
+            </div>
           </div>
-        </div>
+        ) : page === "about" ? (
+          // About section with links
+          <div className="flex items-center gap-10">
+            <Link
+              to="/Linkrary"
+              className="hover:text-neutral-300 font-Raleway font-semibold text-lg"
+            >
+              Discover
+            </Link>
+            <Link
+              to="/Linkrary/collection"
+              className="hover:text-neutral-300 font-Raleway font-semibold text-lg"
+            >
+              Collection
+            </Link>
+          </div>
+        ) : null}
       </div>
 
       <div className="flex w-12 md:w-52 md:space-x-4 mb-2 md:mb-0">

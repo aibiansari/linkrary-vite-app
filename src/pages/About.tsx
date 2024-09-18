@@ -1,9 +1,11 @@
+import Navbar from "@/components/ui/navbar";
 import aibi from "/aibi.webp";
 import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
 
 const About = () => {
   return (
     <>
+      <Navbar page="about" />
       <p className="text-lg text-center md:text-justify text-gray-700 mt-2 mb-8">
         Linkrary is your creative AI-powered image generation tool. With just a
         few words, you can bring your ideas to life and create stunning visuals

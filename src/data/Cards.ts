@@ -76,6 +76,23 @@ import VerifTools from "/icons/VerifTools.webp";
 import FakeNameGenerator from "/icons/FakeNameGenerator.webp";
 import OSINTFramework from "/icons/OSINTFramework.webp";
 import Github from "/icons/Github.webp";
+import FreeOpenVPN from "/icons/FreeOpenVPN.webp";
+import PrePostSEO from "/icons/PrePostSEO.webp";
+import PDF2Go from "/icons/PDF2Go.webp";
+import ILovePDF from "/icons/ILovePDF.webp";
+import Hyperbeam from "/icons/Hyperbeam.webp";
+import OpenTogetherTube from "/icons/OpenTogetherTube.webp";
+import Kosmi from "/icons/Kosmi.webp";
+import FreeMoviesWatch from "/icons/FreeMoviesWatch.webp";
+import HDToday from "/icons/HDToday.webp";
+import HydraHD from "/icons/HydraHD.webp";
+import Movies2Watch from "/icons/Movies2Watch.webp";
+import YesMovies from "/icons/YesMovies.webp";
+import ShowboxMovies from "/icons/ShowboxMovies.webp";
+import AnimeTV9 from "/icons/AnimeTV9.webp";
+import AnimeTsu from "/icons/AnimeTsu.webp";
+import AnimePahe from "/icons/AnimePahe.webp";
+import OpenSubtitles from "/icons/OpenSubtitles.webp";
 
 export const cards = [
   {
@@ -741,5 +758,147 @@ export const cards = [
     link: "https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06",
     categories: ["Cybersecurity", "Research Tools"],
     tags: ["cybersecurity", "gist", "tools", "resources", "sundowndev"],
+  },
+  {
+    image: FreeOpenVPN,
+    title: "FreeOpenVPN",
+    description: "Free VPN service with multiple server locations.",
+    link: "https://www.freeopenvpn.org",
+    categories: ["Security Tools"],
+    tags: ["vpn", "security", "free", "network", "freeopenvpn"],
+  },
+  {
+    image: PrePostSEO,
+    title: "PrePostSEO",
+    description: "A collection of SEO tools to optimize your website.",
+    link: "https://www.prepostseo.com",
+    categories: ["Web Development", "SEO Tools"],
+    tags: ["seo", "web", "optimization", "prepostseo", "tools"],
+  },
+  {
+    image: PDF2Go,
+    title: "PDF2Go",
+    description: "Online PDF converter for various file formats.",
+    link: "https://www.pdf2go.com",
+    categories: ["File Converters", "PDF Utilities"],
+    tags: ["pdf", "converter", "file", "pdf2go", "utilities"],
+  },
+  {
+    image: ILovePDF,
+    title: "ILovePDF",
+    description: "Comprehensive tool to edit and convert PDF files.",
+    link: "https://www.ilovepdf.com",
+    categories: ["File Converters", "PDF Utilities"],
+    tags: ["pdf", "editor", "converter", "ilovepdf", "files"],
+  },
+  {
+    image: Hyperbeam,
+    title: "Hyperbeam",
+    description: "Co-browsing tool for watching and browsing together.",
+    link: "https://hyperbeam.com",
+    categories: ["Streaming Services", "Collaboration Tools"],
+    tags: [
+      "streaming",
+      "co-browsing",
+      "collaboration",
+      "hyperbeam",
+      "together",
+    ],
+  },
+  {
+    image: OpenTogetherTube,
+    title: "Open Together Tube",
+    description: "Watch videos together with synchronized playback.",
+    link: "https://opentogethertube.com",
+    categories: ["Streaming Services", "Collaboration Tools"],
+    tags: ["streaming", "together", "videos", "synced", "opentogethertube"],
+  },
+  {
+    image: Kosmi,
+    title: "Kosmi",
+    description: "Virtual rooms for social hangouts, games, and watch parties.",
+    link: "https://kosmi.io",
+    categories: ["Collaboration Tools", "Streaming Services"],
+    tags: ["social", "watch party", "hangouts", "kosmi", "virtual rooms"],
+  },
+  {
+    image: FreeMoviesWatch,
+    title: "Free Movies Watch",
+    description: "Stream and watch movies for free online.",
+    link: "https://freemovieswatch.cc",
+    categories: ["Streaming Services", "Torrent Resources"],
+    tags: ["streaming", "movies", "free", "freemovieswatch", "torrent"],
+  },
+  {
+    image: HDToday,
+    title: "HD Today",
+    description: "Stream high-definition movies and TV shows for free.",
+    link: "https://hdtoday.cc",
+    categories: ["Streaming Services", "Torrent Resources"],
+    tags: ["streaming", "movies", "tv shows", "hdtoday", "free"],
+  },
+  {
+    image: HydraHD,
+    title: "Hydra HD",
+    description: "Watch HD movies and TV shows online.",
+    link: "https://hydrahd.com",
+    categories: ["Streaming Services", "Torrent Resources"],
+    tags: ["hd", "streaming", "movies", "tv shows", "hydrahd"],
+  },
+  {
+    image: Movies2Watch,
+    title: "Movies 2 Watch",
+    description: "Platform for watching free movies online.",
+    link: "https://movies2watch.tv",
+    categories: ["Streaming Services", "Torrent Resources"],
+    tags: ["streaming", "movies", "free", "movies2watch", "torrent"],
+  },
+  {
+    image: YesMovies,
+    title: "YesMovies",
+    description: "Stream and watch movies for free online.",
+    link: "https://ww.yesmovies.ag",
+    categories: ["Streaming Services", "Torrent Resources"],
+    tags: ["streaming", "movies", "yesmovies", "free", "online"],
+  },
+  {
+    image: ShowboxMovies,
+    title: "Showbox Movies",
+    description: "Watch movies and TV shows online for free.",
+    link: "https://www.showboxmovies.net",
+    categories: ["Streaming Services", "Torrent Resources"],
+    tags: ["streaming", "movies", "showbox", "free", "tv shows"],
+  },
+  {
+    image: AnimeTV9,
+    title: "9Anime TV",
+    description: "Stream anime and animated series online.",
+    link: "https://9animetv.to",
+    categories: ["Streaming Services", "Anime"],
+    tags: ["anime", "streaming", "9anime", "animated series", "online"],
+  },
+  {
+    image: AnimeTsu,
+    title: "AnimeTsu",
+    description: "Watch and stream anime online.",
+    link: "https://animetsu.cc",
+    categories: ["Streaming Services", "Anime"],
+    tags: ["anime", "streaming", "animetsu", "online", "series"],
+  },
+  {
+    image: AnimePahe,
+    title: "AnimePahe",
+    description: "Stream and download anime episodes.",
+    link: "https://animepahe.ru",
+    categories: ["Streaming Services", "Anime"],
+    tags: ["anime", "streaming", "animepahe", "episodes", "download"],
+  },
+  {
+    image: OpenSubtitles,
+    title: "OpenSubtitles",
+    description: "Find and download subtitles for movies and TV shows.",
+    link: "https://www.opensubtitles.org",
+    categories: ["Streaming Services", "Subtitle Resources"],
+    tags: ["subtitles", "movies", "tv shows", "opensubtitles", "downloads"],
   },
 ];

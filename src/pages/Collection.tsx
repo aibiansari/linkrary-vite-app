@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 const Collection: React.FC = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen dark">
+    <div className="flex flex-col items-center min-h-screen pb-4 mb-1 dark">
       <FilterModal />
-      <Navbar />
+      <Navbar page="search" />
       <HorizontalScroll />
       <div className="max-w-screen-2xl mt-16 w-full bg-body">
         <div className="flex mt-2 items-center md:gap-3">
