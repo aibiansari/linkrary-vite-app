@@ -53,7 +53,7 @@ const DropDown = () => {
         animate={open ? "open" : "closed"}
         variants={wrapperVariants}
         style={{ originY: "top", translateX: "-50%" }}
-        className="flex flex-col p-1 rounded-md bg-neutral-950 border border-neutral-800 text-white font-Raleway shadow-xl shadow-black/30 absolute top-[120%] left-[-280%] w-56 overflow-hidden"
+        className="flex flex-col p-1 rounded-md bg-neutral-950 border border-neutral-800 text-white font-Raleway shadow-xl shadow-black/30 absolute top-[120%] left-[-220%] w-48 overflow-hidden"
       >
         <Link
           onClick={() => setOpen(false)}
@@ -78,7 +78,7 @@ const DropDown = () => {
             <li
               key={index}
               onClick={() => setOpen(false)}
-              className="flex py-1.5 text-xs cursor-pointer flex-col w-16 ring-1 ring-neutral-900 hover:bg-element rounded-md items-center justify-center space-y-1 transition-colors duration-300 ease-out"
+              className="flex py-1.5 text-xs cursor-pointer flex-col w-12 ring-1 ring-neutral-900 hover:bg-element rounded-md items-center justify-center space-y-1 transition-colors duration-300 ease-out"
             >
               {item.icon}
               <span>{item.label}</span>

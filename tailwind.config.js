@@ -21,9 +21,9 @@ module.exports = {
         Raleway: ["Raleway", "sans-serif"],
       },
       colors: {
+        element: "#2e2e2e",
         body: "#111111",
         hover: "#3d3d3d",
-        element: "#2e2e2e",
       },
     },
   },

@@ -1,10 +1,9 @@
 import { FaGithub, FaSearch } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
-import logo from "/logo.svg";
-
 import { Link } from "react-router-dom";
 import Dropdown from "./dropdown";
+import logo from "/logo.svg";
 
 type PageProps = {
   page: "search" | "about";
