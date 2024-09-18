@@ -1,24 +1,10 @@
 import { FaGithub, FaSearch } from "react-icons/fa";
-import { FaArrowRight, FaCircleHalfStroke } from "react-icons/fa6";
-import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
+import { FaArrowRight } from "react-icons/fa6";
 import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
-import { FiMenu } from "react-icons/fi";
 import logo from "/logo.svg";
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { Link } from "react-router-dom";
-
-const dropdownItems = [
-  { icon: <FaCircleHalfStroke size={20} />, label: "System" },
-  { icon: <MdOutlineLightMode size={20} />, label: "Light" },
-  { icon: <MdOutlineDarkMode size={20} />, label: "Dark" },
-];
+import Dropdown from "./dropdown";
 
 type PageProps = {
   page: "search" | "about";
@@ -92,38 +78,7 @@ const Navbar = ({ page = "search" }: PageProps) => {
             className="transition-transform duration-200 ease-linear group-hover:-rotate-45"
           />
         </a>
-        <DropdownMenu>
-          <DropdownMenuTrigger className="outline-none">
-            <FiMenu size="1.8em" />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className="dark font-Raleway" align="end">
-            <DropdownMenuItem>
-              <Link className="w-full font-semibold" to="/Linkrary/collection">
-                Collection
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Link className="w-full" to="/Linkrary/about">
-                About
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem disabled className="text-xs">
-              Select a theme
-            </DropdownMenuItem>
-            <div className="flex gap-2 p-2 text-neutral-300">
-              {dropdownItems.map((item, index) => (
-                <DropdownMenuItem
-                  key={index}
-                  className="flex text-xs cursor-pointer flex-col w-14 ring-1 ring-neutral-900 rounded-md items-center justify-center space-y-1"
-                >
-                  {item.icon}
-                  <span>{item.label}</span>
-                </DropdownMenuItem>
-              ))}
-            </div>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <Dropdown />
       </div>
     </nav>
   );
