@@ -9,7 +9,6 @@ Linkrary is the ultimate resource hub, bringing together a curated selection of 
 
 - **Vite**: A build tool that provides a faster and leaner development experience for modern web projects.
 - **Framer Motion**: A powerful library for animations in React, allowing you to create smooth, fluid interactions.
-- **Shadcn UI**: A component library that offers customizable and accessible UI components for React.
 - **Sonner**: A toast notification library to handle user feedback and loading states.
 
 ## Features
