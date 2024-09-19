@@ -93,6 +93,26 @@ import AnimeTV9 from "/icons/AnimeTV9.webp";
 import AnimeTsu from "/icons/AnimeTsu.webp";
 import AnimePahe from "/icons/AnimePahe.webp";
 import OpenSubtitles from "/icons/OpenSubtitles.webp";
+import SteamUnlocked from "/icons/SteamUnlocked.webp";
+import Pi from "/icons/Pi.webp";
+import SteamGG from "/icons/SteamGG.webp";
+import OceanOfGames from "/icons/OceanOfGames.webp";
+import ApunkaGames from "/icons/ApunkaGames.webp";
+import DLXBGame from "/icons/DLXBGame.webp";
+import DLPSGame from "/icons/DLPSGame.webp";
+import W3SchoolsColors from "/icons/W3SchoolsColors.webp";
+import TailwindCSSColors from "/icons/TailwindCSSColors.webp";
+import MockAPI from "/icons/MockAPI.webp";
+import Deblank from "/icons/Deblank.webp";
+import CSSLoaders from "/icons/CSSLoaders.webp";
+import UIBall from "/icons/UIBall.webp";
+import Devicon from "/icons/Devicon.webp";
+import SVGRepo from "/icons/SVGRepo.webp";
+import Namify from "/icons/Namify.webp";
+import Rawpixel from "/icons/Rawpixel.webp";
+import StickPNG from "/icons/StickPNG.webp";
+import CleanPNG from "/icons/CleanPNG.webp";
+import TinyPNG from "/icons/TinyPNG.webp";
 
 export const cards = [
   {
@@ -146,6 +166,15 @@ export const cards = [
     link: "https://chatgpt.com",
     categories: ["AI Tools", "All Apps", "Web Development"],
     tags: ["chatbot", "openai", "ai", "chatgpt", "all web development"],
+  },
+  {
+    image: Pi,
+    title: "Pi AI",
+    description:
+      "Emotional AI chatbot for fun, engaging and helpful conversations.",
+    link: "https://pi.ai",
+    categories: ["AI Tools", "Useful Websites"],
+    tags: ["Pi", "tool", "robot", "personal", "voice"],
   },
   {
     image: TinyWow,
@@ -900,5 +929,157 @@ export const cards = [
     link: "https://www.opensubtitles.org",
     categories: ["Streaming Services", "Subtitle Resources"],
     tags: ["subtitles", "movies", "tv shows", "opensubtitles", "downloads"],
+  },
+  {
+    image: SteamUnlocked,
+    title: "SteamUnlocked",
+    description: "Download and unlock games from Steam for free.",
+    link: "https://steamunlocked.net",
+    categories: ["Game Libraries", "Torrent Resources"],
+    tags: ["games", "steam", "unlocked", "torrent", "free"],
+  },
+  {
+    image: SteamGG,
+    title: "Steam GG",
+    description: "Find and download games from Steam.",
+    link: "https://steamgg.net",
+    categories: ["Game Libraries", "Torrent Resources"],
+    tags: ["games", "steam", "downloads", "steamgg", "torrent"],
+  },
+  {
+    image: OceanOfGames,
+    title: "Ocean of Games",
+    description: "Download PC games for free from Ocean of Games.",
+    link: "https://oceanofgames.com",
+    categories: ["Game Libraries", "Torrent Resources"],
+    tags: ["games", "downloads", "oceanofgames", "pc", "free"],
+  },
+  {
+    image: ApunkaGames,
+    title: "Apunka Games",
+    description: "Free PC games download site with a wide variety.",
+    link: "https://www.apunkagames.com",
+    categories: ["Game Libraries", "Torrent Resources"],
+    tags: ["games", "downloads", "apunkagames", "pc", "free"],
+  },
+  {
+    image: DLXBGame,
+    title: "DLXB Game",
+    description: "Download the latest PC games and updates.",
+    link: "https://dlxbgame.com",
+    categories: ["Game Libraries", "Torrent Resources"],
+    tags: ["games", "downloads", "dlxbgame", "pc", "latest"],
+  },
+  {
+    image: DLPSGame,
+    title: "DLPS Game",
+    description: "Access and download PC games for free.",
+    link: "https://dlpsgame.com/",
+    categories: ["Game Libraries", "Torrent Resources"],
+    tags: ["games", "downloads", "dlpsgame", "pc", "free"],
+  },
+  {
+    image: W3SchoolsColors,
+    title: "W3Schools Color Picker",
+    description: "Tool for picking and previewing colors for web design.",
+    link: "https://www.w3schools.com/colors/colors_picker.asp",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["colors", "picker", "web design", "w3schools"],
+  },
+  {
+    image: TailwindCSSColors,
+    title: "Tailwind CSS Customizing Colors",
+    description: "Documentation for customizing colors in Tailwind CSS.",
+    link: "https://tailwindcss.com/docs/customizing-colors",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["tailwindcss", "colors", "customization", "web development"],
+  },
+  {
+    image: MockAPI,
+    title: "MockAPI",
+    description: "Create mock APIs quickly for testing and development.",
+    link: "https://mockapi.io",
+    categories: ["Web Development", "API Resources"],
+    tags: ["api", "mockapi", "testing", "development"],
+  },
+  {
+    image: Deblank,
+    title: "Deblank",
+    description: "Generate design and development content with Deblank.",
+    link: "https://deblank.com",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["design", "content", "development", "deblank"],
+  },
+  {
+    image: CSSLoaders,
+    title: "CSS Loaders",
+    description: "Collection of CSS loaders for use in web projects.",
+    link: "https://css-loaders.com",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["css", "loaders", "web development", "design"],
+  },
+  {
+    image: UIBall,
+    title: "UI Ball",
+    description: "Collection of CSS loaders and animations.",
+    link: "https://uiball.com/ldrs",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["css", "loaders", "animations", "uiball"],
+  },
+  {
+    image: Devicon,
+    title: "Devicon",
+    description: "Icon set for popular development tools and technologies.",
+    link: "https://devicon.dev",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["icons", "devicon", "development", "tools"],
+  },
+  {
+    image: SVGRepo,
+    title: "SVG Repo",
+    description: "Find and download SVG icons and images.",
+    link: "https://www.svgrepo.com",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["svg", "icons", "download", "svgrepo"],
+  },
+  {
+    image: Namify,
+    title: "Namify",
+    description: "Generate and find unique names for projects and businesses.",
+    link: "https://namify.tech",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["names", "generator", "projects", "business"],
+  },
+  {
+    image: Rawpixel,
+    title: "Rawpixel",
+    description: "High-quality stock images and design resources.",
+    link: "https://www.rawpixel.com",
+    categories: ["Design Inspiration", "Stock Images"],
+    tags: ["stock images", "design", "rawpixel"],
+  },
+  {
+    image: StickPNG,
+    title: "StickPNG",
+    description: "Free transparent PNG images and clipart.",
+    link: "https://www.stickpng.com",
+    categories: ["Design Inspiration", "SVG Icons"],
+    tags: ["png", "images", "clipart", "stickpng"],
+  },
+  {
+    image: CleanPNG,
+    title: "CleanPNG",
+    description: "Transparent PNG images for personal and commercial use.",
+    link: "https://www.cleanpng.com",
+    categories: ["Design Inspiration", "SVG Icons"],
+    tags: ["png", "images", "transparent", "cleanpng"],
+  },
+  {
+    image: TinyPNG,
+    title: "TinyPNG",
+    description: "Compress and optimize PNG images.",
+    link: "https://tinypng.com",
+    categories: ["Web Development", "File Converters"],
+    tags: ["png", "compression", "optimization", "tinypng"],
   },
 ];

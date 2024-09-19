@@ -24,9 +24,12 @@ const Cards = () => {
             draggable="false"
             className="h-16 w-16 rounded-lg object-cover"
           />
-          <div className="overflow-hidden">
+          <div className="overflow-hidden -translate-y-0.5">
             <h3 className="text-xl text-white font-semibold">{card.title}</h3>
-            <p className="text-sm text-neutral-400 line-clamp-2">
+            <p
+              title={card.description}
+              className="text-sm text-neutral-400 line-clamp-2"
+            >
               {card.description}
             </p>
           </div>
