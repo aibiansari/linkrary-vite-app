@@ -49,13 +49,13 @@ const Navbar = ({ page = "search" }: PageProps) => {
           <div className="flex items-center gap-10">
             <Link
               to="/Linkrary"
-              className="hover:text-neutral-300 font-Raleway font-semibold text-lg"
+              className="hover:text-neutral-300 hover:-translate-y-0.5 transition-transform duration-300 font-Raleway font-semibold text-lg"
             >
               Discover
             </Link>
             <Link
               to="/Linkrary/collection"
-              className="hover:text-neutral-300 font-Raleway font-semibold text-lg"
+              className="hover:text-neutral-300 hover:-translate-y-0.5 transition-transform duration-300 font-Raleway font-semibold text-lg"
             >
               Collection
             </Link>

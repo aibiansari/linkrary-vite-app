@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { FiMenu } from "react-icons/fi";
 import { FaCircleHalfStroke } from "react-icons/fa6";
+import { CiBookmark, CiCircleInfo } from "react-icons/ci";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -89,17 +90,19 @@ const DropDown = () => {
       >
         <Link
           onClick={() => setOpen(false)}
-          className="w-full p-1.5 text-sm font-semibold rounded-md hover:bg-neutral-800 transition-colors cursor-pointer"
+          className="w-full flex items-center gap-2 p-1.5 text-sm font-semibold rounded-md hover:bg-neutral-800 transition-colors  cursor-pointer"
           to="/Linkrary/collection"
         >
+          <CiBookmark size="1.2em" className="-translate-y-[1px]" />
           Collection
         </Link>
 
         <Link
           onClick={() => setOpen(false)}
-          className="w-full p-1.5 text-sm rounded-md hover:bg-neutral-800 transition-colors cursor-pointer"
+          className="w-full flex items-center gap-2 p-1.5 text-sm rounded-md hover:bg-neutral-800 transition-colors duration-300 cursor-pointer"
           to="/Linkrary/about"
         >
+          <CiCircleInfo size="1.2em" className="-translate-y-[1px]" />
           About
         </Link>
 

@@ -113,6 +113,15 @@ import Rawpixel from "/icons/Rawpixel.webp";
 import StickPNG from "/icons/StickPNG.webp";
 import CleanPNG from "/icons/CleanPNG.webp";
 import TinyPNG from "/icons/TinyPNG.webp";
+import Haikei from "/icons/Haikei.webp";
+import Readme from "/icons/Readme.webp";
+import GPRM from "/icons/GPRM.webp";
+import Exercism from "/icons/Exercism.webp";
+import V0 from "/icons/V0.webp";
+import Webcode from "/icons/Webcode.webp";
+import Quickref from "/icons/Quickref.webp";
+import Appshots from "/icons/Appshots.webp";
+import Mobbin from "/icons/Mobbin.webp";
 
 export const cards = [
   {
@@ -1081,5 +1090,87 @@ export const cards = [
     link: "https://tinypng.com",
     categories: ["Web Development", "File Converters"],
     tags: ["png", "compression", "optimization", "tinypng"],
+  },
+  {
+    image: Haikei,
+    title: "Haikei",
+    description: "Generate customizable SVG shapes and backgrounds.",
+    link: "https://app.haikei.app",
+    categories: ["Design Inspiration", "Web Development"],
+    tags: ["svg", "backgrounds", "design", "haikei"],
+  },
+  {
+    image: Github,
+    title: "Hover.css",
+    description:
+      "CSS3 powered hover effects for links, buttons, logos, SVG, featured images, and more.",
+    link: "https://ianlunn.github.io/Hover/",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["css", "hover", "effects", "ianlunn"],
+  },
+  {
+    image: Readme,
+    title: "Readme.so",
+    description: "Create beautiful README files for your projects.",
+    link: "https://readme.so/editor",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["readme", "documentation", "projects", "readme.so"],
+  },
+  {
+    image: GPRM,
+    title: "GPRM",
+    description:
+      "A simple web-based tool to generate and manage your personal README files.",
+    link: "https://gprm.itsvg.in",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["readme", "gprm", "generator", "web"],
+  },
+  {
+    image: Exercism,
+    title: "Exercism",
+    description: "Code practice and mentorship for programming languages.",
+    link: "https://exercism.org",
+    categories: ["Web Development", "Useful Websites"],
+    tags: ["coding", "practice", "mentorship", "exercism"],
+  },
+  {
+    image: V0,
+    title: "V0.dev",
+    description: "Web-based tools for developers and designers.",
+    link: "https://v0.dev",
+    categories: ["Web Development", "Useful Websites"],
+    tags: ["tools", "web", "v0.dev"],
+  },
+  {
+    image: Webcode,
+    title: "Webcode Tools",
+    description: "Tools for web development and design.",
+    link: "https://webcode.tools",
+    categories: ["Web Development", "Useful Websites"],
+    tags: ["web development", "tools", "webcode"],
+  },
+  {
+    image: Quickref,
+    title: "QuickRef",
+    description: "Quick reference for coding languages and frameworks.",
+    link: "https://quickref.me",
+    categories: ["Web Development", "Useful Websites"],
+    tags: ["reference", "coding", "quickref"],
+  },
+  {
+    image: Appshots,
+    title: "Appshots",
+    description: "Generate app screenshots with beautiful mockups.",
+    link: "https://appshots.design",
+    categories: ["Design Inspiration", "Web Development"],
+    tags: ["app", "screenshots", "mockups", "appshots"],
+  },
+  {
+    image: Mobbin,
+    title: "Mobbin",
+    description: "Design inspiration from mobile app screenshots.",
+    link: "https://mobbin.com",
+    categories: ["Design Inspiration"],
+    tags: ["mobile", "app", "screenshots", "mobbin"],
   },
 ];
