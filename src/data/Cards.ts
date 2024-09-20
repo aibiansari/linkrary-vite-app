@@ -122,6 +122,17 @@ import Webcode from "/icons/Webcode.webp";
 import Quickref from "/icons/Quickref.webp";
 import Appshots from "/icons/Appshots.webp";
 import Mobbin from "/icons/Mobbin.webp";
+import Showreelz from "/icons/Showreelz.webp";
+import IamSajid from "/icons/IamSajid.webp";
+import Flowbite from "/icons/Flowbite.webp";
+import Uiverse from "/icons/Uiverse.webp";
+import MagicUI from "/icons/MagicUI.webp";
+import Shadcn from "/icons/Shadcn.webp";
+import ReactSelect from "/icons/ReactSelect.webp";
+import DaisyUI from "/icons/DaisyUI.webp";
+import HoverDev from "/icons/HoverDev.webp";
+import HyperUI from "/icons/HyperUI.webp";
+import AntDesign from "/icons/AntDesign.webp";
 
 export const cards = [
   {
@@ -1172,5 +1183,94 @@ export const cards = [
     link: "https://mobbin.com",
     categories: ["Design Inspiration"],
     tags: ["mobile", "app", "screenshots", "mobbin"],
+  },
+  {
+    image: Showreelz,
+    title: "Showreelz",
+    description:
+      "Showreel templates and examples for designers and developers.",
+    link: "https://www.showreelz.com",
+    categories: ["Design Inspiration"],
+    tags: ["showreel", "templates", "design", "showreelz"],
+  },
+  {
+    image: IamSajid,
+    title: "I am Sajid",
+    description: "Design and development resources by Sajid.",
+    link: "https://www.iamsajid.com",
+    categories: ["Design Inspiration", "Web Development"],
+    tags: ["design", "development", "resources", "iamsajid"],
+  },
+  {
+    image: Flowbite,
+    title: "Flowbite",
+    description: "Tailwind CSS components and templates.",
+    link: "https://flowbite.com",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["tailwindcss", "components", "templates", "flowbite"],
+  },
+  {
+    image: Uiverse,
+    title: "Uiverse",
+    description: "Design system and components library.",
+    link: "https://uiverse.io",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["design system", "components", "uiverse"],
+  },
+  {
+    image: MagicUI,
+    title: "Magic UI",
+    description: "Design system and UI components library.",
+    link: "https://magicui.design",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["ui", "design system", "components", "magicui"],
+  },
+  {
+    image: Shadcn,
+    title: "Shadcn UI",
+    description: "Component library for React.",
+    link: "https://ui.shadcn.com",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["react", "components", "ui", "shadcn"],
+  },
+  {
+    image: ReactSelect,
+    title: "React Select",
+    description: "Flexible and customizable select menu for React.",
+    link: "https://react-select.com",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["react", "select", "menu", "reactselect"],
+  },
+  {
+    image: DaisyUI,
+    title: "DaisyUI",
+    description: "Tailwind CSS components library.",
+    link: "https://daisyui.com",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["tailwindcss", "components", "daisyui"],
+  },
+  {
+    image: HoverDev,
+    title: "Hover.dev",
+    description: "Web-based tools for design and development.",
+    link: "https://www.hover.dev",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["design", "development", "tools", "hoverdev"],
+  },
+  {
+    image: HyperUI,
+    title: "HyperUI",
+    description: "Tailwind CSS components and templates.",
+    link: "https://www.hyperui.dev",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["tailwindcss", "components", "templates", "hyperui"],
+  },
+  {
+    image: AntDesign,
+    title: "Ant Design",
+    description: "A design system for enterprise-level products.",
+    link: "https://ant.design",
+    categories: ["Web Development", "Design Inspiration"],
+    tags: ["design system", "components", "antdesign"],
   },
 ];
