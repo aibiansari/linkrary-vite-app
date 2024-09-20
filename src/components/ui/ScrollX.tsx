@@ -26,7 +26,7 @@ const categories = [
   { name: "All Apps", icon: <RiAppsFill /> },
   { name: "AI Tools", icon: <FaRobot /> },
   { name: "Audio Tools", icon: <FaHeadphones /> },
-  { name: "Video Editing", icon: <FaVideo /> },
+  { name: "Video Tools", icon: <FaVideo /> },
   { name: "Design Tools", icon: <FaPaintBrush /> },
   { name: "Game Libraries", icon: <FaGamepad /> },
   { name: "Design Inspiration", icon: <FaPalette /> },
@@ -55,7 +55,7 @@ const HorizontalScroll = () => {
   };
 
   return (
-    <div className="sticky top-20 md:top-16 z-10 bg-body border-y-[1px] border-neutral-800">
+    <div className="sticky top-16 z-10 bg-body border-y-[1px] border-neutral-800">
       <div className="relative flex items-center w-[96vw] md:w-[98vw] lg:w-[99vw] max-w-screen-2xl py-1.5 md:py-0 md:px-4">
         <button
           onClick={() => setButtonState(!buttonState)}

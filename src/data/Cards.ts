@@ -189,7 +189,7 @@ export const cards = [
     title: "ChatGPT",
     description: "The best AI-powered chatbot by OpenAI.",
     link: "https://chatgpt.com",
-    categories: ["AI Tools", "All Apps", "Web Development"],
+    categories: ["AI Tools", "Web Development", "Useful Websites"],
     tags: [
       "AI chatbot",
       "OpenAI",
@@ -283,7 +283,12 @@ export const cards = [
     title: "Canva",
     description: "Online all-in-one graphic design and editing tool.",
     link: "https://www.canva.com",
-    categories: ["Design Tools", "Web Development"],
+    categories: [
+      "Design Tools",
+      "Design Inspiration",
+      "Web Development",
+      "Useful Websites",
+    ],
     tags: [
       "graphic design",
       "canva",
@@ -298,7 +303,7 @@ export const cards = [
     title: "CapCut",
     description: "Video and image editor on the browser.",
     link: "https://www.capcut.com",
-    categories: ["Video Tools"],
+    categories: ["Design Tools", "Video Tools"],
     tags: [
       "video editing",
       "browser-based editor",
@@ -358,7 +363,7 @@ export const cards = [
     title: "OpenArt",
     description: "Explore and create AI-generated art.",
     link: "https://openart.ai",
-    categories: ["AI Tools", "Design Inspiration"],
+    categories: ["AI Tools", "Design Tools", "Design Inspiration"],
     tags: [
       "ai art creation",
       "design inspiration",
@@ -388,7 +393,7 @@ export const cards = [
     title: "SaveWeb2Zip",
     description: "Save entire websites as ZIP files for free.",
     link: "https://saveweb2zip.com",
-    categories: ["Useful Websites"],
+    categories: ["Useful Websites", "Web Development"],
     tags: [
       "website archiving",
       "save websites",
@@ -505,7 +510,7 @@ export const cards = [
     title: "Archive.org",
     description: "A digital library of internet sites and cultural artifacts.",
     link: "https://archive.org",
-    categories: ["Useful Websites"],
+    categories: ["Torrent Resources", "Useful Websites"],
     tags: [
       "digital library",
       "archive",
@@ -520,7 +525,7 @@ export const cards = [
     title: "Seedr",
     description: "Cloud-based torrent downloader and streamer.",
     link: "https://www.seedr.cc",
-    categories: ["Torrent Resources"],
+    categories: ["Torrent Resources", "Useful Websites"],
     tags: [
       "torrent downloader",
       "cloud-based torrents",
@@ -534,7 +539,7 @@ export const cards = [
     title: "GPT4O",
     description: "AI tool (GPT4o) for text generation and tasks.",
     link: "https://gpt4o.so",
-    categories: ["AI Tools"],
+    categories: ["AI Tools", "Web Development"],
     tags: [
       "ai tools",
       "text generation",
@@ -648,7 +653,7 @@ export const cards = [
     title: "Vocal Remover",
     description: "AI-powered tool for removing vocals from audio tracks.",
     link: "https://vocalremover.org",
-    categories: ["Audio Tools"],
+    categories: ["Audio Tools", "AI Tools", "Useful Websites"],
     tags: [
       "AI",
       "vocal removal",
@@ -734,7 +739,12 @@ export const cards = [
     description:
       "Online multimedia tools including video, audio, and PDF editors.",
     link: "https://123apps.com",
-    categories: ["Audio Tools", "Video Tools", "PDF Utilities"],
+    categories: [
+      "Audio Tools",
+      "Video Tools",
+      "PDF Utilities",
+      "Useful Websites",
+    ],
     tags: [
       "multimedia tools",
       "audio editing",
@@ -799,7 +809,7 @@ export const cards = [
     title: "Dirty Line Studio Freebies",
     description: "Free design assets and resources for creatives.",
     link: "https://dirtylinestudio.com/freebies/",
-    categories: ["Design Tools", "Design Inspiration"],
+    categories: ["Design Tools", "Design Inspiration", "Font Resources"],
     tags: [
       "free design assets",
       "creative resources",
@@ -827,7 +837,7 @@ export const cards = [
     title: "Texture Labs",
     description: "Free textures, brushes, and design resources.",
     link: "https://texturelabs.org",
-    categories: ["Design Tools", "Design Inspiration"],
+    categories: ["Design Tools", "Design Inspiration", "Font Resources"],
     tags: [
       "free textures",
       "design brushes",
@@ -841,7 +851,7 @@ export const cards = [
     title: "Sketch Valley",
     description: "Free vector and illustration resources for designers.",
     link: "https://sketchvalley.com",
-    categories: ["Design Tools", "Design Inspiration"],
+    categories: ["Design Tools", "Design Inspiration", "SVG Icons"],
     tags: [
       "free vectors",
       "illustration resources",
@@ -855,7 +865,7 @@ export const cards = [
     title: "Jitter Video",
     description: "Create motion designs and animations easily.",
     link: "https://jitter.video",
-    categories: ["Design Tools"],
+    categories: ["Design Tools", "Video Tools"],
     tags: [
       "motion design",
       "animation tools",
@@ -883,7 +893,7 @@ export const cards = [
     title: "Paletton",
     description: "Color scheme designer for creating perfect color palettes.",
     link: "https://paletton.com",
-    categories: ["Design Tools"],
+    categories: ["Design Tools", "Design Inspiration", "Useful Websites"],
     tags: [
       "color palette generator",
       "design tools",
@@ -897,7 +907,7 @@ export const cards = [
     title: "ResourceBoy",
     description: "Free design resources including mockups, fonts, and more.",
     link: "https://resourceboy.com",
-    categories: ["Design Tools", "Design Inspiration"],
+    categories: ["Design Tools", "Design Inspiration", "Font Resources"],
     tags: [
       "free design resources",
       "mockups",
@@ -926,7 +936,7 @@ export const cards = [
     title: "Coolors",
     description: "Color palette generator for designers and artists.",
     link: "https://coolors.co",
-    categories: ["Design Tools"],
+    categories: ["Design Tools", "Design Inspiration"],
     tags: [
       "color palette generator",
       "color combinations",
@@ -940,7 +950,7 @@ export const cards = [
     title: "The Noun Project",
     description: "Free and paid icons for every project.",
     link: "https://thenounproject.com",
-    categories: ["SVG Icons"],
+    categories: ["SVG Icons", "Design Tools"],
     tags: [
       "icon library",
       "design icons",
@@ -954,7 +964,7 @@ export const cards = [
     title: "Mesh Gradients",
     description: "Beautiful mesh gradient backgrounds for your designs.",
     link: "https://products.ls.graphics/mesh-gradients/",
-    categories: ["Design Tools"],
+    categories: ["Design Tools", "Web Development"],
     tags: [
       "mesh gradients",
       "background designs",
@@ -1024,7 +1034,12 @@ export const cards = [
     title: "Looka",
     description: "AI-powered logo design and branding platform.",
     link: "https://looka.com",
-    categories: ["Design Tools", "AI Tools"],
+    categories: [
+      "Design Tools",
+      "AI Tools",
+      "Design Inspiration",
+      "Web Development",
+    ],
     tags: [
       "AI logo design",
       "branding tools",
@@ -1053,7 +1068,7 @@ export const cards = [
     description:
       "AI-powered design tool for creating high-quality marketing visuals.",
     link: "https://flair.ai",
-    categories: ["AI Tools", "Design Tools"],
+    categories: ["AI Tools", "Design Tools", "Useful Websites"],
     tags: [
       "AI design tool",
       "marketing visuals",
@@ -1081,7 +1096,7 @@ export const cards = [
     title: "Krea AI",
     description: "AI-powered art generator with customizable options.",
     link: "https://www.krea.ai",
-    categories: ["AI Tools", "Design Inspiration"],
+    categories: ["AI Tools", "Design Tools", "Video Tools"],
     tags: [
       "AI art generator",
       "customizable art",
@@ -1166,7 +1181,7 @@ export const cards = [
     title: "Pikimov",
     description: "AI-driven tool for generating video and animations.",
     link: "https://pikimov.com",
-    categories: ["AI Tools", "Video Editing"],
+    categories: ["AI Tools", "Video Tools"],
     tags: [
       "AI",
       "video generation",
@@ -1181,7 +1196,7 @@ export const cards = [
     title: "FLUX.1 Schnell",
     description: "AI-based image generation via Hugging Face Spaces.",
     link: "https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell",
-    categories: ["AI Tools", "Image Generation"],
+    categories: ["AI Tools", "Design Tools"],
     tags: [
       "AI",
       "image generation",
@@ -1196,7 +1211,7 @@ export const cards = [
     title: "WeTranslate Scene Package",
     description: "Downloadable scene packages for design projects.",
     link: "https://wetranslate.thiscould.work/scene.pkg/",
-    categories: ["Design Tools"],
+    categories: ["Useful Websites"],
     tags: [
       "design resources",
       "scene package",
@@ -1210,7 +1225,7 @@ export const cards = [
     title: "CareerFlow",
     description: "AI-driven career guidance and job search platform.",
     link: "https://www.careerflow.ai",
-    categories: ["Career Tools", "AI Tools"],
+    categories: ["AI Tools", "Useful Websites"],
     tags: [
       "AI",
       "career guidance",
@@ -1225,7 +1240,7 @@ export const cards = [
     title: "Hacksplaining",
     description: "Learn cybersecurity through interactive tutorials.",
     link: "https://www.hacksplaining.com",
-    categories: ["Cybersecurity", "Learning Tools"],
+    categories: ["Useful Websites"],
     tags: [
       "cybersecurity",
       "interactive tutorials",
@@ -1239,7 +1254,7 @@ export const cards = [
     title: "Verif Tools",
     description: "Free online verification tools for various use cases.",
     link: "https://veriftools.net",
-    categories: ["Utility Tools"],
+    categories: ["Useful Websites"],
     tags: [
       "verification tools",
       "online utilities",
@@ -1253,7 +1268,7 @@ export const cards = [
     title: "Fake Name Generator",
     description: "Generate random names and identities for testing purposes.",
     link: "https://www.fakenamegenerator.com",
-    categories: ["Utility Tools"],
+    categories: ["Useful Websites"],
     tags: [
       "name generator",
       "fake identities",
@@ -1267,7 +1282,7 @@ export const cards = [
     title: "OSINT Framework",
     description: "A collection of tools for open-source intelligence (OSINT).",
     link: "https://osintframework.com",
-    categories: ["Cybersecurity", "Research Tools"],
+    categories: ["Useful Websites"],
     tags: [
       "OSINT",
       "cybersecurity tools",
@@ -1281,7 +1296,7 @@ export const cards = [
     title: "SundownDev Gist",
     description: "A collection of useful cybersecurity tools and resources.",
     link: "https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06",
-    categories: ["Cybersecurity", "Research Tools"],
+    categories: ["Useful Websites, Web Libraries"],
     tags: [
       "cybersecurity",
       "SundownDev",
@@ -1295,7 +1310,7 @@ export const cards = [
     title: "FreeOpenVPN",
     description: "Free VPN service with multiple server locations.",
     link: "https://www.freeopenvpn.org",
-    categories: ["Security Tools"],
+    categories: ["Useful Websites"],
     tags: [
       "VPN service",
       "free VPN",
@@ -1309,7 +1324,7 @@ export const cards = [
     title: "PrePostSEO",
     description: "A collection of SEO tools to optimize your website.",
     link: "https://www.prepostseo.com",
-    categories: ["Web Development", "SEO Tools"],
+    categories: ["Web Development", "Useful Websites"],
     tags: [
       "SEO tools",
       "website optimization",
@@ -1351,7 +1366,7 @@ export const cards = [
     title: "Hyperbeam",
     description: "Co-browsing tool for watching and browsing together.",
     link: "https://hyperbeam.com",
-    categories: ["Streaming Services", "Collaboration Tools"],
+    categories: ["Streaming Services"],
     tags: [
       "co-browsing",
       "collaboration tool",
@@ -1365,7 +1380,7 @@ export const cards = [
     title: "Open Together Tube",
     description: "Watch videos together with synchronized playback.",
     link: "https://opentogethertube.com",
-    categories: ["Streaming Services", "Collaboration Tools"],
+    categories: ["Streaming Services"],
     tags: [
       "synchronized playback",
       "watch together",
@@ -1379,7 +1394,7 @@ export const cards = [
     title: "Kosmi",
     description: "Virtual rooms for social hangouts, games, and watch parties.",
     link: "https://kosmi.io",
-    categories: ["Collaboration Tools", "Streaming Services"],
+    categories: ["Streaming Services"],
     tags: [
       "social hangouts",
       "watch parties",
@@ -1459,7 +1474,7 @@ export const cards = [
     title: "9Anime TV",
     description: "Stream anime and animated series online.",
     link: "https://9animetv.to",
-    categories: ["Streaming Services", "Anime"],
+    categories: ["Streaming Services"],
     tags: [
       "anime streaming",
       "9Anime",
@@ -1473,7 +1488,7 @@ export const cards = [
     title: "AnimeTsu",
     description: "Watch and stream anime online.",
     link: "https://animetsu.cc",
-    categories: ["Streaming Services", "Anime"],
+    categories: ["Streaming Services"],
     tags: ["anime", "streaming", "AnimeTsu", "online series", "watch anime"],
   },
   {
@@ -1481,7 +1496,7 @@ export const cards = [
     title: "AnimePahe",
     description: "Stream and download anime episodes.",
     link: "https://animepahe.ru",
-    categories: ["Streaming Services", "Anime"],
+    categories: ["Streaming Services"],
     tags: ["anime episodes", "AnimePahe", "streaming", "downloads", "anime"],
   },
   {
@@ -1489,7 +1504,7 @@ export const cards = [
     title: "OpenSubtitles",
     description: "Find and download subtitles for movies and TV shows.",
     link: "https://www.opensubtitles.org",
-    categories: ["Streaming Services", "Subtitle Resources"],
+    categories: ["Streaming Services", "Video Tools"],
     tags: [
       "subtitles",
       "movie subtitles",
@@ -1503,7 +1518,7 @@ export const cards = [
     title: "SteamUnlocked",
     description: "Download and unlock games from Steam for free.",
     link: "https://steamunlocked.net",
-    categories: ["Game Libraries", "Torrent Resources"],
+    categories: ["Game Libraries"],
     tags: [
       "Steam games",
       "free downloads",
@@ -1517,7 +1532,7 @@ export const cards = [
     title: "Steam GG",
     description: "Find and download games from Steam.",
     link: "https://steamgg.net",
-    categories: ["Game Libraries", "Torrent Resources"],
+    categories: ["Game Libraries"],
     tags: [
       "Steam GG",
       "game downloads",
@@ -1531,7 +1546,7 @@ export const cards = [
     title: "Ocean of Games",
     description: "Download PC games for free from Ocean of Games.",
     link: "https://oceanofgames.com",
-    categories: ["Game Libraries", "Torrent Resources"],
+    categories: ["Game Libraries"],
     tags: [
       "PC games",
       "Ocean of Games",
@@ -1545,7 +1560,7 @@ export const cards = [
     title: "Apunka Games",
     description: "Free PC games download site with a wide variety.",
     link: "https://www.apunkagames.com",
-    categories: ["Game Libraries", "Torrent Resources"],
+    categories: ["Game Libraries"],
     tags: [
       "free PC games",
       "Apunka Games",
@@ -1587,7 +1602,7 @@ export const cards = [
     title: "W3Schools Color Picker",
     description: "Tool for picking and previewing colors for web design.",
     link: "https://www.w3schools.com/colors/colors_picker.asp",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Design Inspiration", "Web Libraries"],
     tags: [
       "color picker",
       "web design tool",
@@ -1601,7 +1616,7 @@ export const cards = [
     title: "Tailwind CSS Customizing Colors",
     description: "Documentation for customizing colors in Tailwind CSS.",
     link: "https://tailwindcss.com/docs/customizing-colors",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Design Inspiration", "Web Libraries"],
     tags: [
       "Tailwind CSS",
       "custom colors",
@@ -1615,7 +1630,7 @@ export const cards = [
     title: "MockAPI",
     description: "Create mock APIs quickly for testing and development.",
     link: "https://mockapi.io",
-    categories: ["Web Development", "API Resources"],
+    categories: ["Web Development", "Useful Websites"],
     tags: [
       "mock API",
       "API testing",
@@ -1685,7 +1700,7 @@ export const cards = [
     title: "SVG Repo",
     description: "Find and download SVG icons and images.",
     link: "https://www.svgrepo.com",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Design Inspiration", "SVG Icons"],
     tags: [
       "SVG icons",
       "downloadable images",
@@ -1784,7 +1799,7 @@ export const cards = [
     description:
       "CSS3 powered hover effects for links, buttons, logos, SVG, featured images, and more.",
     link: "https://ianlunn.github.io/Hover/",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Design Inspiration", "Web Libraries"],
     tags: [
       "CSS hover effects",
       "UI interactions",
@@ -1798,7 +1813,7 @@ export const cards = [
     title: "Readme.so",
     description: "Create beautiful README files for your projects.",
     link: "https://readme.so/editor",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Useful Websites"],
     tags: [
       "README generator",
       "project documentation",
@@ -1813,7 +1828,7 @@ export const cards = [
     description:
       "A simple web-based tool to generate and manage your personal README files.",
     link: "https://gprm.itsvg.in",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Useful Websites"],
     tags: [
       "README management",
       "personal README",
@@ -1883,7 +1898,7 @@ export const cards = [
     title: "Appshots",
     description: "Generate app screenshots with beautiful mockups.",
     link: "https://appshots.design",
-    categories: ["Design Inspiration", "Web Development"],
+    categories: ["Design Inspiration"],
     tags: [
       "app mockups",
       "screenshot generator",
@@ -1940,7 +1955,7 @@ export const cards = [
     title: "Flowbite",
     description: "Tailwind CSS components and templates.",
     link: "https://flowbite.com",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Web Libraries"],
     tags: [
       "Tailwind CSS",
       "UI components",
@@ -1954,7 +1969,7 @@ export const cards = [
     title: "Uiverse",
     description: "Design system and components library.",
     link: "https://uiverse.io",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Web Libraries"],
     tags: [
       "design system",
       "component library",
@@ -1968,7 +1983,7 @@ export const cards = [
     title: "Magic UI",
     description: "Design system and UI components library.",
     link: "https://magicui.design",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Web Libraries"],
     tags: [
       "UI components",
       "design system",
@@ -1982,7 +1997,7 @@ export const cards = [
     title: "Shadcn UI",
     description: "Component library for React.",
     link: "https://ui.shadcn.com",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Web Libraries"],
     tags: [
       "React components",
       "Shadcn UI",
@@ -1996,7 +2011,7 @@ export const cards = [
     title: "React Select",
     description: "Flexible and customizable select menu for React.",
     link: "https://react-select.com",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Web Libraries"],
     tags: [
       "React",
       "select menu",
@@ -2010,7 +2025,7 @@ export const cards = [
     title: "DaisyUI",
     description: "Tailwind CSS components library.",
     link: "https://daisyui.com",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Web Libraries"],
     tags: [
       "Tailwind CSS",
       "DaisyUI",
@@ -2024,7 +2039,7 @@ export const cards = [
     title: "Hover.dev",
     description: "Web-based tools for design and development.",
     link: "https://www.hover.dev",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Web Libraries"],
     tags: [
       "design tools",
       "development tools",
@@ -2038,7 +2053,7 @@ export const cards = [
     title: "HyperUI",
     description: "Tailwind CSS components and templates.",
     link: "https://www.hyperui.dev",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Web Libraries"],
     tags: [
       "Tailwind CSS",
       "components",
@@ -2052,7 +2067,7 @@ export const cards = [
     title: "Ant Design",
     description: "A design system for enterprise-level products.",
     link: "https://ant.design",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "Web Libraries"],
     tags: [
       "design system",
       "enterprise products",

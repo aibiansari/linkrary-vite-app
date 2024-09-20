@@ -14,7 +14,7 @@ const Navbar = ({ page = "search" }: PageProps) => {
 
   return (
     <nav
-      className={`bg-body fixed h-20 md:h-16 w-screen z-20 max-w-screen-2xl text-white px-4 md:px-8 flex flex-wrap items-center justify-between ${
+      className={`bg-body fixed h-16 w-screen z-20 max-w-screen-2xl text-white px-4 md:px-8 flex flex-wrap items-center justify-between ${
         page === "about" ? "border-b-[1px] border-neutral-800" : ""
       }`}
     >
@@ -33,7 +33,7 @@ const Navbar = ({ page = "search" }: PageProps) => {
           // Search section
           <div
             onClick={() => setButtonState(!buttonState)}
-            className="relative bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-2 rounded-full hover:bg-hover transition-colors ease-in cursor-pointer"
+            className="relative bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-1 md:p-2 rounded-full hover:bg-hover transition-colors ease-in cursor-pointer"
           >
             <FaSearch size={16} className="text-gray-300 ml-2" />
             <span className="text-neutral-500 italic font-Raleway font-medium">
