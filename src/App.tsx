@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FilterButtonProvider } from "./contexts/FilterButtonContext";
+import { CategoryModalProvider } from "./contexts/CategoryModalContext";
 import { CategoryProvider } from "./contexts/CategoryContext";
 import logo from "/logo.svg";
 
@@ -13,30 +14,32 @@ const App: React.FC = () => {
   return (
     <CategoryProvider>
       <FilterButtonProvider>
-        <Router>
-          <Suspense
-            fallback={
-              <div className="relative bg-transparent min-h-screen flex items-center justify-center">
-                <img
-                  src={logo}
-                  alt="Linkrary Logo"
-                  className="w-12 h-12 absolute"
-                />
-                <img
-                  src={logo}
-                  alt="Linkrary Logo"
-                  className="w-12 h-12 anim"
-                />
-              </div>
-            }
-          >
-            <Routes>
-              <Route path="/Linkrary/" element={<Home />} />
-              <Route path="/Linkrary/collection" element={<Collection />} />
-              <Route path="/Linkrary/about" element={<About />} />
-            </Routes>
-          </Suspense>
-        </Router>
+        <CategoryModalProvider>
+          <Router>
+            <Suspense
+              fallback={
+                <div className="relative bg-transparent min-h-screen flex items-center justify-center">
+                  <img
+                    src={logo}
+                    alt="Linkrary Logo"
+                    className="w-12 h-12 absolute"
+                  />
+                  <img
+                    src={logo}
+                    alt="Linkrary Logo"
+                    className="w-12 h-12 anim"
+                  />
+                </div>
+              }
+            >
+              <Routes>
+                <Route path="/Linkrary/" element={<Home />} />
+                <Route path="/Linkrary/collection" element={<Collection />} />
+                <Route path="/Linkrary/about" element={<About />} />
+              </Routes>
+            </Suspense>
+          </Router>
+        </CategoryModalProvider>
       </FilterButtonProvider>
     </CategoryProvider>
   );

@@ -1,58 +1,59 @@
-import { useRef } from "react";
-import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
+import { useEffect, useRef } from "react";
+import { useCategoryModalContext } from "@/contexts/useCategoryModalContext";
 import { useCategoryContext } from "@/contexts/useCategoryContext";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { PiSlidersHorizontalBold } from "react-icons/pi";
-import {
-  FaVideo,
-  FaGamepad,
-  FaBook,
-  FaHeadphones,
-  FaPaintBrush,
-  FaLaptopCode,
-  FaTools,
-  FaLightbulb,
-  FaUnlockAlt,
-  FaPlay,
-  FaCodeBranch,
-  FaPalette,
-  FaRobot,
-  FaImages,
-} from "react-icons/fa";
-import { RiAppsFill, RiFontSize } from "react-icons/ri";
-import { MdLibraryBooks } from "react-icons/md";
-
-const categories = [
-  { name: "All Apps", icon: <RiAppsFill /> },
-  { name: "AI Tools", icon: <FaRobot /> },
-  { name: "Audio Tools", icon: <FaHeadphones /> },
-  { name: "Video Tools", icon: <FaVideo /> },
-  { name: "Design Tools", icon: <FaPaintBrush /> },
-  { name: "Game Libraries", icon: <FaGamepad /> },
-  { name: "Design Inspiration", icon: <FaPalette /> },
-  { name: "Web Development", icon: <FaLaptopCode /> },
-  { name: "Font Resources", icon: <RiFontSize /> },
-  { name: "SVG Icons", icon: <FaCodeBranch /> },
-  { name: "Web Libraries", icon: <MdLibraryBooks /> },
-  { name: "File Converters", icon: <FaTools /> },
-  { name: "Torrent Resources", icon: <FaUnlockAlt /> },
-  { name: "Useful Websites", icon: <FaLightbulb /> },
-  { name: "Streaming Services", icon: <FaPlay /> },
-  { name: "Cracked Apps", icon: <FaUnlockAlt /> },
-  { name: "PDF Utilities", icon: <FaBook /> },
-  { name: "Stock Images", icon: <FaImages /> },
-];
+import { categories } from "@/data/Categories";
 
 const HorizontalScroll = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const { buttonState, setButtonState } = useFilterButtonContext();
-  const { selectedCategory, setSelectedCategory } = useCategoryContext();
+  const categoryRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const { buttonState, setButtonState } = useCategoryModalContext();
+  const {
+    selectedCategory,
+    setSelectedCategory,
+    categoryToScroll,
+    setCategoryToScroll,
+  } = useCategoryContext();
+
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const scrollAmount = direction === "left" ? -300 : 300;
       scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
+
+  const handleCategoryClick = (name: string) => {
+    setSelectedCategory(name);
+
+    const index = categories.findIndex((category) => category.name === name);
+    if (index !== -1 && categoryRefs.current[index] && scrollRef.current) {
+      const categoryButton = categoryRefs.current[index];
+      const { left, right, width } = categoryButton!.getBoundingClientRect();
+      const { left: containerLeft, right: containerRight } =
+        scrollRef.current.getBoundingClientRect();
+
+      if (left < containerLeft) {
+        scrollRef.current.scrollBy({
+          left: left - containerLeft - width / 2,
+          behavior: "smooth",
+        });
+      } else if (right > containerRight) {
+        scrollRef.current.scrollBy({
+          left: right - containerRight + width / 2,
+          behavior: "smooth",
+        });
+      }
+    }
+  };
+
+  // Scroll to the selected category when categoryToScroll is updated
+  useEffect(() => {
+    if (categoryToScroll) {
+      handleCategoryClick(categoryToScroll);
+      setCategoryToScroll(null); // Reset after scrolling
+    }
+  }, [categoryToScroll, setCategoryToScroll]);
 
   return (
     <div className="sticky top-16 z-10 bg-body border-y-[1px] border-neutral-800">
@@ -79,12 +80,13 @@ const HorizontalScroll = () => {
           {categories.map((category, index) => (
             <button
               key={index}
+              ref={(el) => (categoryRefs.current[index] = el)}
               className={`flex items-center gap-1.5 py-2 px-3 rounded-full transition-colors duration-200 whitespace-nowrap ${
                 selectedCategory === category.name
                   ? "bg-hover text-neutral-300"
                   : "text-neutral-400 hover:bg-hover"
               }`}
-              onClick={() => setSelectedCategory(category.name)}
+              onClick={() => handleCategoryClick(category.name)}
             >
               {category.icon}
               {category.name}

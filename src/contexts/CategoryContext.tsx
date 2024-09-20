@@ -4,16 +4,26 @@ import { createContext, useState, ReactNode } from "react";
 type CategoryContextType = {
   selectedCategory: string;
   setSelectedCategory: React.Dispatch<React.SetStateAction<string>>;
+  categoryToScroll: string | null;
+  setCategoryToScroll: React.Dispatch<React.SetStateAction<string | null>>;
 };
 
-// Initialize the context with the correct type or `null`
+// Initialize the context with the correct type
 export const CategoryContext = createContext<CategoryContextType | null>(null);
 
 export const CategoryProvider = ({ children }: { children: ReactNode }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All Apps");
+  const [categoryToScroll, setCategoryToScroll] = useState<string | null>(null);
 
   return (
-    <CategoryContext.Provider value={{ selectedCategory, setSelectedCategory }}>
+    <CategoryContext.Provider
+      value={{
+        selectedCategory,
+        setSelectedCategory,
+        categoryToScroll,
+        setCategoryToScroll,
+      }}
+    >
       {children}
     </CategoryContext.Provider>
   );

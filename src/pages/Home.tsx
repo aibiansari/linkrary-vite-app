@@ -1,4 +1,5 @@
 import Cards from "@/components/ui/Cards";
+import CategoryModal from "@/components/ui/categoryModal";
 import FilterModal from "@/components/ui/filterModal";
 import Navbar from "@/components/ui/navbar";
 import HorizontalScroll from "@/components/ui/ScrollX";
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col items-center min-h-screen pb-4 mb-1 dark bg-body">
       <FilterModal />
+      <CategoryModal />
       <Navbar page="search" />
       <HorizontalScroll />
       <div className="max-w-screen-2xl mt-16 w-full">
