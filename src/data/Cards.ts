@@ -283,12 +283,7 @@ export const cards = [
     title: "Canva",
     description: "Online all-in-one graphic design and editing tool.",
     link: "https://www.canva.com",
-    categories: [
-      "Design Tools",
-      "Design Inspiration",
-      "Web Development",
-      "Useful Websites",
-    ],
+    categories: ["Design Tools", "Design Inspiration", "Useful Websites"],
     tags: [
       "graphic design",
       "canva",
@@ -363,7 +358,7 @@ export const cards = [
     title: "OpenArt",
     description: "Explore and create AI-generated art.",
     link: "https://openart.ai",
-    categories: ["AI Tools", "Design Tools", "Design Inspiration"],
+    categories: ["AI Tools", "Useful Websites"],
     tags: [
       "ai art creation",
       "design inspiration",
@@ -611,7 +606,7 @@ export const cards = [
     title: "Let's Enhance",
     description: "AI-powered image enhancement tool.",
     link: "https://letsenhance.io",
-    categories: ["AI Tools", "Design Tools"],
+    categories: ["AI Tools", "Useful Websites"],
     tags: [
       "AI",
       "image enhancement",
@@ -625,7 +620,7 @@ export const cards = [
     title: "Waifu2x",
     description: "AI-powered image upscaling and noise reduction.",
     link: "https://waifu2x.booru.pics",
-    categories: ["AI Tools", "Design Tools"],
+    categories: ["AI Tools", "Useful Websites"],
     tags: [
       "AI",
       "image upscaling",
@@ -639,7 +634,7 @@ export const cards = [
     title: "WaifuXL",
     description: "Advanced AI tool for image upscaling.",
     link: "https://waifuxl.com",
-    categories: ["AI Tools", "Design Tools"],
+    categories: ["AI Tools", "Useful Websites"],
     tags: [
       "AI",
       "image upscaling",
@@ -667,7 +662,7 @@ export const cards = [
     title: "Typeform",
     description: "Create interactive forms, surveys, and quizzes.",
     link: "https://www.typeform.com",
-    categories: ["Web Development", "Useful Websites"],
+    categories: ["Useful Websites"],
     tags: [
       "forms",
       "surveys",
@@ -964,7 +959,7 @@ export const cards = [
     title: "Mesh Gradients",
     description: "Beautiful mesh gradient backgrounds for your designs.",
     link: "https://products.ls.graphics/mesh-gradients/",
-    categories: ["Design Tools", "Web Development"],
+    categories: ["Design Tools", "Design Inspiration"],
     tags: [
       "mesh gradients",
       "background designs",
@@ -1034,12 +1029,7 @@ export const cards = [
     title: "Looka",
     description: "AI-powered logo design and branding platform.",
     link: "https://looka.com",
-    categories: [
-      "Design Tools",
-      "AI Tools",
-      "Design Inspiration",
-      "Web Development",
-    ],
+    categories: ["AI Tools", "Design Inspiration", "Web Development"],
     tags: [
       "AI logo design",
       "branding tools",
@@ -1813,7 +1803,7 @@ export const cards = [
     title: "Readme.so",
     description: "Create beautiful README files for your projects.",
     link: "https://readme.so/editor",
-    categories: ["Web Development", "Useful Websites"],
+    categories: ["Useful Websites"],
     tags: [
       "README generator",
       "project documentation",
@@ -1828,7 +1818,7 @@ export const cards = [
     description:
       "A simple web-based tool to generate and manage your personal README files.",
     link: "https://gprm.itsvg.in",
-    categories: ["Web Development", "Useful Websites"],
+    categories: ["Useful Websites"],
     tags: [
       "README management",
       "personal README",
@@ -1941,7 +1931,7 @@ export const cards = [
     title: "I am Sajid",
     description: "Design and development resources by Sajid.",
     link: "https://www.iamsajid.com",
-    categories: ["Design Inspiration", "Web Development"],
+    categories: ["Design Inspiration"],
     tags: [
       "design resources",
       "development tools",

@@ -127,12 +127,17 @@ const CategoryModal = () => {
                     <motion.li
                       key={index}
                       onClick={() => handleClick(category.name)}
-                      className="p-2 flex items-center gap-3 hover:bg-neutral-800 rounded-lg cursor-pointer transition-all duration-300"
+                      className="p-2 flex items-center justify-between  hover:bg-neutral-800 rounded-lg cursor-pointer transition-all duration-300"
                       variants={cardVariants}
                       transition={{ duration: 0.3, ease: "easeIn" }}
                     >
-                      {category.icon}
-                      {category.name}
+                      <div className="flex items-center gap-3">
+                        {category.icon}
+                        {category.name}
+                      </div>
+                      <div className=" font-sans text-sm text-neutral-400">
+                        {category.count}
+                      </div>
                     </motion.li>
                   ))}
                 </motion.ul>
