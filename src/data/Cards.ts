@@ -1,5 +1,6 @@
 import ChatGPT from "/icons/ChatGPT.webp";
 import FMHY from "/icons/FMHY.webp";
+import Toolur from "/icons/Toolur.webp";
 import TinyWow from "/icons/TinyWow.webp";
 import SadeemPC from "/icons/SadeemPC.webp";
 import YTS from "/icons/YTS.webp";
@@ -108,6 +109,7 @@ import CSSLoaders from "/icons/CSSLoaders.webp";
 import UIBall from "/icons/UIBall.webp";
 import Devicon from "/icons/Devicon.webp";
 import SVGRepo from "/icons/SVGRepo.webp";
+import BootstrapIcons from "/icons/BootstrapIcons.webp";
 import Namify from "/icons/Namify.webp";
 import Rawpixel from "/icons/Rawpixel.webp";
 import StickPNG from "/icons/StickPNG.webp";
@@ -182,6 +184,49 @@ export const cards = [
       "all apps",
       "collection",
       "cracked apps",
+    ],
+  },
+  {
+    image: Toolur,
+    title: "Toolur",
+    description:
+      "Free online audio, video and document tools for developers and designers.",
+    link: "https://toolur.com",
+    categories: [
+      "Web Development",
+      "Audio Tools",
+      "Video Tools",
+      "PDF Utilities",
+      "File Converters",
+      "Useful Websites",
+    ],
+    tags: [
+      "online tools",
+      "file converters",
+      "image optimization",
+      "developer tools",
+      "design tools",
+      "PDF utilities",
+    ],
+  },
+  {
+    image: Apps123,
+    title: "123Apps",
+    description:
+      "Online multimedia tools including video, audio, and PDF editors.",
+    link: "https://123apps.com",
+    categories: [
+      "Audio Tools",
+      "Video Tools",
+      "PDF Utilities",
+      "Useful Websites",
+    ],
+    tags: [
+      "multimedia tools",
+      "audio editing",
+      "video editing",
+      "PDF editing",
+      "online applications",
     ],
   },
   {
@@ -356,7 +401,7 @@ export const cards = [
   {
     image: OpenArt,
     title: "OpenArt",
-    description: "Explore and create AI-generated art.",
+    description: "Create and Manipulate AI-generated art.",
     link: "https://openart.ai",
     categories: ["AI Tools", "Useful Websites"],
     tags: [
@@ -488,7 +533,7 @@ export const cards = [
   {
     image: PirateBay,
     title: "The Pirate Bay",
-    description: "The world's most resilient BitTorrent site.",
+    description: "The world's most resilient BitTorrent website.",
     link: "https://thepiratebay.org",
     categories: ["Torrent Resources"],
     tags: [
@@ -518,7 +563,7 @@ export const cards = [
   {
     image: Seedr,
     title: "Seedr",
-    description: "Cloud-based torrent downloader and streamer.",
+    description: "Cloud-based torrent downloading and streaming service.",
     link: "https://www.seedr.cc",
     categories: ["Torrent Resources", "Useful Websites"],
     tags: [
@@ -604,7 +649,7 @@ export const cards = [
   {
     image: LetsEnhance,
     title: "Let's Enhance",
-    description: "AI-powered image enhancement tool.",
+    description: "AI-powered image enhancement and upscaling tool.",
     link: "https://letsenhance.io",
     categories: ["AI Tools", "Useful Websites"],
     tags: [
@@ -729,26 +774,6 @@ export const cards = [
     ],
   },
   {
-    image: Apps123,
-    title: "123Apps",
-    description:
-      "Online multimedia tools including video, audio, and PDF editors.",
-    link: "https://123apps.com",
-    categories: [
-      "Audio Tools",
-      "Video Tools",
-      "PDF Utilities",
-      "Useful Websites",
-    ],
-    tags: [
-      "multimedia tools",
-      "audio editing",
-      "video editing",
-      "PDF editing",
-      "online applications",
-    ],
-  },
-  {
     image: AudioAlter,
     title: "AudioAlter",
     description:
@@ -801,7 +826,7 @@ export const cards = [
   },
   {
     image: DirtyLineStudio,
-    title: "Dirty Line Studio Freebies",
+    title: "Dirty Line Studio",
     description: "Free design assets and resources for creatives.",
     link: "https://dirtylinestudio.com/freebies/",
     categories: ["Design Tools", "Design Inspiration", "Font Resources"],
@@ -1184,7 +1209,7 @@ export const cards = [
   {
     image: HuggingF,
     title: "FLUX.1 Schnell",
-    description: "AI-based image generation via Hugging Face Spaces.",
+    description: "Free AI image generation tool with many options.",
     link: "https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell",
     categories: ["AI Tools", "Design Tools"],
     tags: [
@@ -1198,8 +1223,8 @@ export const cards = [
   },
   {
     image: ScenePkg,
-    title: "WeTranslate Scene Package",
-    description: "Downloadable scene packages for design projects.",
+    title: "Wallpaper Engine Scene Unpacker",
+    description: "Website to unpack wallpaper engine's scenes for free.",
     link: "https://wetranslate.thiscould.work/scene.pkg/",
     categories: ["Useful Websites"],
     tags: [
@@ -1284,7 +1309,7 @@ export const cards = [
   {
     image: Github,
     title: "SundownDev Gist",
-    description: "A collection of useful cybersecurity tools and resources.",
+    description: "A huge list of Google dorks.",
     link: "https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06",
     categories: ["Useful Websites, Web Libraries"],
     tags: [
@@ -1603,7 +1628,7 @@ export const cards = [
   },
   {
     image: TailwindCSSColors,
-    title: "Tailwind CSS Customizing Colors",
+    title: "Tailwind CSS Colors",
     description: "Documentation for customizing colors in Tailwind CSS.",
     link: "https://tailwindcss.com/docs/customizing-colors",
     categories: ["Web Development", "Design Inspiration", "Web Libraries"],
@@ -1697,6 +1722,20 @@ export const cards = [
       "SVG resources",
       "design assets",
       "icon repository",
+    ],
+  },
+  {
+    image: BootstrapIcons,
+    title: "Bootstrap Icons",
+    description: "Open source SVG icons for Bootstrap and beyond.",
+    link: "https://icons.getbootstrap.com",
+    categories: ["Web Development", "SVG Icons", "Design Inspiration"],
+    tags: [
+      "SVG icons",
+      "Bootstrap",
+      "icon library",
+      "open-source icons",
+      "web design assets",
     ],
   },
   {
