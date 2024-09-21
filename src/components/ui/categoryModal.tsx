@@ -1,6 +1,5 @@
 import { useCategoryModalContext } from "@/contexts/useCategoryModalContext";
 import { useCategoryContext } from "@/contexts/useCategoryContext";
-import { IoSearch } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
 import { categories } from "@/data/Categories";
 import React from "react";
@@ -86,7 +85,7 @@ const CategoryModal = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={handleClose}
-          className="bg-black/50 fixed font-Raleway inset-0 z-50 grid place-items-center"
+          className="bg-black/50 fixed inset-0 z-50 grid place-items-center"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
@@ -97,17 +96,27 @@ const CategoryModal = () => {
           >
             <div className="relative z-10 max-h-[90vh] md:max-h-[70vh]">
               <h3 className="text-center pb-2 mx-4 mt-2 mb-3 border-b-hover border-b-2 flex items-baseline justify-between">
-                <IoSearch
-                  size="1.25em"
-                  className="translate-y-1 text-neutral-500"
-                />
+                <svg
+                  className="w-5 h-5 translate-y-1 text-black dark:text-neutral-500"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                  />
+                </svg>
                 <input
                   type="text"
                   placeholder="Search Categories"
                   value={search}
                   ref={inputRef}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="w-full p-1.5 pl-4 placeholder:italic text-neutral-200 bg-body border border-none rounded-lg focus:outline-none focus:border-neutral-600"
+                  className="w-full font-Raleway p-1.5 pl-4 placeholder:italic text-neutral-200 bg-body border border-none rounded-lg focus:outline-none focus:border-neutral-600"
                 />
               </h3>
 
@@ -135,7 +144,7 @@ const CategoryModal = () => {
                         {category.icon}
                         {category.name}
                       </div>
-                      <div className=" font-sans text-sm text-neutral-400">
+                      <div className="text-sm text-neutral-400">
                         {category.count}
                       </div>
                     </motion.li>

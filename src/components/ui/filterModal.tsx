@@ -1,7 +1,5 @@
 import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
-import { IoSearch } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
-import { FaArrowRight } from "react-icons/fa6";
 import { cards } from "@/data/Cards";
 import React from "react";
 
@@ -91,10 +89,18 @@ const FilterModal = () => {
           >
             <div className="relative z-10 max-h-[90vh] md:max-h-[70vh]">
               <h3 className="text-center pb-2 mx-4 mt-2 mb-6 border-b-hover border-b-2 flex items-baseline justify-between">
-                <IoSearch
-                  size="1.25em"
-                  className="translate-y-1 text-neutral-500"
-                />
+                <svg
+                  className="w-5 h-5 translate-y-1 text-black dark:text-neutral-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                  />
+                </svg>
                 <input
                   type="text"
                   placeholder="Search on Linkrary"
@@ -149,10 +155,13 @@ const FilterModal = () => {
                           {card.description}
                         </p>
                       </div>
-                      <FaArrowRight
-                        size="1.25em"
-                        className="absolute right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white"
-                      />
+                      <svg
+                        className="w-6 h-6 absolute right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white"
+                        viewBox="0 -960 960 960"
+                        fill="currentColor"
+                      >
+                        <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+                      </svg>
                     </motion.a>
                   ))}
                 </motion.ul>

@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
-import { FiMenu } from "react-icons/fi";
-import { FaCircleHalfStroke } from "react-icons/fa6";
-import { CiBookmark, CiCircleInfo } from "react-icons/ci";
-import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const wrapperVariants = {
@@ -48,9 +44,34 @@ const itemVariants = {
 };
 
 const dropdownItems = [
-  { icon: <FaCircleHalfStroke size={20} />, label: "System" },
-  { icon: <MdOutlineLightMode size={20} />, label: "Light" },
-  { icon: <MdOutlineDarkMode size={20} />, label: "Dark" },
+  {
+    icon: (
+      <svg fill="currentColor" className="w-5 h-5" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16" />
+      </svg>
+    ),
+    label: "System",
+  },
+  {
+    icon: (
+      <svg
+        fill="currentColor"
+        className="w-5 h-5  text-white "
+        viewBox="0 0 16 16"
+      >
+        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+      </svg>
+    ),
+    label: "Light",
+  },
+  {
+    icon: (
+      <svg fill="currentColor" className="w-5 h-5" viewBox="0 0 16 16">
+        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+      </svg>
+    ),
+    label: "Dark",
+  },
 ];
 
 const DropDown = () => {
@@ -75,12 +96,17 @@ const DropDown = () => {
 
   return (
     <motion.div ref={dropdownRef} className="relative">
-      <FiMenu
-        size="1.8em"
-        className="cursor-pointer"
+      <svg
+        fill="currentColor"
+        className="w-8 h-8 cursor-pointer"
         onClick={() => setOpen((pv) => !pv)}
-      />
-
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+        />
+      </svg>
       <motion.ul
         initial="closed"
         animate={open ? "open" : "closed"}
@@ -93,7 +119,13 @@ const DropDown = () => {
           className="w-full flex items-center gap-2 p-1.5 text-sm font-semibold rounded-md hover:bg-neutral-800 transition-colors  cursor-pointer"
           to="/Linkrary/collection"
         >
-          <CiBookmark size="1.2em" className="-translate-y-[1px]" />
+          <svg
+            fill="currentColor"
+            className="w-3.5 h-3.5 -translate-y-[1px]"
+            viewBox="0 0 16 16"
+          >
+            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+          </svg>
           Collection
         </Link>
 
@@ -102,7 +134,14 @@ const DropDown = () => {
           className="w-full flex items-center gap-2 p-1.5 text-sm rounded-md hover:bg-neutral-800 transition-colors duration-300 cursor-pointer"
           to="/Linkrary/about"
         >
-          <CiCircleInfo size="1.2em" className="-translate-y-[1px]" />
+          <svg
+            fill="currentColor"
+            className="w-3.5 h-3.5 -translate-y-[1px]"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+          </svg>
           About
         </Link>
 
@@ -123,7 +162,7 @@ const DropDown = () => {
             <motion.li
               key={index}
               onClick={() => setOpen(false)}
-              className="flex py-1 text-[10px] cursor-pointer flex-col w-12 ring-1 ring-neutral-900 hover:bg-element rounded-md items-center justify-center space-y-1 transition-colors duration-300 ease-out"
+              className="flex py-1 text-[10px] cursor-pointer flex-col w-12 ring-1 ring-neutral-900 hover:bg-element rounded-md items-center justify-center space-y-1.5 transition-colors duration-300 ease-out"
               variants={itemVariants}
             >
               {item.icon}

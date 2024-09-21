@@ -1,5 +1,3 @@
-import { FaGithub, FaSearch } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
 import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
 import { Link } from "react-router-dom";
 import Dropdown from "./dropdown";
@@ -35,7 +33,20 @@ const Navbar = ({ page = "search" }: PageProps) => {
             onClick={() => setButtonState(!buttonState)}
             className="relative bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-1 md:p-2 rounded-full hover:bg-hover transition-colors ease-in cursor-pointer"
           >
-            <FaSearch size={16} className="text-gray-300 ml-2" />
+            <svg
+              className="w-5 h-5 text-black dark:text-gray-300 ml-2"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+              />
+            </svg>
             <span className="text-neutral-500 italic font-Raleway font-medium">
               Search on Linkrary...
             </span>
@@ -68,14 +79,26 @@ const Navbar = ({ page = "search" }: PageProps) => {
           href="https://github.com/aibiansari/Linkrary"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex items-center space-x-1.5 hover:text-neutral-300 transition-colors duration-300 ease-in-out group"
+          className="hidden md:flex items-center hover:text-neutral-300 transition-colors duration-300 ease-in-out group"
         >
-          <FaGithub size={20} />
+          <svg
+            fill="currentColor"
+            className="w-5 h-5 text-white mr-1.5"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+          </svg>
           <span>GitHub Repo</span>
-          <FaArrowRight
-            size={16}
-            className="transition-transform duration-200 ease-linear group-hover:-rotate-45"
-          />
+          <svg
+            fill="currentColor"
+            className="w-8 h-8 translate-y-[1px] transition-transform duration-300 ease-linear group-hover:-rotate-45"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+            />
+          </svg>
         </a>
         <Dropdown />
       </div>
