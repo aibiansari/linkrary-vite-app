@@ -3,20 +3,20 @@ import aibi from "/aibi.webp";
 
 const About = () => {
   return (
-    <div className="bg-body min-h-screen">
+    <div className="bg-white dark:bg-body min-h-screen pt-20">
       <Navbar page="about" />
-      <p className="text-lg text-center md:text-justify text-gray-700 mt-2 mb-8">
+      <p className="text-lg text-center md:text-justify text-gray-700 dark:text-gray-300 mx-8 mt-2 mb-8">
         Linkrary is your creative AI-powered image generation tool. With just a
         few words, you can bring your ideas to life and create stunning visuals
         in seconds. Whether it's art, design, or inspiration, Linkrary makes it
         quick and easy to generate images tailored to your imagination.
       </p>
 
-      <section className="bg-white p-6 md:p-8 rounded-lg shadow-inner w-full">
+      <section className="bg-white dark:bg-body p-6 md:p-8 rounded-lg shadow-inner w-full">
         <h2 className="text-xl md:text-2  xl font-semibold mb-4 text-purple-600">
           How to Use Linkrary
         </h2>
-        <ul className="text-left text-gray-700 space-y-4">
+        <ul className="text-left text-gray-700 dark:text-gray-300 space-y-4">
           <li>
             <strong>1. Enter a Prompt:</strong> In the text area provided, type
             a creative prompt that describes the image you want to generate. Be
@@ -45,7 +45,7 @@ const About = () => {
         </ul>
       </section>
 
-      <section className="w-full max-w-xl mx-auto p-6 mt-4 bg-white rounded-lg shadow-inner">
+      <section className="w-full max-w-xl mx-auto p-6 mt-4 bg-white dark:bg-body rounded-lg shadow-inner">
         <div className="flex flex-col md:flex-row items-center gap-4">
           <img
             src={aibi}
@@ -104,7 +104,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="hidden md:flex w-full justify-end my-4 font-Atkinson">
+      <section className="hidden md:flex w-full text-black dark:text-white justify-center my-4 font-Atkinson">
         &copy; {new Date().getFullYear()} Linkrary. All rights reserved.
       </section>
     </div>

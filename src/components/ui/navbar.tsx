@@ -12,13 +12,19 @@ const Navbar = ({ page = "search" }: PageProps) => {
 
   return (
     <nav
-      className={`bg-body fixed h-16 w-screen z-20 max-w-screen-2xl text-white px-4 md:px-8 flex flex-wrap items-center justify-between ${
-        page === "about" ? "border-b-[1px] border-neutral-800" : ""
+      className={`bg-white dark:bg-body fixed top-0 h-16 w-screen z-20 max-w-screen-2xl text-black dark:text-white px-4 md:px-8 flex flex-wrap items-center justify-between transition-colors duration-500 ${
+        page === "about"
+          ? "border-b-[1px] border-neutral-400 dark:border-neutral-800"
+          : ""
       }`}
     >
       <div className="flex-shrink-0 w-12 md:w-52 flex items-center mb-2 md:mb-0">
         <Link to="/Linkrary/" className="flex items-center gap-2">
-          <img src={logo} alt="Linkrary Logo" className="w-6 h-6" />
+          <img
+            src={logo}
+            alt="Linkrary Logo"
+            className="w-6 h-6 invert dark:invert-0 transition-all duration-500"
+          />
 
           <span className="hidden md:block text-2xl font-Raleway font-bold">
             Linkrary
@@ -31,10 +37,10 @@ const Navbar = ({ page = "search" }: PageProps) => {
           // Search section
           <div
             onClick={() => setButtonState(!buttonState)}
-            className="relative bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-1 md:p-2 rounded-full hover:bg-hover transition-colors ease-in cursor-pointer"
+            className="relative bg-stone-200 dark:bg-element flex items-center justify-start gap-4 w-56 md:w-72 xl:w-96 p-1 md:p-2 rounded-full hover:bg-neutral-300 dark:hover:bg-hover transition-colors duration-300 ease-in cursor-pointer"
           >
             <svg
-              className="w-5 h-5 text-black dark:text-gray-300 ml-2"
+              className="w-5 h-5 text-black dark:text-gray-300 ml-2 transition-colors duration-300"
               width="24"
               height="24"
               fill="none"
@@ -47,12 +53,16 @@ const Navbar = ({ page = "search" }: PageProps) => {
                 d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
               />
             </svg>
-            <span className="text-neutral-500 italic font-Raleway font-medium">
+            <span className="text-black dark:text-neutral-500 italic font-Raleway font-medium transition-colors duration-300">
               Search on Linkrary...
             </span>
             <div className="absolute hidden lg:flex right-4 items-center gap-1.5 text-neutral-500 text-sm">
-              <kbd className="ring-neutral-600 ring-1 px-1 rounded">Ctrl</kbd>
-              <kbd className="ring-neutral-600 ring-1 px-1 rounded">K</kbd>
+              <kbd className="ring-neutral-400 dark:ring-neutral-600 ring-1 px-1 rounded transition-colors duration-300">
+                Ctrl
+              </kbd>
+              <kbd className="ring-neutral-400 dark:ring-neutral-600 ring-1 px-1 rounded transition-colors duration-300">
+                K
+              </kbd>
             </div>
           </div>
         ) : page === "about" ? (
@@ -60,13 +70,13 @@ const Navbar = ({ page = "search" }: PageProps) => {
           <div className="flex items-center gap-10">
             <Link
               to="/Linkrary"
-              className="hover:text-neutral-300 hover:-translate-y-0.5 transition-transform duration-300 font-Raleway font-semibold text-lg"
+              className="hover:text-black dark:hover:text-neutral-300 text-neutral-800 dark:text-white hover:-translate-y-0.5 transition-all duration-300 font-Raleway font-semibold text-lg"
             >
               Discover
             </Link>
             <Link
               to="/Linkrary/collection"
-              className="hover:text-neutral-300 hover:-translate-y-0.5 transition-transform duration-300 font-Raleway font-semibold text-lg"
+              className="hover:text-black dark:hover:text-neutral-300 text-neutral-800 dark:text-white hover:-translate-y-0.5 transition-all duration-300 font-Raleway font-semibold text-lg"
             >
               Collection
             </Link>
@@ -79,11 +89,11 @@ const Navbar = ({ page = "search" }: PageProps) => {
           href="https://github.com/aibiansari/Linkrary"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex items-center hover:text-neutral-300 transition-colors duration-300 ease-in-out group"
+          className="hidden md:flex items-center text-black dark:text-white dark:hover:text-neutral-300 transition-colors duration-300 ease-in-out group"
         >
           <svg
             fill="currentColor"
-            className="w-5 h-5 text-white mr-1.5"
+            className="w-5 h-5 text-black dark:text-white mr-1.5 transition-colors duration-300"
             viewBox="0 0 16 16"
           >
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />

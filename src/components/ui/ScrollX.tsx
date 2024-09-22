@@ -23,6 +23,7 @@ const HorizontalScroll = () => {
 
   const handleCategoryClick = (name: string) => {
     setSelectedCategory(name);
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
     const index = categories.findIndex((category) => category.name === name);
     if (index !== -1 && categoryRefs.current[index] && scrollRef.current) {
@@ -55,17 +56,17 @@ const HorizontalScroll = () => {
   }, [categoryToScroll, setCategoryToScroll]);
 
   return (
-    <div className="sticky top-16 z-10 bg-body border-y-[1px] border-neutral-800">
+    <div className="sticky top-16 z-10 bg-white dark:bg-body border-y-[1px] border-neutral-300 dark:border-neutral-800 transition-colors duration-500">
       <div className="relative flex items-center w-[96vw] md:w-[98vw] lg:w-[99vw] max-w-screen-2xl py-1.5 md:py-0 md:px-4">
         <button
           onClick={() => setButtonState(!buttonState)}
-          className="hidden md:flex py-2 px-3 items-center justify-center gap-2 font-Raleway bg-element hover:bg-hover transition-colors duration-200 rounded-full text-neutral-200 font-semibold"
+          className="hidden md:flex py-2 px-3 items-center justify-center gap-2 font-Raleway bg-neutral-200 dark:bg-element hover:bg-neutral-300 dark:hover:bg-hover transition-colors duration-300 rounded-full text-neutral-900 dark:text-neutral-200 font-semibold"
         >
           <svg
             width="16"
             height="16"
             fill="currentColor"
-            className="text-neutral-200 -translate-y-[1px]"
+            className="text-neutral-800 dark:text-neutral-200 -translate-y-[1px] transition-colors duration-300"
             viewBox="0 0 16 16"
           >
             <path
@@ -75,7 +76,7 @@ const HorizontalScroll = () => {
           </svg>
           Filters
         </button>
-        <div className="hidden md:block h-9 w-[1.4px] shrink-0 bg-element ml-5 mr-1"></div>
+        <div className="hidden md:block h-9 w-[1.4px] shrink-0 bg-neutral-300 dark:bg-element ml-5 mr-1"></div>
         <button
           onClick={() => scroll("left")}
           className="hidden md:block p-2"
@@ -83,7 +84,7 @@ const HorizontalScroll = () => {
         >
           <svg
             fill="currentColor"
-            className="w-10 h-10 p-1.5 text-white hover:bg-element transition-all duration-200 rounded-full"
+            className="w-10 h-10 p-1.5 text-black dark:text-white hover:bg-neutral-300 dark:hover:bg-element transition-all duration-200 rounded-full"
             viewBox="0 0 16 16"
           >
             <path
@@ -101,10 +102,10 @@ const HorizontalScroll = () => {
             <button
               key={index}
               ref={(el) => (categoryRefs.current[index] = el)}
-              className={`flex items-center gap-1.5 py-2 px-3 rounded-full transition-colors duration-200 whitespace-nowrap ${
+              className={`flex items-center gap-1.5 py-2 px-3 rounded-full transition-colors duration-300 whitespace-nowrap ${
                 selectedCategory === category.name
-                  ? "bg-hover text-neutral-300"
-                  : "text-neutral-400 hover:bg-hover"
+                  ? "bg-neutral-300 dark:bg-hover text-black dark:text-neutral-300"
+                  : "text-neutral-800 dark:text-neutral-400 hover:bg-neutral-300 dark:hover:bg-hover"
               }`}
               onClick={() => handleCategoryClick(category.name)}
             >
@@ -120,7 +121,7 @@ const HorizontalScroll = () => {
         >
           <svg
             fill="currentColor"
-            className="w-10 h-10 p-1.5 text-white hover:bg-element transition-all duration-200 rounded-full"
+            className="w-10 h-10 p-1.5 text-black dark:text-white hover:bg-neutral-300 dark:hover:bg-element transition-all duration-200 rounded-full"
             viewBox="0 0 16 16"
           >
             <path

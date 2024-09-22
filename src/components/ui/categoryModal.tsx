@@ -76,17 +76,17 @@ const CategoryModal = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={handleClose}
-          className="bg-black/50 fixed inset-0 z-50 grid place-items-center"
+          className="dark:bg-black/50 bg-black/20 fixed inset-0 z-50 grid place-items-center"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "0deg" }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-body text-white p-6 rounded-3xl w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
+            className="dark:bg-body bg-white text-black dark:text-white p-6 rounded-3xl w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
           >
             <div className="relative z-10 max-h-[90vh] md:max-h-[70vh]">
-              <h3 className="text-center pb-2 mx-4 mt-2 mb-3 border-b-hover border-b-2 flex items-baseline justify-between">
+              <h3 className="text-center pb-2 mx-4 mt-2 mb-3 border-b-neutral-200 dark:border-b-hover border-b-2 flex items-baseline justify-between">
                 <svg
                   className="w-5 h-5 translate-y-1 text-black dark:text-neutral-500"
                   width="24"
@@ -107,7 +107,7 @@ const CategoryModal = () => {
                   value={search}
                   ref={inputRef}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="w-full font-Raleway p-1.5 pl-4 placeholder:italic text-neutral-200 bg-body border border-none rounded-lg focus:outline-none focus:border-neutral-600"
+                  className="w-full font-Raleway p-1.5 pl-4 placeholder:italic text-black dark:text-neutral-200 bg-white dark:bg-body border border-none rounded-lg focus:outline-none"
                 />
               </h3>
 
@@ -127,7 +127,7 @@ const CategoryModal = () => {
                     <motion.li
                       key={index}
                       onClick={() => handleClick(category.name)}
-                      className="p-2 flex items-center justify-between  hover:bg-neutral-800 rounded-lg cursor-pointer transition-all duration-300"
+                      className="p-2 flex items-center justify-between hover:bg-stone-200 dark:hover:bg-neutral-800 rounded-lg cursor-pointer transition-all duration-300"
                       variants={cardVariants}
                       transition={{ duration: 0.3, ease: "easeIn" }}
                     >
@@ -143,7 +143,7 @@ const CategoryModal = () => {
                 </motion.ul>
               )}
             </div>
-            <div className="hidden md:block absolute bg-body h-6 w-full bottom-0 left-0 z-50"></div>
+            <div className="hidden md:block absolute bg-white dark:bg-body h-6 w-full bottom-0 left-0 z-50"></div>
             <div
               onClick={handleClose}
               className="block text-center font-bold p-2 md:hidden absolute bg-neutral-900 hover:bg-neutral-800 transition-colors duration-300 cursor-pointer h-10 w-full bottom-0 left-0 z-50"

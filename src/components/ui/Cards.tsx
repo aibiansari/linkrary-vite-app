@@ -16,7 +16,7 @@ const Cards = () => {
           href={card.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 hover:bg-hover hover:-translate-y-1 hover:shadow-lg hover:shadow-black/40 shadow-black/50 transition-all duration-300"
+          className="bg-stone-100 dark:bg-element rounded-lg shadow-md p-4 flex items-center space-x-4 dark:hover:bg-hover hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-black/40 hover:shadow-black/20 shadow-black/30 dark:shadow-black/50 transition-all duration-300"
         >
           <img
             src={card.image}
@@ -25,10 +25,12 @@ const Cards = () => {
             className="h-16 w-16 rounded-lg object-cover"
           />
           <div className="overflow-hidden -translate-y-0.5">
-            <h1 className="text-xl text-white font-semibold">{card.title}</h1>
+            <h1 className="text-xl text-hover dark:text-white font-semibold transition-colors duration-500">
+              {card.title}
+            </h1>
             <p
               title={card.description}
-              className="text-sm text-neutral-400 line-clamp-2"
+              className="text-sm text-neutral-500 dark:text-neutral-400 line-clamp-2"
             >
               {card.description}
             </p>

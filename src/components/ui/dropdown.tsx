@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
+import { useThemeContext } from "@/contexts/useThemeContext";
 import { Link } from "react-router-dom";
 
 const wrapperVariants = {
@@ -51,18 +52,16 @@ const dropdownItems = [
       </svg>
     ),
     label: "System",
+    theme: "system",
   },
   {
     icon: (
-      <svg
-        fill="currentColor"
-        className="w-5 h-5  text-white "
-        viewBox="0 0 16 16"
-      >
+      <svg fill="currentColor" className="w-5 h-5" viewBox="0 0 16 16">
         <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
       </svg>
     ),
     label: "Light",
+    theme: "light",
   },
   {
     icon: (
@@ -71,11 +70,13 @@ const dropdownItems = [
       </svg>
     ),
     label: "Dark",
+    theme: "dark",
   },
 ];
 
 const DropDown = () => {
   const [open, setOpen] = useState(false);
+  const { theme, setTheme } = useThemeContext();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -98,7 +99,7 @@ const DropDown = () => {
     <motion.div ref={dropdownRef} className="relative">
       <svg
         fill="currentColor"
-        className="w-8 h-8 cursor-pointer"
+        className="w-8 h-8 text-black dark:text-white cursor-pointer transition-colors duration-500"
         onClick={() => setOpen((pv) => !pv)}
         viewBox="0 0 16 16"
       >
@@ -112,11 +113,11 @@ const DropDown = () => {
         animate={open ? "open" : "closed"}
         variants={wrapperVariants}
         style={{ originY: "top", translateX: "-50%" }}
-        className="flex flex-col p-1 rounded-md bg-neutral-950 border border-neutral-800 text-white font-Raleway shadow-xl shadow-black/30 absolute top-[120%] left-[-220%] w-48 overflow-hidden"
+        className="flex flex-col p-1 rounded-md bg-white dark:bg-neutral-950 border border-neutral-400 dark:border-neutral-800 text-black dark:text-white font-Raleway shadow-xl shadow-black/10 dark:shadow-black/30 absolute top-[120%] left-[-220%] w-48 overflow-hidden transition-colors duration-500"
       >
         <Link
           onClick={() => setOpen(false)}
-          className="w-full flex items-center gap-2 p-1.5 text-sm font-semibold rounded-md hover:bg-neutral-800 transition-colors  cursor-pointer"
+          className="w-full flex items-center gap-2 p-1.5 text-sm font-semibold rounded-md hover:bg-neutral-400 dark:hover:bg-neutral-800 transition-colors duration-100 cursor-pointer"
           to="/Linkrary/collection"
         >
           <svg
@@ -131,7 +132,7 @@ const DropDown = () => {
 
         <Link
           onClick={() => setOpen(false)}
-          className="w-full flex items-center gap-2 p-1.5 text-sm rounded-md hover:bg-neutral-800 transition-colors duration-300 cursor-pointer"
+          className="w-full flex items-center gap-2 p-1.5 text-sm rounded-md hover:bg-neutral-400 dark:hover:bg-neutral-800 transition-colors duration-100 cursor-pointer"
           to="/Linkrary/about"
         >
           <svg
@@ -145,7 +146,7 @@ const DropDown = () => {
           About
         </Link>
 
-        <hr className="border-t my-1 border-neutral-800" />
+        <hr className="border-t my-1 border-neutral-400 dark:border-neutral-800" />
 
         <motion.div
           variants={itemVariants}
@@ -161,8 +162,12 @@ const DropDown = () => {
           {dropdownItems.map((item, index) => (
             <motion.li
               key={index}
-              onClick={() => setOpen(false)}
-              className="flex py-1 text-[10px] cursor-pointer flex-col w-12 ring-1 ring-neutral-900 hover:bg-element rounded-md items-center justify-center space-y-1.5 transition-colors duration-300 ease-out"
+              onClick={() => setTheme(item.theme)}
+              className={`flex py-1 text-[10px] font-medium cursor-pointer flex-col w-12 ring-1 ring-neutral-400 dark:ring-neutral-900 rounded-md items-center justify-center space-y-1.5 transition-colors duration-500 ease-out ${
+                theme === item.theme
+                  ? "bg-neutral-400 dark:bg-neutral-700"
+                  : "hover:bg-neutral-300 dark:hover:bg-element"
+              }`}
               variants={itemVariants}
             >
               {item.icon}
