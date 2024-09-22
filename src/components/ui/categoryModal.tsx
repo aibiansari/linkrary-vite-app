@@ -39,15 +39,6 @@ const CategoryModal = () => {
 
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Ctrl + K key press
-      if (e.ctrlKey && e.key === "k") {
-        e.preventDefault();
-        setButtonState(true);
-        if (inputRef.current) {
-          inputRef.current.focus();
-        }
-      }
-
       // Escape key press
       if (e.key === "Escape") {
         handleClose();

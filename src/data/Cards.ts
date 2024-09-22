@@ -23,7 +23,6 @@ import PirateBay from "/icons/PirateBay.webp";
 import Archive from "/icons/Archive.webp";
 import Seedr from "/icons/Seedr.webp";
 import GPT4O from "/icons/GPT4O.webp";
-import PiecesApp from "/icons/PiecesApp.webp";
 import LlamaCoder from "/icons/LlamaCoder.webp";
 import PerplexityAI from "/icons/PerplexityAI.webp";
 import AdobeEnhance from "/icons/AdobeEnhance.webp";
@@ -158,7 +157,7 @@ export const cards = [
     description:
       "Fast and intuitive image generator powered by FLUX.1's Schnell model",
     link: "https://aibiansari.github.io/schnell-image-generator/",
-    categories: ["Useful Websites", "Ai Tools", "Design Tools"],
+    categories: ["Useful Websites", "AI Tools", "Design Tools"],
     tags: [
       "AI",
       "image generator",
@@ -262,34 +261,6 @@ export const cards = [
       "free utilities",
       "image conversion",
       "compress PDF",
-    ],
-  },
-  {
-    image: SadeemPC,
-    title: "SadeemPC",
-    description: "Cracked software for Windows and Mac.",
-    link: "https://www.sadeempc.com",
-    categories: ["Cracked Apps"],
-    tags: [
-      "cracked software",
-      "windows apps",
-      "mac apps",
-      "free downloads",
-      "software activation",
-    ],
-  },
-  {
-    image: YTS,
-    title: "YTS",
-    description: "Download YIFY movies torrents directly.",
-    link: "https://yts.mx",
-    categories: ["Torrent Resources", "Streaming Services"],
-    tags: [
-      "movies",
-      "torrent downloads",
-      "streaming services",
-      "high-quality torrents",
-      "free movies",
     ],
   },
   {
@@ -418,6 +389,20 @@ export const cards = [
     ],
   },
   {
+    image: SadeemPC,
+    title: "SadeemPC",
+    description: "Cracked software for Windows and Mac.",
+    link: "https://www.sadeempc.com",
+    categories: ["Cracked Apps"],
+    tags: [
+      "cracked software",
+      "windows apps",
+      "mac apps",
+      "free downloads",
+      "software activation",
+    ],
+  },
+  {
     image: GetIntoPC,
     title: "GetIntoPC",
     description: "Download free PC softwares and apps.",
@@ -458,6 +443,20 @@ export const cards = [
       "cracking community",
       "software resources",
       "forums",
+    ],
+  },
+  {
+    image: YTS,
+    title: "YTS",
+    description: "Download YIFY movies torrents directly.",
+    link: "https://yts.mx",
+    categories: ["Torrent Resources", "Streaming Services"],
+    tags: [
+      "movies",
+      "torrent downloads",
+      "streaming services",
+      "high-quality torrents",
+      "free movies",
     ],
   },
   {
@@ -537,20 +536,6 @@ export const cards = [
       "automation",
       "gpt4o",
       "task automation",
-    ],
-  },
-  {
-    image: PiecesApp,
-    title: "Pieces",
-    description: "AI-powered snippets and productivity tools for developers.",
-    link: "https://pieces.app",
-    categories: ["AI Tools", "Web Development"],
-    tags: [
-      "ai snippets",
-      "developer productivity",
-      "web development tools",
-      "ai-powered tools",
-      "snippets management",
     ],
   },
   {
@@ -685,7 +670,7 @@ export const cards = [
     title: "CloudConvert",
     description: "Online file converter supporting over 200 formats.",
     link: "https://cloudconvert.com",
-    categories: ["File Converters", "Useful Websites"],
+    categories: ["File Converters", "Useful Websites", "PDF Utilities"],
     tags: [
       "file conversion",
       "cloud services",
@@ -699,7 +684,7 @@ export const cards = [
     title: "Convertio",
     description: "Easy-to-use online file converter for multiple formats.",
     link: "https://convertio.co",
-    categories: ["File Converters", "Useful Websites"],
+    categories: ["File Converters", "Useful Websites", "PDF Utilities"],
     tags: [
       "file conversion",
       "easy to use",
@@ -713,7 +698,7 @@ export const cards = [
     title: "Online Convert",
     description: "Free online file converter for documents, images, and more.",
     link: "https://www.online-convert.com",
-    categories: ["File Converters", "Useful Websites"],
+    categories: ["File Converters", "Useful Websites", "PDF Utilities"],
     tags: [
       "file conversion",
       "documents",
@@ -1017,7 +1002,7 @@ export const cards = [
     title: "Search Anything",
     description: "A tool to search for anything across multiple websites.",
     link: "https://search.anything.io",
-    categories: ["Useful Websites", "Web Libraries"],
+    categories: ["Useful Websites", "Design Tools"],
     tags: [
       "search tool",
       "web search",
@@ -1172,7 +1157,7 @@ export const cards = [
   },
   {
     image: ScenePkg,
-    title: "Wallpaper Engine Scene Unpacker",
+    title: "WE Scene Unpacker",
     description: "Website to unpack wallpaper engine's scenes for free.",
     link: "https://wetranslate.thiscould.work/scene.pkg/",
     categories: ["Useful Websites"],
@@ -1608,7 +1593,7 @@ export const cards = [
     title: "Deblank",
     description: "Generate design and development content with Deblank.",
     link: "https://deblank.com",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["AI Tools", "Web Development", "Design Inspiration"],
     tags: [
       "content generator",
       "design content",
@@ -1650,7 +1635,7 @@ export const cards = [
     title: "Devicon",
     description: "Icon set for popular development tools and technologies.",
     link: "https://devicon.dev",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["Web Development", "SVG Icons"],
     tags: [
       "development icons",
       "Devicon",
@@ -1692,7 +1677,7 @@ export const cards = [
     title: "Namify",
     description: "Generate and find unique names for projects and businesses.",
     link: "https://namify.tech",
-    categories: ["Web Development", "Design Inspiration"],
+    categories: ["AI Tools", "Web Development", "Design Inspiration"],
     tags: [
       "name generator",
       "unique names",
