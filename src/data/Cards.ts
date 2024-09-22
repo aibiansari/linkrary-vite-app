@@ -189,9 +189,9 @@ export const cards = [
       "Free online audio, video and document tools for developers and designers.",
     link: "https://toolur.com",
     categories: [
-      "Web Development",
       "Audio Tools",
       "Video Tools",
+      "Image Utilities",
       "PDF Utilities",
       "File Converters",
       "Useful Websites",
@@ -599,7 +599,7 @@ export const cards = [
     title: "Waifu2x",
     description: "AI-powered image upscaling and noise reduction.",
     link: "https://waifu2x.booru.pics",
-    categories: ["AI Tools", "Useful Websites"],
+    categories: ["AI Tools", "Useful Websites", "Image Utilities"],
     tags: [
       "AI",
       "image upscaling",
@@ -613,7 +613,7 @@ export const cards = [
     title: "WaifuXL",
     description: "Advanced AI tool for image upscaling.",
     link: "https://waifuxl.com",
-    categories: ["AI Tools", "Useful Websites"],
+    categories: ["AI Tools", "Useful Websites", "Image Utilities"],
     tags: [
       "AI",
       "image upscaling",
@@ -1002,7 +1002,7 @@ export const cards = [
     title: "Search Anything",
     description: "A tool to search for anything across multiple websites.",
     link: "https://search.anything.io",
-    categories: ["Useful Websites", "Design Tools"],
+    categories: ["Useful Websites", "Design Tools", "Image Utilities"],
     tags: [
       "search tool",
       "web search",
@@ -1059,7 +1059,7 @@ export const cards = [
     title: "PicFinder AI",
     description: "AI-powered tool for finding and generating images.",
     link: "https://picfinder.ai",
-    categories: ["AI Tools", "Design Tools"],
+    categories: ["AI Tools", "Design Tools", "Image Utilities"],
     tags: [
       "AI image finder",
       "image generation",
@@ -1160,7 +1160,7 @@ export const cards = [
     title: "WE Scene Unpacker",
     description: "Website to unpack wallpaper engine's scenes for free.",
     link: "https://wetranslate.thiscould.work/scene.pkg/",
-    categories: ["Useful Websites"],
+    categories: ["Useful Websites", "Image Utilities"],
     tags: [
       "design resources",
       "scene package",
@@ -1733,7 +1733,7 @@ export const cards = [
     title: "TinyPNG",
     description: "Compress and optimize PNG images.",
     link: "https://tinypng.com",
-    categories: ["Web Development", "File Converters"],
+    categories: ["Web Development", "File Converters", "Image Utilities"],
     tags: [
       "image compression",
       "PNG optimization",
