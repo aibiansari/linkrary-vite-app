@@ -69,21 +69,25 @@ const HorizontalScroll = () => {
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"
             />
           </svg>
           Filters
         </button>
         <div className="hidden md:block h-9 w-[1.4px] shrink-0 bg-element ml-5 mr-1"></div>
-        <button onClick={() => scroll("left")} className="hidden md:block p-2">
+        <button
+          onClick={() => scroll("left")}
+          className="hidden md:block p-2"
+          aria-label="Scroll Left"
+        >
           <svg
             fill="currentColor"
             className="w-10 h-10 p-1.5 text-white hover:bg-element transition-all duration-200 rounded-full"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"
             />
           </svg>
@@ -109,14 +113,18 @@ const HorizontalScroll = () => {
             </button>
           ))}
         </div>
-        <button onClick={() => scroll("right")} className="hidden md:block p-2">
+        <button
+          onClick={() => scroll("right")}
+          className="hidden md:block p-2"
+          aria-label="Scroll Right"
+        >
           <svg
             fill="currentColor"
             className="w-10 h-10 p-1.5 text-white hover:bg-element transition-all duration-200 rounded-full"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
             />
           </svg>

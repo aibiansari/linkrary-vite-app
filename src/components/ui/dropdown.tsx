@@ -103,11 +103,11 @@ const DropDown = () => {
         viewBox="0 0 16 16"
       >
         <path
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
         />
       </svg>
-      <motion.ul
+      <motion.div
         initial="closed"
         animate={open ? "open" : "closed"}
         variants={wrapperVariants}
@@ -147,14 +147,14 @@ const DropDown = () => {
 
         <hr className="border-t my-1 border-neutral-800" />
 
-        <motion.li
+        <motion.div
           variants={itemVariants}
           className="w-full p-1.5 text-xs pointer-events-none select-none"
         >
           Select a theme
-        </motion.li>
+        </motion.div>
 
-        <motion.div
+        <motion.ul
           variants={itemVariants}
           className="flex items-center justify-center gap-2 p-2"
         >
@@ -169,8 +169,8 @@ const DropDown = () => {
               <span>{item.label}</span>
             </motion.li>
           ))}
-        </motion.div>
-      </motion.ul>
+        </motion.ul>
+      </motion.div>
     </motion.div>
   );
 };

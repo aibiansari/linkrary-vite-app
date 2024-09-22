@@ -25,7 +25,7 @@ const Cards = () => {
             className="h-16 w-16 rounded-lg object-cover"
           />
           <div className="overflow-hidden -translate-y-0.5">
-            <h3 className="text-xl text-white font-semibold">{card.title}</h3>
+            <h1 className="text-xl text-white font-semibold">{card.title}</h1>
             <p
               title={card.description}
               className="text-sm text-neutral-400 line-clamp-2"
