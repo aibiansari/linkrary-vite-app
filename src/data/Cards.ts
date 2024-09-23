@@ -93,6 +93,7 @@ import AnimeTV9 from "/icons/AnimeTV9.webp";
 import AnimeTsu from "/icons/AnimeTsu.webp";
 import AnimePahe from "/icons/AnimePahe.webp";
 import OpenSubtitles from "/icons/OpenSubtitles.webp";
+import OnlineFix from "/icons/OnlineFix.webp";
 import SteamUnlocked from "/icons/SteamUnlocked.webp";
 import Pi from "/icons/Pi.webp";
 import SteamGG from "/icons/SteamGG.webp";
@@ -134,6 +135,25 @@ import DaisyUI from "/icons/DaisyUI.webp";
 import HoverDev from "/icons/HoverDev.webp";
 import HyperUI from "/icons/HyperUI.webp";
 import AntDesign from "/icons/AntDesign.webp";
+import Veed from "/icons/Veed.webp";
+import Y2Mate from "/icons/Y2Mate.webp";
+import VideoSmaller from "/icons/VideoSmaller.webp";
+import VideoLouder from "/icons/VideoLouder.webp";
+import Unscreen from "/icons/Unscreen.webp";
+import Ezgif from "/icons/Ezgif.webp";
+import Clideo from "/icons/Clideo.webp";
+import WaveVideo from "/icons/WaveVideo.webp";
+import VideoUtils from "/icons/VideoUtils.webp";
+import AnyConv from "/icons/AnyConv.webp";
+import BetterConverter from "/icons/BetterConverter.webp";
+import Soundraw from "/icons/Soundraw.webp";
+import AudioMass from "/icons/AudioMass.webp";
+import VoiceMaker from "/icons/VoiceMaker.webp";
+import VoiceChanger from "/icons/VoiceChanger.webp";
+import OnlineToneGenerator from "/icons/OnlineToneGenerator.webp";
+import Ringer from "/icons/Ringer.webp";
+import Zedge from "/icons/Zedge.webp";
+import ResponsiveVoice from "/icons/ResponsiveVoice.webp";
 
 export const cards = [
   {
@@ -282,7 +302,7 @@ export const cards = [
     title: "Canva",
     description: "Online all-in-one graphic design and editing tool.",
     link: "https://www.canva.com",
-    categories: ["Design Tools", "Design Inspiration", "Useful Websites"],
+    categories: ["Design Tools", "Design Inspiration"],
     tags: [
       "graphic design",
       "online design tool",
@@ -317,6 +337,113 @@ export const cards = [
       "video editing",
       "podcast editing",
       "transcription",
+    ],
+  },
+  {
+    image: Soundraw,
+    title: "Soundraw",
+    description:
+      "An AI-based music generator that allows users to create royalty-free music.",
+    link: "https://soundraw.io",
+    categories: ["Audio Tools", "AI Tools"],
+    tags: [
+      "AI music generator",
+      "royalty-free music",
+      "music creation",
+      "audio tools",
+    ],
+  },
+  {
+    image: AudioMass,
+    title: "AudioMass",
+    description:
+      "A free, open-source online audio editor to edit and manipulate sound files.",
+    link: "https://audiomass.co",
+    categories: ["Audio Tools"],
+    tags: [
+      "audio editing",
+      "sound manipulation",
+      "online audio editor",
+      "free audio tools",
+    ],
+  },
+  {
+    image: VoiceMaker,
+    title: "VoiceMaker",
+    description:
+      "An online text-to-speech converter to create natural-sounding voices.",
+    link: "https://voicemaker.in",
+    categories: ["Audio Tools", "AI Tools"],
+    tags: [
+      "text-to-speech",
+      "AI voice generator",
+      "voice synthesis",
+      "online audio language tools",
+    ],
+  },
+  {
+    image: VoiceChanger,
+    title: "VoiceChanger",
+    description:
+      "Free online tool to change voice in various fun and creative ways.",
+    link: "https://voicechanger.io",
+    categories: ["Audio Tools"],
+    tags: [
+      "voice changer",
+      "online voice tools",
+      "voice manipulation",
+      "fun audio tools",
+    ],
+  },
+  {
+    image: OnlineToneGenerator,
+    title: "Online Tone Generator",
+    description: "A tool for generating pure tones of specific frequencies.",
+    link: "https://onlinetonegenerator.com",
+    categories: ["Audio Tools"],
+    tags: [
+      "tone generation",
+      "audio testing",
+      "sound frequency",
+      "online audio tools",
+    ],
+  },
+  {
+    image: Ringer,
+    title: "Ringer",
+    description:
+      "A free ringtone maker that allows users to create ringtones from audio files online.",
+    link: "https://ringer.org",
+    categories: ["Audio Tools"],
+    tags: [
+      "ringtone maker",
+      "audio editing",
+      "custom ringtones",
+      "online audio tools",
+    ],
+  },
+  {
+    image: Zedge,
+    title: "Zedge",
+    description:
+      "A platform offering free wallpapers, ringtones, and other content.",
+    link: "https://www.zedge.net",
+    categories: ["Audio Tools", "Design Inspiration", "Useful Websites"],
+    tags: ["wallpapers", "ringtones", "mobile customization", "free content"],
+  },
+  {
+    image: ResponsiveVoice,
+    title: "ResponsiveVoice",
+    description:
+      "A powerful text-to-speech tool that offers high-quality voice synthesis.",
+    link: "https://responsivevoice.org",
+    categories: ["Audio Tools", "AI Tools"],
+    tags: [
+      "text-to-speech",
+      "voice synthesis",
+      "AI audio tools",
+      "web text-to-speech",
+      "languages tool",
     ],
   },
   {
@@ -363,7 +490,7 @@ export const cards = [
   },
   {
     image: NexusMods,
-    title: "NexusMods",
+    title: "Nexus Mods",
     description: "Mods and community for game modding.",
     link: "https://www.nexusmods.com",
     categories: ["Game Libraries"],
@@ -443,6 +570,162 @@ export const cards = [
       "cracking community",
       "software resources",
       "forums",
+    ],
+  },
+  {
+    image: Veed,
+    title: "Veed.io",
+    description:
+      "Online video editor with tools for creating, editing, and enhancing videos.",
+    link: "https://www.veed.io",
+    categories: ["Video Tools", "AI Tools"],
+    tags: [
+      "video editing",
+      "online video tools",
+      "video creation",
+      "video enhancement",
+    ],
+  },
+  {
+    image: Y2Mate,
+    title: "Y2Mate",
+    description:
+      "Popular tool for downloading videos and audio from YouTube and other platforms.",
+    link: "https://www.y2mate.com",
+    categories: [
+      "Video Tools",
+      "Audio Tools",
+      "File Converters",
+      "Useful Websites",
+    ],
+    tags: [
+      "video downloading",
+      "audio downloading",
+      "YouTube download",
+      "media converters",
+    ],
+  },
+  {
+    image: VideoSmaller,
+    title: "VideoSmaller",
+    description:
+      "Online service to reduce video file size without losing quality.",
+    link: "https://www.videosmaller.com",
+    categories: ["Video Tools", "File Converters"],
+    tags: [
+      "video compression",
+      "reduce video size",
+      "file optimization",
+      "online video compressor",
+    ],
+  },
+  {
+    image: VideoLouder,
+    title: "VideoLouder",
+    description:
+      "A free tool to increase the audio volume in video files online.",
+    link: "https://www.videolouder.com",
+    categories: ["Video Tools", "Audio Tools"],
+    tags: [
+      "increase audio volume",
+      "video audio boost",
+      "online video tools",
+      "video sound enhancement",
+    ],
+  },
+  {
+    image: Unscreen,
+    title: "Unscreen",
+    description:
+      "A tool to automatically remove the background from videos and GIFs.",
+    link: "https://www.unscreen.com",
+    categories: ["Video Tools", "Design Tools"],
+    tags: [
+      "remove video background",
+      "video editing",
+      "background removal",
+      "GIF background removal",
+    ],
+  },
+  {
+    image: Ezgif,
+    title: "Ezgif",
+    description: "Fimple online GIF creator and image editor.",
+    link: "https://ezgif.com",
+    categories: ["Video Tools", "Design Tools", "File Converters"],
+    tags: [
+      "GIF creator",
+      "image editing",
+      "video to GIF conversion",
+      "online video tools",
+    ],
+  },
+  {
+    image: Clideo,
+    title: "Clideo",
+    description:
+      "An online tool for creating, editing, compressing & merging videos.",
+    link: "https://clideo.com",
+    categories: ["Video Tools", "File Converters"],
+    tags: [
+      "video editing",
+      "compress video",
+      "merge video files",
+      "online video tools",
+    ],
+  },
+  {
+    image: WaveVideo,
+    title: "Wave.video",
+    description:
+      "Video creation platform for making, editing, and hosting videos.",
+    link: "https://wave.video",
+    categories: ["Video Tools", "Design Tools"],
+    tags: [
+      "video creation",
+      "video hosting",
+      "video marketing",
+      "online video editing",
+    ],
+  },
+  {
+    image: VideoUtils,
+    title: "VideoUtils",
+    description:
+      "Free online video editing tools such as trimming, merging, and converting videos.",
+    link: "https://www.videoutils.com",
+    categories: ["Video Tools", "File Converters"],
+    tags: [
+      "video editing",
+      "video trimming",
+      "video merging",
+      "online video tools",
+    ],
+  },
+  {
+    image: AnyConv,
+    title: "AnyConv",
+    description: "A free file converter supporting various formats.",
+    link: "https://anyconv.com",
+    categories: ["File Converters"],
+    tags: [
+      "file conversion",
+      "document converter",
+      "video converter",
+      "audio converter",
+    ],
+  },
+  {
+    image: BetterConverter,
+    title: "Better Converter",
+    description: "Online tool for converting audio, video, and images.",
+    link: "https://better-converter.com",
+    categories: ["File Converters"],
+    tags: [
+      "media conversion",
+      "audio converter",
+      "video converter",
+      "image conversion",
     ],
   },
   {
@@ -557,7 +840,7 @@ export const cards = [
     title: "Perplexity AI",
     description: "AI-powered search engine for answering questions.",
     link: "https://www.perplexity.ai",
-    categories: ["AI Tools", "Useful Websites"],
+    categories: ["AI Tools"],
     tags: [
       "AI",
       "search engine",
@@ -670,7 +953,7 @@ export const cards = [
     title: "CloudConvert",
     description: "Online file converter supporting over 200 formats.",
     link: "https://cloudconvert.com",
-    categories: ["File Converters", "Useful Websites", "PDF Utilities"],
+    categories: ["File Converters", "PDF Utilities"],
     tags: [
       "file conversion",
       "cloud services",
@@ -684,7 +967,7 @@ export const cards = [
     title: "Convertio",
     description: "Easy-to-use online file converter for multiple formats.",
     link: "https://convertio.co",
-    categories: ["File Converters", "Useful Websites", "PDF Utilities"],
+    categories: ["File Converters", "PDF Utilities"],
     tags: [
       "file conversion",
       "easy to use",
@@ -698,7 +981,7 @@ export const cards = [
     title: "Online Convert",
     description: "Free online file converter for documents, images, and more.",
     link: "https://www.online-convert.com",
-    categories: ["File Converters", "Useful Websites", "PDF Utilities"],
+    categories: ["File Converters", "PDF Utilities"],
     tags: [
       "file conversion",
       "documents",
@@ -1017,7 +1300,7 @@ export const cards = [
     description:
       "AI-powered design tool for creating high-quality marketing visuals.",
     link: "https://flair.ai",
-    categories: ["AI Tools", "Design Tools", "Useful Websites"],
+    categories: ["AI Tools", "Design Tools"],
     tags: [
       "AI design tool",
       "marketing visuals",
@@ -1448,6 +1731,7 @@ export const cards = [
     categories: ["Streaming Services"],
     tags: ["anime episodes", "AnimePahe", "streaming", "downloads", "anime"],
   },
+
   {
     image: OpenSubtitles,
     title: "OpenSubtitles",
@@ -1460,6 +1744,20 @@ export const cards = [
       "OpenSubtitles",
       "TV show subtitles",
       "downloads",
+    ],
+  },
+  {
+    image: OnlineFix,
+    title: "OnlineFix",
+    description:
+      "A website providing games and help with launching games over the network.",
+    link: "https://online-fix.me",
+    categories: ["Game Libraries"],
+    tags: [
+      "Steam games",
+      "free downloads",
+      "PC LAN gaming",
+      "torrent resources",
     ],
   },
   {
