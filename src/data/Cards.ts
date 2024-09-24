@@ -165,7 +165,7 @@ import PrettyFolio from "/icons/PrettyFolio.webp";
 import Blush from "/icons/Blush.webp";
 import Flaticon from "/icons/Flaticon.webp";
 import FaviconIO from "/icons/FaviconIO.webp";
-import RemoveBG from "/icons/RemoveBG.webp";
+import SFlix from "/icons/SFlix.webp";
 import SVGOMG from "/icons/SVGOMG.webp";
 import ColorHunt from "/icons/ColorHunt.webp";
 import Squoosh from "/icons/Squoosh.webp";
@@ -197,6 +197,7 @@ import FreeImages from "/icons/FreeImages.webp";
 import Pikwizard from "/icons/Pikwizard.webp";
 import Polyhaven from "/icons/Polyhaven.webp";
 import StyledStock from "/icons/StyledStock.webp";
+import Adobe from "/icons/Adobe.webp";
 
 export const cards = [
   {
@@ -1343,10 +1344,10 @@ export const cards = [
     ],
   },
   {
-    image: RemoveBG,
-    title: "Remove.bg",
+    image: Adobe,
+    title: "Adobe Background Remover",
     description: "A powerful tool to remove backgrounds from images.",
-    link: "https://www.remove.bg",
+    link: "https://www.adobe.com/express/feature/image/remove-background",
     categories: ["Image Utilities", "Useful Websites"],
     tags: [
       "background removal",
@@ -2101,6 +2102,20 @@ export const cards = [
       "free online movies",
       "FreeMoviesWatch",
       "watch movies",
+      "torrent resources",
+    ],
+  },
+  {
+    image: SFlix,
+    title: "SFlix",
+    description: "Watch movies & TV shows online for free.",
+    link: "https://sflix.to",
+    categories: ["Streaming Services", "Torrent Resources"],
+    tags: [
+      "streaming movies",
+      "free online movies",
+      "SFlix",
+      "watch Netflix",
       "torrent resources",
     ],
   },

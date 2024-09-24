@@ -18,29 +18,32 @@ const Collection: React.FC = () => {
   }, []);
 
   return (
-    <div
-      className={`flex flex-col items-center min-h-screen pb-4 mb-1 bg-white dark:bg-body transition-colors duration-500 ${
-        theme === "dark" ? "dark" : ""
-      }`}
-    >
-      <FilterModal />
-      <CategoryModal />
-      <Navbar page="search" />
-      <HorizontalScroll />
-      <div className="max-w-screen-2xl mt-16 w-full">
-        <div className="flex mt-2 items-center md:gap-3">
-          <h1 className="p-8 text-3xl md:text-4xl text-black dark:text-white font-Raleway font-bold transition-colors duration-500">
-            Collection
-          </h1>
-          <Link
-            to="/Linkrary/"
-            className="text-sm md:text-base py-2 px-3 font-Raleway bg-black dark:bg-neutral-800 dark:hover:bg-element transition-colors duration-500 rounded-full text-neutral-200 font-semibold"
-          >
-            Go to Home
-          </Link>
+    <div>
+      <div
+        className={`flex flex-col items-center min-h-screen pb-4 bg-white dark:bg-body transition-colors duration-500 ${
+          theme === "dark" ? "dark" : ""
+        }`}
+      >
+        <FilterModal />
+        <CategoryModal />
+        <Navbar page="search" />
+        <HorizontalScroll />
+        <div className="max-w-screen-2xl mt-16 w-full">
+          <div className="flex mt-2 items-center md:gap-3">
+            <h1 className="p-8 text-3xl md:text-4xl text-black dark:text-white font-Raleway font-bold transition-colors duration-500">
+              Collection
+            </h1>
+            <Link
+              to="/Linkrary/"
+              className="text-sm md:text-base py-2 px-3 font-Raleway bg-black dark:bg-neutral-800 dark:hover:bg-element transition-colors duration-500 rounded-full text-neutral-200 font-semibold"
+            >
+              Go to Home
+            </Link>
+          </div>
+          <Cards />
         </div>
-        <Cards />
       </div>
+      <div className="border-b-4 border-white dark:border-body"></div>
     </div>
   );
 };

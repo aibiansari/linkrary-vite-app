@@ -1,4 +1,5 @@
 import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
+import { useCategoryContext } from "@/contexts/useCategoryContext";
 import { Link } from "react-router-dom";
 import Dropdown from "./dropdown";
 import logo from "/logo.svg";
@@ -9,6 +10,12 @@ type PageProps = {
 
 const Navbar = ({ page = "search" }: PageProps) => {
   const { buttonState, setButtonState } = useFilterButtonContext();
+  const { setSelectedCategory, setCategoryToScroll } = useCategoryContext();
+
+  const handleClick = () => {
+    setSelectedCategory("All Apps");
+    setCategoryToScroll("All Apps");
+  };
 
   return (
     <nav
@@ -19,7 +26,11 @@ const Navbar = ({ page = "search" }: PageProps) => {
       }`}
     >
       <div className="flex-shrink-0 w-12 md:w-52 flex items-center mb-2 md:mb-0">
-        <Link to="/Linkrary/" className="flex items-center gap-2">
+        <Link
+          onClick={handleClick}
+          to="/Linkrary/"
+          className="flex items-center gap-2"
+        >
           <img
             src={logo}
             alt="Linkrary Logo"
