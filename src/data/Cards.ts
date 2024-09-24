@@ -154,6 +154,49 @@ import OnlineToneGenerator from "/icons/OnlineToneGenerator.webp";
 import Ringer from "/icons/Ringer.webp";
 import Zedge from "/icons/Zedge.webp";
 import ResponsiveVoice from "/icons/ResponsiveVoice.webp";
+import UncutWTF from "/icons/UncutWTF.webp";
+import FontShare from "/icons/FontShare.webp";
+import DaFont from "/icons/DaFont.webp";
+import WhatFontIs from "/icons/WhatFontIs.webp";
+import TypIO from "/icons/TypIO.webp";
+import FontPair from "/icons/FontPair.webp";
+import PaFolios from "/icons/PaFolios.webp";
+import PrettyFolio from "/icons/PrettyFolio.webp";
+import Blush from "/icons/Blush.webp";
+import Flaticon from "/icons/Flaticon.webp";
+import FaviconIO from "/icons/FaviconIO.webp";
+import RemoveBG from "/icons/RemoveBG.webp";
+import SVGOMG from "/icons/SVGOMG.webp";
+import ColorHunt from "/icons/ColorHunt.webp";
+import Squoosh from "/icons/Squoosh.webp";
+import CoolBackgrounds from "/icons/CoolBackgrounds.webp";
+import HeroPatterns from "/icons/HeroPatterns.webp";
+import Picrew from "/icons/Picrew.webp";
+import ObjectRemover from "/icons/ObjectRemover.webp";
+import PFPs from "/icons/PFPs.webp";
+import Thingiverse from "/icons/Thingiverse.webp";
+import TinEye from "/icons/TinEye.webp";
+import SauceNAO from "/icons/SauceNAO.webp";
+import ImgOps from "/icons/ImgOps.webp";
+import Muzli from "/icons/Muzli.webp";
+import DeepAI from "/icons/DeepAI.webp";
+import CSSGradient from "/icons/CSSGradient.webp";
+import JSONFormatter from "/icons/JSONFormatter.webp";
+import Glitch from "/icons/Glitch.webp";
+import PageSpeed from "/icons/PageSpeed.webp";
+import SVGBox from "/icons/SVGBox.webp";
+import Reshot from "/icons/Reshot.webp";
+import Blobmaker from "/icons/Blobmaker.webp";
+import Creatica from "/icons/Creatica.webp";
+import Freepik from "/icons/Freepik.webp";
+import Pixabay from "/icons/Pixabay.webp";
+import StockSnap from "/icons/StockSnap.webp";
+import KaboomPics from "/icons/KaboomPics.webp";
+import LifeOfPix from "/icons/LifeOfPix.webp";
+import FreeImages from "/icons/FreeImages.webp";
+import Pikwizard from "/icons/Pikwizard.webp";
+import Polyhaven from "/icons/Polyhaven.webp";
+import StyledStock from "/icons/StyledStock.webp";
 
 export const cards = [
   {
@@ -1028,6 +1071,96 @@ export const cards = [
     ],
   },
   {
+    image: CSSGradient,
+    title: "CSS Gradient",
+    description: "A simple tool for generating CSS gradients.",
+    link: "https://cssgradient.io",
+    categories: ["Design Tools", "Web Development"],
+    tags: ["CSS gradients", "gradient generator", "web design", "color tools"],
+  },
+  {
+    image: JSONFormatter,
+    title: "JSON Formatter",
+    description: "An online tool to format and validate JSON data.",
+    link: "https://jsonformatter.org",
+    categories: ["Web Development", "Useful Websites"],
+    tags: [
+      "JSON formatting",
+      "data validation",
+      "developer tools",
+      "online formatter",
+    ],
+  },
+  {
+    image: Glitch,
+    title: "Glitch",
+    description: "A collaborative platform for building web apps.",
+    link: "https://glitch.com",
+    categories: ["Web Development", "Useful Websites"],
+    tags: [
+      "web apps",
+      "collaborative coding",
+      "real-time editing",
+      "developer community",
+    ],
+  },
+  {
+    image: PageSpeed,
+    title: "PageSpeed Insights",
+    description:
+      "Analyze the content of a web page and get suggestions to make it faster.",
+    link: "https://pagespeed.web.dev",
+    categories: ["Web Development", "Useful Websites"],
+    tags: [
+      "page speed analysis",
+      "performance optimization",
+      "web development tools",
+      "site performance",
+    ],
+  },
+  {
+    image: SVGBox,
+    title: "SVG Box",
+    description: "A resource for creating and customizing SVG icons.",
+    link: "https://svgbox.net",
+    categories: ["SVG Icons"],
+    tags: ["SVG icons", "custom icons", "design assets", "icon library"],
+  },
+  {
+    image: Reshot,
+    title: "Reshot",
+    description: "A platform for finding and sharing free stock photos.",
+    link: "https://www.reshot.com",
+    categories: ["Stock Images"],
+    tags: [
+      "free stock photos",
+      "design resources",
+      "image library",
+      "creative assets",
+    ],
+  },
+  {
+    image: Blobmaker,
+    title: "Blobmaker",
+    description: "An online tool for generating customizable blob shapes.",
+    link: "https://www.blobmaker.app",
+    categories: ["Design Tools", "Web Development"],
+    tags: ["blob generator", "custom shapes", "design resources", "SVG shapes"],
+  },
+  {
+    image: Creatica,
+    title: "Creatica",
+    description: "A platform that offers design resources & inspiration.",
+    link: "https://creatica.app",
+    categories: ["SVG Icons", "Design Tools"],
+    tags: [
+      "design resources",
+      "creative inspiration",
+      "graphic design",
+      "design tools",
+    ],
+  },
+  {
     image: HuggingF,
     title: "MusicGen",
     description: "AI-based music generation by Facebook on Hugging Face.",
@@ -1081,6 +1214,328 @@ export const cards = [
       "graphic resources",
       "texture packs",
       "creative design",
+    ],
+  },
+  {
+    image: UncutWTF,
+    title: "Uncut.wtf",
+    description: "A free platform offering open-source fonts..",
+    link: "https://uncut.wtf",
+    categories: ["Font Resources"],
+    tags: [
+      "open-source fonts",
+      "font library",
+      "typography",
+      "design resources",
+    ],
+  },
+  {
+    image: FontShare,
+    title: "FontShare",
+    description: "A free and open-source font service.",
+    link: "https://fontshare.com",
+    categories: ["Font Resources"],
+    tags: ["free fonts", "open-source fonts", "typography", "design fonts"],
+  },
+  {
+    image: DaFont,
+    title: "DaFont",
+    description: "A massive collection of free fonts.",
+    link: "https://www.dafont.com",
+    categories: ["Font Resources"],
+    tags: ["free fonts", "font download", "typography", "font library"],
+  },
+  {
+    image: WhatFontIs,
+    title: "WhatFontIs",
+    description: "An online tool that helps identify fonts from images.",
+    link: "https://www.whatfontis.com",
+    categories: ["Font Resources", "Useful Websites", "Image Utilities"],
+    tags: [
+      "font identification",
+      "font finder",
+      "identify fonts",
+      "similar fonts",
+    ],
+  },
+  {
+    image: TypIO,
+    title: "Typ.io",
+    description:
+      "A platform that showcases beautiful font pairings used in real projects.",
+    link: "https://typ.io",
+    categories: ["Font Resources", "Design Inspiration"],
+    tags: [
+      "font pairings",
+      "typography inspiration",
+      "font combinations",
+      "design inspiration",
+    ],
+  },
+  {
+    image: FontPair,
+    title: "FontPair",
+    description: "A curated library of Google font pairings.",
+    link: "https://www.fontpair.co",
+    categories: ["Font Resources", "Design Inspiration"],
+    tags: ["font pairings", "Google fonts", "typography", "design resources"],
+  },
+  {
+    image: PaFolios,
+    title: "PaFolios",
+    description: "A platform to create and showcase beautiful portfolios.",
+    link: "https://pafolios.com",
+    categories: ["Design Inspiration", "Design Tools"],
+    tags: [
+      "portfolio creation",
+      "designer portfolio",
+      "showcase designs",
+      "online portfolios",
+    ],
+  },
+  {
+    image: PrettyFolio,
+    title: "PrettyFolio",
+    description: "An inspiration site featuring a collection of portfolios.",
+    link: "https://prettyfolio.com",
+    categories: ["Design Inspiration"],
+    tags: [
+      "portfolio inspiration",
+      "creative portfolios",
+      "design showcase",
+      "designer websites",
+    ],
+  },
+  {
+    image: Blush,
+    title: "Blush",
+    description:
+      "A design tool that allows users to create and customize illustrations.",
+    link: "https://blush.design",
+    categories: ["Design Tools", "SVG Icons"],
+    tags: [
+      "custom illustrations",
+      "SVG illustrations",
+      "design assets",
+      "illustration tool",
+    ],
+  },
+  {
+    image: Flaticon,
+    title: "Flaticon",
+    description: "A vast library of free icons in SVG & PNG.",
+    link: "https://www.flaticon.com",
+    categories: ["SVG Icons", "Design Tools"],
+    tags: ["icon library", "free icons", "SVG icons", "vector icons"],
+  },
+  {
+    image: FaviconIO,
+    title: "Favicon.io",
+    description:
+      "A free tool for generating favicons from text, images, or emojis.",
+    link: "https://favicon.io",
+    categories: ["SVG Icons", "Design Tools"],
+    tags: [
+      "favicon generator",
+      "favicon creation",
+      "icon generator",
+      "SVG favicons",
+    ],
+  },
+  {
+    image: RemoveBG,
+    title: "Remove.bg",
+    description: "A powerful tool to remove backgrounds from images.",
+    link: "https://www.remove.bg",
+    categories: ["Image Utilities", "Useful Websites"],
+    tags: [
+      "background removal",
+      "image editing",
+      "photo editing",
+      "design tools",
+    ],
+  },
+  {
+    image: SVGOMG,
+    title: "SVGOMG",
+    description: "An online tool to optimize and compress SVG files.",
+    link: "https://jakearchibald.github.io/svgomg/",
+    categories: ["SVG Icons", "Image Utilities", "Web Development"],
+    tags: [
+      "SVG optimization",
+      "compress SVG",
+      "reduce file size",
+      "online tools",
+    ],
+  },
+  {
+    image: ColorHunt,
+    title: "ColorHunt",
+    description: "A collection of beautiful, curated color palettes.",
+    link: "https://colorhunt.co",
+    categories: ["Design Inspiration", "Design Tools"],
+    tags: [
+      "color palettes",
+      "design inspiration",
+      "color combinations",
+      "curated palettes",
+    ],
+  },
+  {
+    image: Squoosh,
+    title: "Squoosh",
+    description:
+      "An open-source tool for compressing and optimizing images for the web.",
+    link: "https://squoosh.app",
+    categories: ["Web Development", "Image Utilities", "Design Tools"],
+    tags: [
+      "image compression",
+      "image optimization",
+      "web image tools",
+      "reduce image size",
+    ],
+  },
+  {
+    image: CoolBackgrounds,
+    title: "CoolBackgrounds",
+    description: "A collection of unique and customizable backgrounds.",
+    link: "https://coolbackgrounds.io",
+    categories: ["Design Inspiration", "Design Tools"],
+    tags: [
+      "backgrounds",
+      "custom backgrounds",
+      "design resources",
+      "graphic design",
+    ],
+  },
+  {
+    image: HeroPatterns,
+    title: "HeroPatterns",
+    description: "A collection of repeatable SVG background patterns.",
+    link: "https://heropatterns.com",
+    categories: ["SVG Icons", "Design Tools"],
+    tags: [
+      "SVG patterns",
+      "background patterns",
+      "custom patterns",
+      "design assets",
+    ],
+  },
+  {
+    image: Picrew,
+    title: "Picrew",
+    description:
+      "A popular avatar maker to create and customize your own character illustrations.",
+    link: "https://picrew.me",
+    categories: ["Design Tools"],
+    tags: [
+      "avatar maker",
+      "character design",
+      "custom illustrations",
+      "design fun",
+    ],
+  },
+  {
+    image: ObjectRemover,
+    title: "ObjectRemover",
+    description:
+      "An online tool to remove unwanted objects from images easily.",
+    link: "https://objectremover.com",
+    categories: ["Image Utilities", "Useful Websites"],
+    tags: ["object removal", "photo editing", "image editing", "design tools"],
+  },
+  {
+    image: PFPs,
+    title: "PFPs.gg",
+    description: "A collection of profile pictures for gamers and creatives.",
+    link: "https://pfps.gg",
+    categories: ["Design Inspiration", "Design Tools"],
+    tags: [
+      "profile pictures",
+      "PFPs",
+      "gaming avatars",
+      "custom profile images",
+    ],
+  },
+  {
+    image: Thingiverse,
+    title: "Thingiverse",
+    description: "A platform for sharing 3D printable designs and models.",
+    link: "https://www.thingiverse.com",
+    categories: ["Design Inspiration", "Useful Websites"],
+    tags: [
+      "3D printing",
+      "open-source designs",
+      "maker community",
+      "3D models",
+    ],
+  },
+  {
+    image: TinEye,
+    title: "TinEye",
+    description: "A reverse image search engine to find source of images.",
+    link: "https://tineye.com",
+    categories: ["Useful Websites", "Image Utilities"],
+    tags: [
+      "reverse image search",
+      "image tracking",
+      "source verification",
+      "online tools",
+    ],
+  },
+  {
+    image: SauceNAO,
+    title: "SauceNAO",
+    description:
+      "An image search engine designed to find source of anime & manga",
+    link: "https://saucenao.com",
+    categories: ["Useful Websites", "Image Utilities"],
+    tags: [
+      "anime search",
+      "image source finder",
+      "art source verification",
+      "manga reference",
+    ],
+  },
+  {
+    image: ImgOps,
+    title: "ImgOps",
+    description:
+      "An online image processing tool that offers a variety of services.",
+    link: "https://imgops.com",
+    categories: ["Design Tools", "Image Utilities"],
+    tags: [
+      "image processing",
+      "image optimization",
+      "resize images",
+      "image conversion",
+    ],
+  },
+  {
+    image: Muzli,
+    title: "Muzli",
+    description:
+      "A design inspiration search engine that curates the latest trends.",
+    link: "https://search.muz.li",
+    categories: ["Design Inspiration", "Image Utilities"],
+    tags: [
+      "design trends",
+      "inspiration",
+      "creative resources",
+      "curated content",
+    ],
+  },
+  {
+    image: DeepAI,
+    title: "DeepAI",
+    description: "An AI platform that offers various tools and APIs.",
+    link: "https://deepai.org",
+    categories: ["AI Tools", "Design Tools", "Useful Websites"],
+    tags: [
+      "AI generation",
+      "image generation",
+      "creative AI tools",
+      "text generation",
     ],
   },
   {
@@ -1996,6 +2451,122 @@ export const cards = [
       "high-quality photos",
       "Rawpixel",
       "creative assets",
+    ],
+  },
+  {
+    image: Freepik,
+    title: "Freepik",
+    description: "A vast library of free vectors,PSDs, and more.",
+    link: "https://www.freepik.com",
+    categories: ["Stock Images", "Design Tools"],
+    tags: [
+      "free vectors",
+      "stock photos",
+      "design resources",
+      "graphic design",
+    ],
+  },
+  {
+    image: Pixabay,
+    title: "Pixabay",
+    description: "A platform offering a wide range of free images and videos.",
+    link: "https://pixabay.com",
+    categories: ["Stock Images"],
+    tags: [
+      "free images",
+      "stock videos",
+      "creative resources",
+      "design assets",
+    ],
+  },
+  {
+    image: StockSnap,
+    title: "StockSnap",
+    description:
+      "A large selection of high-quality stock photos, all free to use.",
+    link: "https://stocksnap.io",
+    categories: ["Stock Images"],
+    tags: [
+      "stock photos",
+      "free images",
+      "high-quality photos",
+      "design resources",
+    ],
+  },
+  {
+    image: KaboomPics,
+    title: "KaboomPics",
+    description:
+      "A free stock photo site with a collection of high-quality images.",
+    link: "https://kaboompics.com",
+    categories: ["Stock Images"],
+    tags: [
+      "free stock photos",
+      "high-resolution images",
+      "design assets",
+      "blogging resources",
+    ],
+  },
+  {
+    image: LifeOfPix,
+    title: "Life of Pix",
+    description: "A source of free photos donated by an advertising agency.",
+    link: "https://www.lifeofpix.com",
+    categories: ["Stock Images"],
+    tags: [
+      "free high-resolution photos",
+      "design resources",
+      "creative commons",
+      "photo sharing",
+    ],
+  },
+  {
+    image: FreeImages,
+    title: "FreeImages",
+    description: "A library of free stock photos, illustrations, and vectors.",
+    link: "https://www.freeimages.com",
+    categories: ["Stock Images"],
+    tags: [
+      "free stock photos",
+      "illustrations",
+      "design assets",
+      "image library",
+    ],
+  },
+  {
+    image: Pikwizard,
+    title: "Pikwizard",
+    description:
+      "A free stock photo site with a large library of images and videos.",
+    link: "https://pikwizard.com",
+    categories: ["Stock Images"],
+    tags: [
+      "free stock photos",
+      "customizable templates",
+      "image library",
+      "design resources",
+    ],
+  },
+  {
+    image: Polyhaven,
+    title: "Polyhaven",
+    description:
+      "A free resource for high-quality 3D assets, HDRIs, and textures.",
+    link: "https://polyhaven.com",
+    categories: ["Design Tools", "Stock Images"],
+    tags: ["3D assets", "HDRIs", "textures", "free resources"],
+  },
+  {
+    image: StyledStock,
+    title: "Styled Stock",
+    description: "A collection of beautiful, styled stock photos.",
+    link: "https://styledstock.co",
+    categories: ["Stock Images", "Design Tools"],
+    tags: [
+      "styled stock photos",
+      "free images",
+      "creative resources",
+      "blogging assets",
     ],
   },
   {
