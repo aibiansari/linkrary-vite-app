@@ -1,51 +1,60 @@
 import Navbar from "@/components/ui/navbar";
 import aibi from "/aibi.webp";
+import logo from "/logo.svg";
 
 const About = () => {
   return (
     <div className="bg-white dark:bg-body min-h-screen pt-20">
       <Navbar page="about" />
-      <p className="text-lg text-center md:text-justify text-gray-700 dark:text-gray-300 mx-8 mt-2 mb-8">
-        Linkrary is your creative AI-powered image generation tool. With just a
-        few words, you can bring your ideas to life and create stunning visuals
-        in seconds. Whether it's art, design, or inspiration, Linkrary makes it
-        quick and easy to generate images tailored to your imagination.
-      </p>
-
-      <section className="bg-white dark:bg-body p-6 md:p-8 rounded-lg shadow-inner w-full">
-        <h2 className="text-xl md:text-2  xl font-semibold mb-4 text-purple-600">
-          How to Use Linkrary
+      <div className="grid grid-cols-6 mt-8">
+        <div className="col-span-4">
+          <h1 className=" mx-8 text-black font-Raleway font-medium text-4xl dark:text-gray-200">
+            What is Linkrary?
+          </h1>
+          <p className="text-lg text-center md:text-justify text-gray-700 dark:text-gray-300 mx-8 mt-2 mb-8">
+            Linkrary is the ultimate resource hub, bringing together a curated
+            selection of the best web tools, design inspirations, development
+            utilities, and more. Linkrary organizes everything into
+            easy-to-navigate categories, making it simple to find exactly what
+            you need. Explore and share your favorite links - all in one place.
+          </p>
+        </div>
+        <div className=" col-span-2">
+          <img src={logo} alt="Linkrary" className="w-64 h-64 mx-auto" />
+        </div>
+      </div>
+      <section
+        id="how-to-use"
+        className="text-white dark:text-gray-300 mx-8 mb-8"
+      >
+        <h2 className="text-3xl font-semibold mb-2">How to Use Linkrary</h2>
+        <ol className="list-decimal list-inside">
+          <li className="mb-2">
+            Browse through the categories listed on the homepage.
+          </li>
+          <li className="mb-2">
+            Click on the desired category to see a curated list of links.
+          </li>
+          <li className="mb-2">
+            Utilize the search bar to quickly find specific tools or resources.
+          </li>
+          <li className="mb-2">Save your favorites for easy access later.</li>
+        </ol>
+      </section>
+      <section id="motive" className="text-white dark:text-gray-300 mx-8 mb-8">
+        <h2 className="text-3xl font-semibold mb-2">
+          My Motive Behind Developing Linkrary
         </h2>
-        <ul className="text-left text-gray-700 dark:text-gray-300 space-y-4">
-          <li>
-            <strong>1. Enter a Prompt:</strong> In the text area provided, type
-            a creative prompt that describes the image you want to generate. Be
-            as detailed or as simple as you like.
-          </li>
-          <li>
-            <strong>2. Generate Image:</strong> Click on the "Generate Image"
-            button to see your prompt come to life. You'll see the AI-generated
-            image in the center of your screen.
-          </li>
-          <li>
-            <strong>3. View Image History:</strong> All the images you generate
-            are saved in the gallery section on the left. Click on any image to
-            view it again or delete it if you no longer need it.
-          </li>
-          <li>
-            <strong>4. Delete an Image:</strong> To delete an image, click the
-            'X' button on the image in the gallery. If the confirmation dialog
-            appears, confirm your action, and the image will be removed.
-          </li>
-          <li>
-            <strong>5. Customize Your Experience:</strong> Use the settings to
-            manage your preferences, such as skipping the confirmation dialog
-            when deleting images.
-          </li>
-        </ul>
+        <p className="text-lg">
+          As a passionate web developer, I noticed the struggle many face in
+          finding reliable resources and tools online. My goal with Linkrary is
+          to create a centralized location where users can easily discover and
+          utilize various online tools, enhancing their productivity and
+          creativity.
+        </p>
       </section>
 
-      <section className="w-full max-w-xl mx-auto p-6 mt-4 bg-white dark:bg-body rounded-lg shadow-inner">
+      <section className="w-full max-w-xl mx-auto p-6 mt-4 rounded-lg shadow-inner">
         <div className="flex flex-col md:flex-row items-center gap-4">
           <img
             src={aibi}
@@ -53,10 +62,12 @@ const About = () => {
             className="w-24 h-24 rounded-full shadow-black/40 shadow-md"
           />
           <div className="-translate-y-1 flex flex-col items-center md:items-start">
-            <h2 className="text-3xl text-left font-semibold">
+            <h2 className="text-3xl text-black dark:text-gray-200 text-left font-semibold">
               Abdullah Ansari
             </h2>
-            <p className="text-gray-600 text-left">Web Developer & Designer</p>
+            <p className="text-neutral-950 dark:text-gray-300 text-left">
+              Web Developer & Designer
+            </p>
             <div className="flex space-x-4 mt-4 md:mt-2">
               <a
                 href="https://github.com/aibiansari"
