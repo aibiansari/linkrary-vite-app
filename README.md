@@ -18,7 +18,7 @@ Linkrary is the ultimate resource hub, bringing together a curated selection of 
 - **Responsive Design**: Fully optimized for all devices.
 - **Search and Filter**: Quickly find resources with powerful search and filtering options.
 - **Dark Mode**: Switch between light and dark themes.
-- **Favorites and Bookmarks**: Save and access your favorite links easily.
+- **Favorites and Bookmarks**: Save and access your favorite links easily from your collection.
 - **Animation and Interactivity**: Smooth animations powered by Framer Motion.
 - **Secure and Private**: Built with security best practices.
 
