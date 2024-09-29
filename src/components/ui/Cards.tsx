@@ -73,7 +73,7 @@ const Cards = () => {
             </h1>
             <p
               title={card.description}
-              className="text-sm text-neutral-500 dark:text-neutral-400 line-clamp-2"
+              className="text-sm text-neutral-600 dark:text-neutral-400 line-clamp-2"
             >
               {card.description}
             </p>

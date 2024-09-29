@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #111111;
+  }
+}
+
 .anim {
   animation: l9 1s infinite;
   transform: perspective(300px) translateZ(0px);
