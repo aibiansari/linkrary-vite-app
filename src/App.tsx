@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { Router, Route } from "wouter";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FilterButtonProvider } from "./contexts/FilterButtonContext";
 import { FavoriteCardsProvider } from "./contexts/FavoriteCardsContext";
 import { CategoryModalProvider } from "./contexts/CategoryModalContext";
@@ -46,16 +46,14 @@ const App: React.FC = () => {
                       },
                     }}
                   />
-                  {/* Define Routes using Wouter */}
-                  <Route path="/">
-                    <Home />
-                  </Route>
-                  <Route path="/collection">
-                    <Collection />
-                  </Route>
-                  <Route path="/about">
-                    <About />
-                  </Route>
+                  <Routes>
+                    <Route path="/Linkrary/" element={<Home />} />
+                    <Route
+                      path="/Linkrary/collection"
+                      element={<Collection />}
+                    />
+                    <Route path="/Linkrary/about" element={<About />} />
+                  </Routes>
                 </Suspense>
               </Router>
             </CategoryModalProvider>
