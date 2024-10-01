@@ -19,25 +19,111 @@ import {
   PDF,
   Stock,
 } from "./Icons";
+import { cards } from "./Cards";
 
-export const categories = [
-  { name: "All Apps", icon: <AllApps />, count: "201" },
-  { name: "AI Tools", icon: <AiTools />, count: "34" },
-  { name: "Audio Tools", icon: <AudioTools />, count: "20" },
-  { name: "Video Tools", icon: <VideoTools />, count: "17" },
-  { name: "Design Tools", icon: <DesignTools />, count: "46" },
-  { name: "Image Utilities", icon: <ImageUtils />, count: "16" },
-  { name: "Game Libraries", icon: <Games />, count: "8" },
-  { name: "Design Inspiration", icon: <DesignInsp />, count: "37" },
-  { name: "Web Development", icon: <WebDev />, count: "43" },
-  { name: "SVG Icons", icon: <SVGs />, count: "15" },
-  { name: "Font Resources", icon: <Fonts />, count: "11" },
-  { name: "Web Libraries", icon: <WebLibs />, count: "13" },
-  { name: "File Converters", icon: <Converter />, count: "15" },
-  { name: "Torrent Resources", icon: <Torrent />, count: "15" },
-  { name: "Useful Websites", icon: <UsefulSites />, count: "47" },
-  { name: "Streaming Services", icon: <Streaming />, count: "14" },
-  { name: "Cracked Apps", icon: <Torrent />, count: "6" },
-  { name: "PDF Utilities", icon: <PDF />, count: "9" },
-  { name: "Stock Images", icon: <Stock />, count: "13" },
-];
+// Define the types for category count and category
+type CategoryCount = {
+  [key: string]: number;
+};
+
+interface Category {
+  name: string;
+  icon: JSX.Element | null;
+  count: number;
+}
+
+// Define the initial category counts with const assertion for type safety
+const initialCategoryCounts = {
+  "All Apps": cards.length,
+  "AI Tools": 0,
+  "Audio Tools": 0,
+  "Video Tools": 0,
+  "Design Tools": 0,
+  "Image Utilities": 0,
+  "Game Libraries": 0,
+  "Design Inspiration": 0,
+  "Web Development": 0,
+  "SVG Icons": 0,
+  "Font Resources": 0,
+  "Web Libraries": 0,
+  "File Converters": 0,
+  "Torrent Resources": 0,
+  "Useful Websites": 0,
+  "Streaming Services": 0,
+  "Cracked Apps": 0,
+  "PDF Utilities": 0,
+  "Stock Images": 0,
+} as const;
+
+// Function to count occurrences of all categories in cards
+const countCategories = (): CategoryCount => {
+  const categoryCount: CategoryCount = { ...initialCategoryCounts };
+
+  cards.forEach(({ categories }) => {
+    categories.forEach((category) => {
+      if (Object.prototype.hasOwnProperty.call(categoryCount, category)) {
+        categoryCount[category] += 1;
+      }
+    });
+  });
+
+  return categoryCount;
+};
+
+// Get the category counts
+const categoryCounts = countCategories();
+
+// Build the categories array
+export const categories: Category[] = Object.entries(initialCategoryCounts).map(
+  ([name]) => ({
+    name,
+    icon: getIcon(name),
+    count: categoryCounts[name],
+  })
+);
+
+// Helper function to get the corresponding icon based on category name
+const getIcon = (name: string): JSX.Element | null => {
+  switch (name) {
+    case "All Apps":
+      return <AllApps />;
+    case "AI Tools":
+      return <AiTools />;
+    case "Audio Tools":
+      return <AudioTools />;
+    case "Video Tools":
+      return <VideoTools />;
+    case "Design Tools":
+      return <DesignTools />;
+    case "Image Utilities":
+      return <ImageUtils />;
+    case "Game Libraries":
+      return <Games />;
+    case "Design Inspiration":
+      return <DesignInsp />;
+    case "Web Development":
+      return <WebDev />;
+    case "SVG Icons":
+      return <SVGs />;
+    case "Font Resources":
+      return <Fonts />;
+    case "Web Libraries":
+      return <WebLibs />;
+    case "File Converters":
+      return <Converter />;
+    case "Torrent Resources":
+      return <Torrent />;
+    case "Useful Websites":
+      return <UsefulSites />;
+    case "Streaming Services":
+      return <Streaming />;
+    case "Cracked Apps":
+      return <Torrent />; // Duplicate case; adjust if needed
+    case "PDF Utilities":
+      return <PDF />;
+    case "Stock Images":
+      return <Stock />;
+    default:
+      return null; // or a default icon
+  }
+};
