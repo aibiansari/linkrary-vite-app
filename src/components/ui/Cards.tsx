@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from "react";
-import { cards } from "@/data/Cards";
 import { useCategoryContext } from "@/contexts/useCategoryContext";
+import { useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
+import { cards } from "@/data/Cards";
 
 interface CardsProps {
   collection: boolean;
@@ -19,20 +20,37 @@ const Cards = ({ collection }: CardsProps) => {
   }, []);
 
   const handleSaveToggle = (title: string) => {
-    setFavCards((prev) => {
-      let updatedSaved;
-      if (prev.includes(title)) {
-        // Remove card from favorites if unchecked
-        updatedSaved = prev.filter((fav) => fav !== title);
-      } else {
-        // Add card to favorites if checked
-        updatedSaved = [...prev, title];
-      }
-
-      // Save updated array to localStorage
-      localStorage.setItem("Collection", JSON.stringify(updatedSaved));
-      return updatedSaved;
-    });
+    const isFavorite = favCards.includes(title);
+    const delCard = title;
+    setFavCards((prevFavCards) => {
+      const updatedFavCards = isFavorite
+        ? prevFavCards.filter((fav) => fav !== title)
+        : [...prevFavCards, title];
+      localStorage.setItem("Collection", JSON.stringify(updatedFavCards));
+      return updatedFavCards;
+    }); // Update state and localStorage
+    if (isFavorite) {
+      toast.info(`${title} removed from collection`, {
+        action: {
+          label: "Undo",
+          onClick: () => {
+            setFavCards((prevFavCards) => {
+              if (!prevFavCards.includes(delCard)) {
+                const updatedFavCards = [...prevFavCards, delCard];
+                localStorage.setItem(
+                  "Collection",
+                  JSON.stringify(updatedFavCards)
+                );
+                return updatedFavCards;
+              }
+              return prevFavCards;
+            });
+          },
+        },
+      });
+    } else {
+      toast.success(`${title} added to collection`);
+    }
   };
 
   let filteredCards =

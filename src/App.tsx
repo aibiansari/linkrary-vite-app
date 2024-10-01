@@ -4,6 +4,7 @@ import { FilterButtonProvider } from "./contexts/FilterButtonContext";
 import { CategoryModalProvider } from "./contexts/CategoryModalContext";
 import { CategoryProvider } from "./contexts/CategoryContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { Toaster } from "sonner";
 import logo from "/logo.svg";
 
 // Lazy load page components
@@ -34,6 +35,16 @@ const App: React.FC = () => {
                   </div>
                 }
               >
+                <Toaster
+                  position="top-center"
+                  toastOptions={{
+                    style: {
+                      background: "#e5e5e5",
+                      padding: "12px",
+                      paddingLeft: "24px",
+                    },
+                  }}
+                />
                 <Routes>
                   <Route path="/Linkrary/" element={<Home />} />
                   <Route path="/Linkrary/collection" element={<Collection />} />
