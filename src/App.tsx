@@ -20,7 +20,7 @@ const App: React.FC = () => {
         <FilterButtonProvider>
           <FavoriteCardsProvider>
             <CategoryModalProvider>
-              <Router>
+              <Router basename="/Linkrary">
                 <Suspense
                   fallback={
                     <div className="relative bg-white dark:bg-body min-h-screen flex items-center justify-center">
