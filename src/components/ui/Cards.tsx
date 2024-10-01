@@ -1,4 +1,5 @@
 import { useCategoryContext } from "@/contexts/useCategoryContext";
+import { useFavoriteCardsContext } from "@/contexts/useFavoriteCardsContext";
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { cards } from "@/data/Cards";
@@ -10,7 +11,7 @@ interface CardsProps {
 const Cards = ({ collection }: CardsProps) => {
   const { selectedCategory } = useCategoryContext();
   const [visibleCards, setVisibleCards] = useState<string[]>([]);
-  const [favCards, setFavCards] = useState<string[]>([]);
+  const { favCards, setFavCards } = useFavoriteCardsContext();
   const cardRefs = useRef<(HTMLAnchorElement | null)[]>([]);
 
   // Fetch favorites from localStorage or initialize it
@@ -26,7 +27,6 @@ const Cards = ({ collection }: CardsProps) => {
       const updatedFavCards = isFavorite
         ? prevFavCards.filter((fav) => fav !== title)
         : [...prevFavCards, title];
-      localStorage.setItem("Collection", JSON.stringify(updatedFavCards));
       return updatedFavCards;
     }); // Update state and localStorage
     if (isFavorite) {
@@ -37,10 +37,6 @@ const Cards = ({ collection }: CardsProps) => {
             setFavCards((prevFavCards) => {
               if (!prevFavCards.includes(delCard)) {
                 const updatedFavCards = [...prevFavCards, delCard];
-                localStorage.setItem(
-                  "Collection",
-                  JSON.stringify(updatedFavCards)
-                );
                 return updatedFavCards;
               }
               return prevFavCards;

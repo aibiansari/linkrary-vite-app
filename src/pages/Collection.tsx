@@ -24,9 +24,9 @@ const Collection: React.FC = () => {
           theme === "dark" ? "dark" : ""
         }`}
       >
-        <FilterModal />
-        <CategoryModal />
-        <Navbar page="search" />
+        <FilterModal collection={true} />
+        <CategoryModal collection={true} />
+        <Navbar page="collection" />
         <HorizontalScroll />
         <div className="max-w-screen-2xl mt-16 w-full">
           <div className="flex mt-2 items-center md:gap-3">

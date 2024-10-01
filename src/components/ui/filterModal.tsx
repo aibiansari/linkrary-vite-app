@@ -1,10 +1,16 @@
 import { useFilterButtonContext } from "@/contexts/useFilterButtonContext";
+import { useFavoriteCardsContext } from "@/contexts/useFavoriteCardsContext";
 import { AnimatePresence, motion } from "framer-motion";
 import { cards } from "@/data/Cards";
 import React from "react";
 
-const FilterModal = () => {
+interface FilterProps {
+  collection: boolean;
+}
+
+const FilterModal = ({ collection }: FilterProps) => {
   const { buttonState, setButtonState } = useFilterButtonContext();
+  const { favCards } = useFavoriteCardsContext();
   const [search, setSearch] = React.useState("");
   const inputRef = React.useRef<HTMLInputElement>(null);
 
@@ -13,11 +19,12 @@ const FilterModal = () => {
     search.length >= 2
       ? cards.filter(
           (card) =>
-            card.tags.some((tag) =>
+            (card.tags.some((tag) =>
               tag.toLowerCase().includes(search.toLowerCase())
             ) ||
-            card.description.toLowerCase().includes(search.toLowerCase()) ||
-            card.title.toLowerCase().includes(search.toLowerCase())
+              card.description.toLowerCase().includes(search.toLowerCase()) ||
+              card.title.toLowerCase().includes(search.toLowerCase())) &&
+            (!collection || favCards.includes(card.title))
         )
       : [];
 

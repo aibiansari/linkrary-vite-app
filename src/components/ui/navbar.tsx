@@ -5,10 +5,10 @@ import Dropdown from "./dropdown";
 import logo from "/logo.svg";
 
 type PageProps = {
-  page: "search" | "about";
+  page: "home" | "collection" | "about";
 };
 
-const Navbar = ({ page = "search" }: PageProps) => {
+const Navbar = ({ page = "home" }: PageProps) => {
   const { buttonState, setButtonState } = useFilterButtonContext();
   const { setSelectedCategory, setCategoryToScroll } = useCategoryContext();
 
@@ -44,7 +44,7 @@ const Navbar = ({ page = "search" }: PageProps) => {
       </div>
 
       <div className="flex flex-grow justify-center mb-2 md:mb-0">
-        {page === "search" ? (
+        {page === "home" || page === "collection" ? (
           // Search section
           <div
             onClick={() => setButtonState(!buttonState)}
@@ -65,7 +65,11 @@ const Navbar = ({ page = "search" }: PageProps) => {
               />
             </svg>
             <span className="text-black dark:text-neutral-500 italic font-Raleway font-medium transition-colors duration-300">
-              Search on Linkrary...
+              {page === "home"
+                ? "Search on Linkrary..."
+                : page === "collection"
+                ? "Search in Collection..."
+                : ""}
             </span>
             <div className="absolute hidden lg:flex right-4 items-center gap-1.5 text-neutral-500 text-sm">
               <kbd className="ring-neutral-400 dark:ring-neutral-600 ring-1 px-1 rounded transition-colors duration-300">

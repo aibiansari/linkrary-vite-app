@@ -22,9 +22,9 @@ const Home: React.FC = () => {
           theme === "dark" ? "dark" : ""
         }`}
       >
-        <FilterModal />
-        <CategoryModal />
-        <Navbar page="search" />
+        <FilterModal collection={false} />
+        <CategoryModal collection={false} />
+        <Navbar page="home" />
         <HorizontalScroll />
         <div className="max-w-screen-2xl mt-16 w-full">
           <h1 className="p-8 mt-2 text-3xl md:text-4xl text-black dark:text-white font-Raleway font-bold transition-colors duration-500">

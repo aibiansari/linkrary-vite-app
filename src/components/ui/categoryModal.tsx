@@ -4,7 +4,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { categories } from "@/data/Categories";
 import React from "react";
 
-const CategoryModal = () => {
+interface CatProps {
+  collection: boolean;
+}
+
+const CategoryModal = ({ collection }: CatProps) => {
   const { buttonState, setButtonState } = useCategoryModalContext();
   const { setSelectedCategory, setCategoryToScroll } = useCategoryContext();
 
@@ -136,7 +140,7 @@ const CategoryModal = () => {
                         {category.name}
                       </div>
                       <div className="text-sm text-neutral-400">
-                        {category.count}
+                        {!collection && category.count}
                       </div>
                     </motion.li>
                   ))}

@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FilterButtonProvider } from "./contexts/FilterButtonContext";
+import { FavoriteCardsProvider } from "./contexts/FavoriteCardsContext";
 import { CategoryModalProvider } from "./contexts/CategoryModalContext";
 import { CategoryProvider } from "./contexts/CategoryContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -17,42 +18,46 @@ const App: React.FC = () => {
     <ThemeProvider>
       <CategoryProvider>
         <FilterButtonProvider>
-          <CategoryModalProvider>
-            <Router>
-              <Suspense
-                fallback={
-                  <div className="relative bg-white dark:bg-body min-h-screen flex items-center justify-center">
-                    <img
-                      src={logo}
-                      alt="Linkrary Logo"
-                      className="w-12 h-12 absolute invert dark:invert-0"
+          <FavoriteCardsProvider>
+            <CategoryModalProvider>
+              <Router>
+                <Suspense
+                  fallback={
+                    <div className="relative bg-white dark:bg-body min-h-screen flex items-center justify-center">
+                      <img
+                        src={logo}
+                        alt="Linkrary Logo"
+                        className="w-12 h-12 absolute invert dark:invert-0"
+                      />
+                      <img
+                        src={logo}
+                        alt="Linkrary Logo"
+                        className="w-12 h-12 anim invert dark:invert-0"
+                      />
+                    </div>
+                  }
+                >
+                  <Toaster
+                    toastOptions={{
+                      style: {
+                        background: "#e5e5e5",
+                        padding: "12px",
+                        paddingLeft: "24px",
+                      },
+                    }}
+                  />
+                  <Routes>
+                    <Route path="/Linkrary/" element={<Home />} />
+                    <Route
+                      path="/Linkrary/collection"
+                      element={<Collection />}
                     />
-                    <img
-                      src={logo}
-                      alt="Linkrary Logo"
-                      className="w-12 h-12 anim invert dark:invert-0"
-                    />
-                  </div>
-                }
-              >
-                <Toaster
-                  position="top-center"
-                  toastOptions={{
-                    style: {
-                      background: "#e5e5e5",
-                      padding: "12px",
-                      paddingLeft: "24px",
-                    },
-                  }}
-                />
-                <Routes>
-                  <Route path="/Linkrary/" element={<Home />} />
-                  <Route path="/Linkrary/collection" element={<Collection />} />
-                  <Route path="/Linkrary/about" element={<About />} />
-                </Routes>
-              </Suspense>
-            </Router>
-          </CategoryModalProvider>
+                    <Route path="/Linkrary/about" element={<About />} />
+                  </Routes>
+                </Suspense>
+              </Router>
+            </CategoryModalProvider>
+          </FavoriteCardsProvider>
         </FilterButtonProvider>
       </CategoryProvider>
     </ThemeProvider>
