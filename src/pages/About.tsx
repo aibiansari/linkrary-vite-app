@@ -17,7 +17,7 @@ interface SocialIconProps {
 // Reusable Section Component
 const Section: React.FC<SectionProps> = ({ title, children }) => (
   <section className="mx-8 mb-10">
-    <h1 className="text-black italic font-semibold font-Raleway text-3xl dark:text-gray-200">
+    <h1 className="text-black font-semibold text-3xl dark:text-gray-200">
       {title}
     </h1>
     {children}

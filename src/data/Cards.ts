@@ -198,6 +198,8 @@ import Pikwizard from "/icons/Pikwizard.webp";
 import Polyhaven from "/icons/Polyhaven.webp";
 import StyledStock from "/icons/StyledStock.webp";
 import Adobe from "/icons/Adobe.webp";
+import Hama from "/icons/Hama.webp";
+import Gitfluence from "/icons/Gitfluence.webp";
 
 export const cards = [
   {
@@ -1093,6 +1095,20 @@ export const cards = [
     ],
   },
   {
+    image: Gitfluence,
+    title: "Gitfluence",
+    description: "A platform to find the git command you need effortlessly.",
+    link: "https://www.gitfluence.com",
+    categories: ["Web Development", "Useful Websites"],
+    tags: [
+      "find git commands",
+      "git command generator",
+      "version control",
+      "programming",
+      "developer tools",
+    ],
+  },
+  {
     image: Glitch,
     title: "Glitch",
     description: "A collaborative platform for building web apps.",
@@ -1434,6 +1450,19 @@ export const cards = [
       "character design",
       "custom illustrations",
       "design fun",
+    ],
+  },
+  {
+    image: Hama,
+    title: "Hama",
+    description: "A tool to remove unwanted objects from photos.",
+    link: "https://www.hama.app",
+    categories: ["Image Utilities", "Useful Websites"],
+    tags: [
+      "background removal",
+      "image editing",
+      "photo editing",
+      "design tools",
     ],
   },
   {
