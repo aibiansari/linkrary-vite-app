@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { FilterButtonProvider } from "./contexts/FilterButtonContext";
 import { FavoriteCardsProvider } from "./contexts/FavoriteCardsContext";
 import { CategoryModalProvider } from "./contexts/CategoryModalContext";
