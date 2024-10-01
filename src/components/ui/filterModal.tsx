@@ -112,7 +112,9 @@ const FilterModal = ({ collection }: FilterProps) => {
                 </svg>
                 <input
                   type="text"
-                  placeholder="Search on Linkrary"
+                  placeholder={
+                    collection ? "Search in Collection" : "Search on Linkrary"
+                  }
                   value={search}
                   ref={inputRef}
                   onChange={(e) => setSearch(e.target.value)}

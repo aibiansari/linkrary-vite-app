@@ -443,7 +443,7 @@ export const cards = [
   },
   {
     image: OnlineToneGenerator,
-    title: "Online Tone Generator",
+    title: "Tone Generator",
     description: "A tool for generating pure tones of specific frequencies.",
     link: "https://onlinetonegenerator.com",
     categories: ["Audio Tools"],
@@ -897,7 +897,7 @@ export const cards = [
   },
   {
     image: AdobeEnhance,
-    title: "Adobe Podcast Enhance",
+    title: "Adobe Enhance",
     description: "Enhance audio quality for podcasts using AI.",
     link: "https://podcast.adobe.com/enhance",
     categories: ["Audio Tools"],
@@ -1361,7 +1361,7 @@ export const cards = [
   },
   {
     image: Adobe,
-    title: "Adobe Background Remover",
+    title: "Adobe BG Remover",
     description: "A powerful tool to remove backgrounds from images.",
     link: "https://www.adobe.com/express/feature/image/remove-background",
     categories: ["Image Utilities", "Useful Websites"],
@@ -1982,7 +1982,7 @@ export const cards = [
   },
   {
     image: FakeNameGenerator,
-    title: "Fake Name Generator",
+    title: "Fake Name Gen",
     description: "Generate random names and identities for testing purposes.",
     link: "https://www.fakenamegenerator.com",
     categories: ["Useful Websites"],
@@ -2345,7 +2345,7 @@ export const cards = [
   },
   {
     image: W3SchoolsColors,
-    title: "W3Schools Color Picker",
+    title: "Color Picker",
     description: "Tool for picking and previewing colors for web design.",
     link: "https://www.w3schools.com/colors/colors_picker.asp",
     categories: ["Web Development", "Design Inspiration", "Web Libraries"],
