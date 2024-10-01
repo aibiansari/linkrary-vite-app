@@ -40,7 +40,7 @@ const Collection: React.FC = () => {
               Go to Home
             </Link>
           </div>
-          <Cards />
+          <Cards collection={true} />
         </div>
       </div>
       <div className="border-b-4 border-white dark:border-body"></div>

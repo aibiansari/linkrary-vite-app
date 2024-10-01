@@ -30,7 +30,7 @@ const Home: React.FC = () => {
           <h1 className="p-8 mt-2 text-3xl md:text-4xl text-black dark:text-white font-Raleway font-bold transition-colors duration-500">
             Discover
           </h1>
-          <Cards />
+          <Cards collection={false} />
         </div>
       </div>
       <div className="border-b-4 border-white dark:border-body"></div>
