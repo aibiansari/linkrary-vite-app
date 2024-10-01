@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/Linkrary/(.*)", "destination": "/Linkrary/index.html" }
+  ]
+}
