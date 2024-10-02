@@ -111,6 +111,7 @@ const About: React.FC = () => {
           <img
             src={aibi}
             alt="Abdullah Ansari"
+            loading="lazy"
             className="w-32 h-32 rounded-full shadow-black/50 shadow-lg"
           />
           <div className="-translate-y-1 flex flex-col items-center">

@@ -93,8 +93,12 @@ const Cards = ({ collection }: CardsProps) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 px-8 py-2">
       {filteredCards.length === 0 ? (
-        <p className="text-center text-neutral-600 font-Raleway italic dark:text-neutral-400 col-span-full">
-          No favorite cards available. Add some to your collection!
+        <p className="text-center text-neutral-600 italic dark:text-neutral-400 col-span-full">
+          No favorite cards available. Add some to your{" "}
+          {selectedCategory === "All Apps"
+            ? "collection"
+            : `${selectedCategory} collection`}
+          !
         </p>
       ) : (
         filteredCards.map((card, index) => (
