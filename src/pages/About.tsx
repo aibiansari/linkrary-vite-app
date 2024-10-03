@@ -18,7 +18,7 @@ interface SocialIconProps {
 // Reusable Section Component
 const Section: React.FC<SectionProps> = ({ title, children }) => (
   <section className="mx-8 mb-10">
-    <h1 className="text-black font-semibold text-3xl dark:text-gray-200">
+    <h1 className="text-black font-semibold text-2xl md:text-3xl dark:text-gray-200">
       {title}
     </h1>
     {children}
@@ -57,6 +57,13 @@ const About: React.FC = () => {
             easy-to-navigate categories, making it simple to find exactly what
             you need. Explore and share your favorite links - all in one place.
           </p>
+          <p className="text-neutral-950 dark:text-gray-300 mt-4">
+            Each site and tool featured in Linkrary is carefully selected for
+            being completely free and accessible online. Whether designed for a
+            specific task or covering an entire category, these resources are
+            easy to use and may require only a quick, straightforward
+            registration at most.
+          </p>
         </Section>
 
         <Section title="How to Use Linkrary">
@@ -66,6 +73,10 @@ const About: React.FC = () => {
             </li>
             <li className="mb-2">
               Click on the desired category to see a curated list of links.
+            </li>
+            <li className="mb-2">
+              Click on any link within a category to visit the corresponding
+              website or tool.
             </li>
             <li className="mb-2">
               Utilize the search bar to quickly find specific tools or
@@ -141,7 +152,7 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        <section className="flex w-full text-black dark:text-white justify-center font-Atkinson">
+        <section className="flex w-full text-black dark:text-white justify-center">
           &copy; {new Date().getFullYear()} Linkrary. All rights reserved.
         </section>
       </div>
