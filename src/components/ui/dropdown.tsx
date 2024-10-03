@@ -125,7 +125,7 @@ const DropDown = () => {
         <Link
           onClick={() => setOpen(false)}
           className="w-full flex items-center gap-2 p-1.5 text-sm font-semibold rounded-md hover:bg-neutral-400 dark:hover:bg-neutral-800 transition-colors duration-100 cursor-pointer"
-          to="/Linkrary/collection"
+          to="/linkrary-vite-app/collection"
         >
           <svg
             fill="currentColor"
@@ -140,7 +140,7 @@ const DropDown = () => {
         <Link
           onClick={() => setOpen(false)}
           className="w-full flex items-center gap-2 p-1.5 text-sm rounded-md hover:bg-neutral-400 dark:hover:bg-neutral-800 transition-colors duration-100 cursor-pointer"
-          to="/Linkrary/about"
+          to="/linkrary-vite-app/about"
         >
           <svg
             fill="currentColor"

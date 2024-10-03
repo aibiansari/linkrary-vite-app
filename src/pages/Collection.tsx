@@ -34,7 +34,7 @@ const Collection: React.FC = () => {
               Collection
             </h1>
             <Link
-              to="/Linkrary/"
+              to="/linkrary-vite-app/"
               className="text-sm md:text-base py-2 px-3 font-Raleway bg-black dark:bg-neutral-800 dark:hover:bg-element transition-colors duration-500 rounded-full text-neutral-200 font-semibold"
             >
               Go to Home

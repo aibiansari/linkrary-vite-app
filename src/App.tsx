@@ -47,12 +47,15 @@ const App: React.FC = () => {
                     }}
                   />
                   <Routes>
-                    <Route path="/Linkrary/" element={<Home />} />
+                    <Route path="/linkrary-vite-app/" element={<Home />} />
                     <Route
-                      path="/Linkrary/collection"
+                      path="/linkrary-vite-app/collection"
                       element={<Collection />}
                     />
-                    <Route path="/Linkrary/about" element={<About />} />
+                    <Route
+                      path="/linkrary-vite-app/about"
+                      element={<About />}
+                    />
                   </Routes>
                 </Suspense>
               </Router>

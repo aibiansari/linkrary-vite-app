@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/linkrary-vite-app/", //here goes your own repository names
+  base: "/linkrary-vite-app/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

@@ -28,7 +28,7 @@ const Navbar = ({ page = "home" }: PageProps) => {
       <div className="flex-shrink-0 w-12 md:w-52 flex items-center mb-2 md:mb-0">
         <Link
           onClick={handleClick}
-          to="/Linkrary/"
+          to="/linkrary-vite-app/"
           className="flex items-center gap-2"
         >
           <img
@@ -84,13 +84,13 @@ const Navbar = ({ page = "home" }: PageProps) => {
           // About section with links
           <div className="flex items-center gap-10">
             <Link
-              to="/Linkrary"
+              to="/linkrary-vite-app"
               className="hover:text-black dark:hover:text-neutral-300 text-neutral-800 dark:text-white hover:-translate-y-0.5 transition-all duration-300 font-Raleway font-semibold text-lg"
             >
               Discover
             </Link>
             <Link
-              to="/Linkrary/collection"
+              to="/linkrary-vite-app/collection"
               className="hover:text-black dark:hover:text-neutral-300 text-neutral-800 dark:text-white hover:-translate-y-0.5 transition-all duration-300 font-Raleway font-semibold text-lg"
             >
               Collection
@@ -101,7 +101,7 @@ const Navbar = ({ page = "home" }: PageProps) => {
 
       <div className="flex w-12 md:w-52 md:space-x-4 mb-2 md:mb-0">
         <a
-          href="https://github.com/aibiansari/Linkrary"
+          href="https://github.com/aibiansari/linkrary-vite-app"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:flex items-center text-black dark:text-white dark:hover:text-neutral-300 transition-colors duration-300 ease-in-out group"
