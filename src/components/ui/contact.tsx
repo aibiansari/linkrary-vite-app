@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_4wk6tem",
+        "service_6k49fan",
         "template_1qg9bsu",
         event.target as HTMLFormElement,
         "2K0y90IOnZ3BYCtYL"
